@@ -43,7 +43,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.5 }}
                 className="text-4xl md:text-5xl font-bold mb-6 text-balance"
               >
-                {"About Mazaya United"}
+                {"Topicrem & Novexpert"}
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function AboutPage() {
                 className="text-lg text-muted-foreground leading-relaxed text-pretty"
               >
                 {
-                  "Your trusted source for premium European skincare in Jordan. We bring you two exceptional French brands - Topicrem and Novexpert."
+                  "Two exceptional French skincare brands bringing premium dermatological expertise to Jordan. Trusted by professionals worldwide."
                 }
               </motion.p>
             </motion.div>
@@ -73,12 +73,12 @@ export default function AboutPage() {
                   <h2 className="text-3xl font-bold mb-4">{"Our Story"}</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     {
-                      "Mazaya United was founded with a mission to bring the finest European skincare to Jordan. We exclusively distribute Topicrem and Novexpert - two prestigious French brands known for their quality, efficacy, and innovation."
+                      "Topicrem and Novexpert are two prestigious French skincare brands, each with a unique approach to skin health. Both brands share a commitment to quality, efficacy, and innovation backed by dermatological expertise."
                     }
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     {
-                      "Each product is carefully selected for its dermatological excellence and proven results. We believe everyone deserves access to premium skincare that truly works."
+                      "Each product is carefully formulated with clinically-proven ingredients and tested for safety and efficacy. We bring premium French skincare to Jordan - products that truly deliver results."
                     }
                   </p>
                 </motion.div>
@@ -291,7 +291,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.5 }}
                 className="text-3xl font-bold text-center mb-12"
               >
-                {"Why Choose Mazaya United"}
+                {"Why Choose These Brands"}
               </motion.h2>
 
               <motion.div

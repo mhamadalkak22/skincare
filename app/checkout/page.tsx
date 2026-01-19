@@ -82,7 +82,7 @@ export default function CheckoutPage() {
     e.preventDefault()
 
     // Create order message for WhatsApp
-    let message = `*New Order from Mazaya United*\n\n`
+    let message = `*New Order - Topicrem & Novexpert*\n\n`
     message += `*Customer Information:*\n`
     message += `Name: ${formData.name}\n`
     message += `Phone: ${formData.phone}\n`

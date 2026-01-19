@@ -1,12 +1,14 @@
 "use client"
 
-import { ProductCard } from "@/components/product-card"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Instagram } from "lucide-react"
-import type { Product } from "@/lib/products"
+import type { Product } from "@/lib/products-data"
+import { ProductCard } from "@/components/product-card-new"
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
 
 interface BrandPageClientProps {
   brand: "topicrem" | "novexpert"
@@ -19,11 +21,22 @@ interface BrandPageClientProps {
     instagram: string
   }
   products: Product[]
+  lines: string[]
 }
 
-export function BrandPageClient({ brand, brandInfo, products }: BrandPageClientProps) {
-  const brandColorClass =
-    brand === "topicrem" ? "bg-primary text-primary-foreground" : "bg-accent text-accent-foreground"
+export function BrandPageClient({ brand, brandInfo, products, lines }: BrandPageClientProps) {
+  const [selectedLine, setSelectedLine] = useState<string | null>(null)
+
+  // Filter products by selected line
+  const filteredProducts = selectedLine
+    ? products.filter((p) => p.line === selectedLine)
+    : products
+
+  // Group products by line for display
+  const productsByLine = lines.reduce((acc, line) => {
+    acc[line] = products.filter((p) => p.line === line)
+    return acc
+  }, {} as Record<string, Product[]>)
 
   return (
     <div className="min-h-screen bg-background">
@@ -38,14 +51,9 @@ export function BrandPageClient({ brand, brandInfo, products }: BrandPageClientP
               transition={{ duration: 0.5, type: "spring" }}
               className="relative w-32 h-32 mx-auto bg-white rounded-2xl shadow-xl p-4"
             >
-              <Image
-                src={brandInfo.logo}
-                alt={`${brandInfo.name} Logo`}
-                fill
-                className="object-contain p-4"
-              />
+              <Image src={brandInfo.logo} alt={`${brandInfo.name} Logo`} fill className="object-contain p-4" />
             </motion.div>
-            
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -54,16 +62,18 @@ export function BrandPageClient({ brand, brandInfo, products }: BrandPageClientP
             >
               {brandInfo.name}
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className={`text-xl md:text-2xl font-semibold ${brand === "topicrem" ? "text-primary" : "text-accent"}`}
+              className={`text-xl md:text-2xl font-semibold ${
+                brand === "topicrem" ? "text-primary" : "text-accent"
+              }`}
             >
               {brandInfo.tagline}
             </motion.p>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -96,32 +106,100 @@ export function BrandPageClient({ brand, brandInfo, products }: BrandPageClientP
         </div>
       </section>
 
+      {/* Product Lines Filter */}
+      <section className="border-b border-border bg-muted/20">
+        <div className="container mx-auto px-4 py-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-wrap gap-2 items-center">
+              <span className="text-sm font-medium mr-2">Filter by Line:</span>
+              <Button
+                variant={selectedLine === null ? "default" : "outline"}
+                size="sm"
+                onClick={() => setSelectedLine(null)}
+              >
+                All Products ({products.length})
+              </Button>
+              {lines.map((line) => (
+                <Button
+                  key={line}
+                  variant={selectedLine === line ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setSelectedLine(line)}
+                >
+                  {line} ({productsByLine[line]?.length || 0})
+                </Button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Grid */}
       <section className="container mx-auto px-4 py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="mb-12 text-center"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">Our Collection</h2>
-          <p className="text-lg text-muted-foreground">
-            {products.length} premium product{products.length !== 1 ? "s" : ""} available
-          </p>
-        </motion.div>
+        {selectedLine === null ? (
+          // Show all products grouped by line
+          <div className="space-y-16 max-w-7xl mx-auto">
+            {lines.map((line, lineIndex) => {
+              const lineProducts = productsByLine[line] || []
+              if (lineProducts.length === 0) return null
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {products.map((product, index) => (
+              return (
+                <motion.div
+                  key={line}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: lineIndex * 0.1 }}
+                >
+                  <div className="mb-8">
+                    <h2 className="text-3xl font-bold mb-2">{line}</h2>
+                    <p className="text-muted-foreground">{lineProducts.length} products</p>
+                  </div>
+
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    {lineProducts.map((product, index) => (
+                      <motion.div
+                        key={product.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 + index * 0.05 }}
+                      >
+                        <ProductCard product={product} />
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+        ) : (
+          // Show filtered products
+          <div className="max-w-7xl mx-auto">
             <motion.div
-              key={product.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 + index * 0.05 }}
+              transition={{ duration: 0.4 }}
+              className="mb-8"
             >
-              <ProductCard product={product} />
+              <h2 className="text-3xl font-bold mb-2">{selectedLine}</h2>
+              <p className="text-muted-foreground">
+                {filteredProducts.length} product{filteredProducts.length !== 1 ? "s" : ""}
+              </p>
             </motion.div>
-          ))}
-        </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {filteredProducts.map((product, index) => (
+                <motion.div
+                  key={product.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                >
+                  <ProductCard product={product} />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       <SiteFooter />

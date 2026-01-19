@@ -7,8 +7,12 @@ import { SiteFooter } from "@/components/site-footer"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Instagram, Shield, Sparkles, Heart } from "lucide-react"
+import { getProductsByBrand } from "@/lib/products-data"
 
 export default function HomePage() {
+  const topicremProducts = getProductsByBrand("topicrem")
+  const novexpertProducts = getProductsByBrand("novexpert")
+  
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
@@ -25,8 +29,9 @@ export default function HomePage() {
             >
               <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-balance mb-4">
                 {"Premium Skincare"}
-                <span className="block text-primary mt-2">{"by Mazaya United"}</span>
+                <span className="block text-primary mt-2">{"Topicrem & Novexpert"}</span>
               </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mt-4">French Dermatological Excellence</p>
             </motion.div>
             
             <motion.p
@@ -36,7 +41,7 @@ export default function HomePage() {
               className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed"
             >
               {
-                "Discover the perfect blend of dermatological expertise and natural innovation with Topicrem and Novexpert - two leading European skincare brands trusted by professionals worldwide."
+                "Two leading French skincare brands trusted by dermatologists worldwide. Discover the perfect blend of dermatological expertise and natural innovation."
               }
             </motion.p>
 
@@ -277,8 +282,8 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-primary mb-2">20+</div>
-                <p className="text-sm text-muted-foreground">Years of Expertise</p>
+                <div className="text-4xl font-bold text-primary mb-2">{topicremProducts.length + novexpertProducts.length}+</div>
+                <p className="text-sm text-muted-foreground">Premium Products</p>
               </div>
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">100%</div>
@@ -289,8 +294,8 @@ export default function HomePage() {
                 <p className="text-sm text-muted-foreground">Made in France</p>
               </div>
               <div>
-                <div className="text-4xl font-bold text-primary mb-2">∞</div>
-                <p className="text-sm text-muted-foreground">For All Skin Types</p>
+                <div className="text-4xl font-bold text-primary mb-2">2</div>
+                <p className="text-sm text-muted-foreground">Premium Brands</p>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { getProductsByBrand, getBrandInfo } from "@/lib/products"
+import { getProductsByBrand, getBrandInfo, getLinesByBrand } from "@/lib/products-data"
 import { BrandPageClient } from "@/components/brand-page-client"
 
 export function generateStaticParams() {
@@ -20,6 +20,7 @@ export default async function BrandPage({
 
   const brandInfo = getBrandInfo(brand)
   const products = getProductsByBrand(brand)
+  const lines = getLinesByBrand(brand)
 
-  return <BrandPageClient brand={brand} brandInfo={brandInfo} products={products} />
+  return <BrandPageClient brand={brand} brandInfo={brandInfo} products={products} lines={lines} />
 }

@@ -9,7 +9,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-sans" 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" })
 
 export const metadata: Metadata = {
-  title: "Mazaya United - Premium European Skincare | Topicrem & Novexpert Jordan",
+  title: "Topicrem & Novexpert Jordan | Premium French Skincare",
   description: "Official distributor of Topicrem and Novexpert in Jordan. Authentic French skincare - dermatologically tested, clinically proven. Shop premium skincare solutions.",
   generator: "v0.app",
   icons: {

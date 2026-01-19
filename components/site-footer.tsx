@@ -24,9 +24,9 @@ export function SiteFooter() {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <h3 className="font-bold text-xl">{"Mazaya United"}</h3>
+            <h3 className="font-bold text-xl">{"Topicrem & Novexpert"}</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              {"Premium European skincare from Topicrem and Novexpert. Trusted quality, proven results."}
+              {"Premium French skincare brands. Dermatologically tested, clinically proven results."}
             </p>
             <div className="space-y-2">
               <motion.a
@@ -188,7 +188,7 @@ export function SiteFooter() {
           className="border-t border-border pt-8"
         >
           <p className="text-center text-muted-foreground text-sm">
-            {"© 2026 Mazaya United. Premium European Skincare - Topicrem & Novexpert."}
+            {"© 2026 Topicrem & Novexpert. Premium French Skincare."}
           </p>
         </motion.div>
       </div>

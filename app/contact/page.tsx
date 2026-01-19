@@ -100,7 +100,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Location</h3>
                     <p className="text-sm text-muted-foreground mb-3">Serving Jordan</p>
-                    <p className="text-sm">Mazaya United - Premium European Skincare</p>
+                    <p className="text-sm">Topicrem & Novexpert - Jordan</p>
                   </div>
                 </CardContent>
               </Card>

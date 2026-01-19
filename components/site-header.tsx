@@ -29,8 +29,8 @@ export function SiteHeader({ showBackButton = false, backHref = "/" }: SiteHeade
                 </Button>
               </Link>
             )}
-            <Link href="/" className="text-2xl font-bold tracking-tight text-foreground">
-              {"Mazaya United"}
+            <Link href="/" className="text-xl md:text-2xl font-bold tracking-tight text-foreground">
+              {"Topicrem & Novexpert"}
             </Link>
           </div>
 
