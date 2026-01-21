@@ -49,57 +49,41 @@ function generateProductId(brand: string, name: string, index: number): string {
 
 // Helper function to map product image - EXACT 1-to-1 mapping
 function mapProductImage(productName: string, brand: string): string {
-  // Clean the product name for comparison
+  // Clean the product name - trim spaces
   const cleanName = productName.trim()
   
-  // EXACT product name to image mapping for NOVEXPERT only
-  // Each product gets ONE unique image - no duplicates!
+  // NOVEXPERT: EXACT mapping - 19 products to 19 images
+  // Image names from public/novaexpertimage/ folder
   const novexpertImageMap: Record<string, string> = {
-    // VITAMIN C LINE
     "Vitamin C Serum 25%": "BOOSTER WITH VITAMIN C_2000x2000px.png",
     "The Peeling Night Cream": "THE PEELING NIGHT CREAM_2000x2000px.png",
+    "HA Serum Booster 3.2%": "BOOSTER SERUM WITH HA_2000x2000px.png",
+    "Expert Anti Aging Cream": "THE EXPERT ANTI-AGING CREAM_2000x2000px.png",
+    "Expert Anti Aging Fluid": "THE EXPERT ANTI-AGING FLUID_2000x2000px.png",
+    "LipUp": "LIP'UP_2000x2000px.png",
+    "Expert Antiaging Eye Contour": "EXPERT ANTI-AGING EYE CONTOUR_2000x2000px.png",
     "Radiance Lifting Eye Contour": "RADIANCE LIFTING EYE CONTOUR_2000x2000px.png",
     "Express Radiant Cleansing Foam": "EXPRESS RADIANT CLEANSING FOAM_2000x2000px.png",
     "Expert Exfoliator": "THE EXPERT EXFOLIATOR_2000x2000px.png",
-    
-    // HYALURONIC ACID LINE
-    "HA Serum Booster 3.2%": "BOOSTER SERUM WITH HA_2000x2000px.png",
-    "LipUp": "LIP'UP_2000x2000px.png",
-    "Micellar Water With HA": "MICELLAR WATER WITH HA_2000x2000px.png",
-    
-    // PRO-COLLAGEN LINE
-    "Expert Anti Aging Cream": "THE EXPERT ANTI-AGING CREAM_2000x2000px.png",
-    "Expert Anti Aging Fluid": "THE EXPERT ANTI-AGING FLUID_2000x2000px.png",
-    "Expert Antiaging Eye Contour": "EXPERT ANTI-AGING EYE CONTOUR_2000x2000px.png",
-    
-    // MAGNESIUM LINE
     "Velvety Hydrobiotic Cream": "VELVETY HYDRO-BIOTIC CREAM_2000x2000px.png",
     "Magnesium Mist": "MAGNESIUM MIST_2000x2000px.png",
     "Milky Cleanser Hydro-Biotic": "MILKY CLEANSER HYDRO-BIOTIC_2000x2000px.png",
-    
-    // TRIO-ZINC LINE
     "Purifying Gel": "PURIFYING GEL_2000x2000px.png",
     "Express Blemish Care": "EXPRESS BLEMISH CARE_2000x2000px.png",
     "Clear Skin Foaming Gel": "CLEAR SKIN FOAMING GEL_2000x2000px.png",
-    
-    // GREEN TEA POLYPHENOLS LINE
-    "Booster Serum Polyphenols": "BEAUTY OIL BOOSTER WITH 5 OMEGAS_2000x2000px.png",
-    "Targeted Dark Spot Corrector": "EXTRA RICH REPAIR CREAM_2000x2000px.png",
-    
-    // PRO-MELANIN LINE
     "The Caramel Cream light -N 1": "THE CARAMEL CREAM N°1_2000x2000px.png",
     "The Caramel Cream medium -N 2": "THE CARAMEL CREAM N°2_2000x2000px.png",
-    
-    // PRO COLLAGEN LINE
-    "Pro Collagen Booster Serum": "THE INSTANT LIFTING SERUM_2000x2000px.png",
+    "Micellar Water With HA": "MICELLAR WATER WITH HA_2000x2000px.png",
   }
 
-  // For NOVEXPERT - EXACT match only
+  // For NOVEXPERT - return image path from /novaexpertimage/ folder
   if (brand === "NOVEXPERT") {
     const imageName = novexpertImageMap[cleanName]
     if (imageName) {
-      return `/skincareimages/${imageName}`
+      return `/novaexpertimage/${imageName}`
     }
+    // If no image found, return placeholder
+    return "/placeholder.jpg"
   }
 
   // For TOPICREM, use category-based placeholders
@@ -128,28 +112,43 @@ function mapProductImage(productName: string, brand: string): string {
   return "/placeholder.jpg"
 }
 
-// Transform the JSON data
-export const allProducts: Product[] = productsJson.map((item: any, index: number) => {
-  const brand = item.brand === "TOPICREM" ? "topicrem" : "novexpert"
-  
-  // Ensure benefits is always an array
-  const benefits = Array.isArray(item.benefits) ? item.benefits : [item.benefits]
-  
-  return {
-    id: generateProductId(item.brand, item.name, index),
-    brand,
-    line: item.line,
-    name: item.name.trim(),
-    variants: item.variants,
-    description: item.description,
-    texture: item.texture || "",
-    skinType: item.skinType || "",
-    benefits,
-    ingredients: item.ingredients,
-    usage: item.usage,
-    image: mapProductImage(item.name, item.brand),
-  }
-})
+// Products to EXCLUDE - no images available
+const excludedProducts = [
+  "Booster Serum Polyphenols",
+  "Targeted Dark Spot Corrector", 
+  "Pro Collagen Booster Serum"
+]
+
+// Transform the JSON data - FILTER OUT products without images
+export const allProducts: Product[] = productsJson
+  .filter((item: any) => {
+    // Remove Novexpert products that don't have images
+    if (item.brand === "NOVEXPERT") {
+      return !excludedProducts.includes(item.name.trim())
+    }
+    return true
+  })
+  .map((item: any, index: number) => {
+    const brand = item.brand === "TOPICREM" ? "topicrem" : "novexpert"
+    
+    // Ensure benefits is always an array
+    const benefits = Array.isArray(item.benefits) ? item.benefits : [item.benefits]
+    
+    return {
+      id: generateProductId(item.brand, item.name, index),
+      brand,
+      line: item.line,
+      name: item.name.trim(),
+      variants: item.variants,
+      description: item.description,
+      texture: item.texture || "",
+      skinType: item.skinType || "",
+      benefits,
+      ingredients: item.ingredients,
+      usage: item.usage,
+      image: mapProductImage(item.name, item.brand),
+    }
+  })
 
 // Get products by brand
 export function getProductsByBrand(brand: "topicrem" | "novexpert"): Product[] {
