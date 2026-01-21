@@ -19,7 +19,11 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
-        <div className="container mx-auto px-4 py-20 md:py-32">
+        {/* Decorative Elements - Behind content */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none -z-10" />
+        
+        <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
           <div className="text-center max-w-5xl mx-auto space-y-8">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -49,25 +53,21 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex gap-4 justify-center flex-wrap pt-4"
+              className="flex gap-4 justify-center flex-wrap pt-4 relative z-20"
             >
-              <Link href="/brand/topicrem">
-                <Button size="lg" className="text-lg px-8">
+              <Button size="lg" className="text-lg px-8 pointer-events-auto" asChild>
+                <Link href="/brand/topicrem">
                   {"Explore Topicrem"}
-                </Button>
-              </Link>
-              <Link href="/brand/novexpert">
-                <Button size="lg" variant="outline" className="text-lg px-8">
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" className="text-lg px-8 pointer-events-auto" asChild>
+                <Link href="/brand/novexpert">
                   {"Explore Novexpert"}
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </motion.div>
           </div>
         </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       </section>
 
       {/* Why Choose Us Section */}
@@ -145,65 +145,62 @@ export default function HomePage() {
             transition={{ duration: 0.5, delay: 0.3 }}
             whileHover={{ scale: 1.01 }}
           >
-            <Link href="/brand/topicrem" className="group block">
-              <div className="bg-card border-2 border-border rounded-2xl overflow-hidden hover:shadow-2xl hover:border-primary/50 transition-all duration-500">
-                <div className="grid md:grid-cols-2 gap-0">
-                  <div className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/20 dark:to-pink-900/20 relative overflow-hidden">
-                    <Image
-                      src="/luxury-pink-skincare-bottles-elegant-minimal.jpg"
-                      alt="Topicrem Collection"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            <div className="bg-card border-2 border-border rounded-2xl overflow-hidden hover:shadow-2xl hover:border-primary/50 transition-all duration-500">
+              <div className="grid md:grid-cols-2 gap-0">
+                <Link href="/brand/topicrem" className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/20 dark:to-pink-900/20 relative overflow-hidden group">
+                  <Image
+                    src="/luxury-pink-skincare-bottles-elegant-minimal.jpg"
+                    alt="Topicrem Collection"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                </Link>
+                
+                <div className="p-10 md:p-12 flex flex-col justify-center space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="relative w-20 h-20 bg-white rounded-xl p-2 shadow-lg">
+                      <Image
+                        src="/topicremlogo.png"
+                        alt="Topicrem Logo"
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
+                    <div>
+                      <h2 className="text-4xl font-bold">{"Topicrem"}</h2>
+                      <p className="text-sm text-muted-foreground mt-1">Made in France</p>
+                    </div>
                   </div>
                   
-                  <div className="p-10 md:p-12 flex flex-col justify-center space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="relative w-20 h-20 bg-white rounded-xl p-2 shadow-lg">
-                        <Image
-                          src="/topicremlogo.png"
-                          alt="Topicrem Logo"
-                          fill
-                          className="object-contain p-2"
-                        />
-                      </div>
-                      <div>
-                        <h2 className="text-4xl font-bold">{"Topicrem"}</h2>
-                        <p className="text-sm text-muted-foreground mt-1">Made in France</p>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-3">
-                      <p className="text-lg font-semibold text-primary">
-                        {"Dermatological Expertise for All Skin Types"}
-                      </p>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {
-                          "Topicrem offers dermatologically tested skincare solutions designed for sensitive and demanding skin. Trusted by dermatologists worldwide for over 20 years, our products combine efficacy with gentleness."
-                        }
-                      </p>
-                    </div>
+                  <div className="space-y-3">
+                    <p className="text-lg font-semibold text-primary">
+                      {"Dermatological Expertise for All Skin Types"}
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {
+                        "Topicrem offers dermatologically tested skincare solutions designed for sensitive and demanding skin. Trusted by dermatologists worldwide for over 20 years, our products combine efficacy with gentleness."
+                      }
+                    </p>
+                  </div>
 
-                    <div className="flex gap-4 items-center pt-4">
-                      <Button className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                        {"Explore Collection"}
-                      </Button>
-                      <a
-                        href="https://www.instagram.com/topicrem_jordan?igsh=eDgxajhjc3BjZXU2"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        <Instagram className="w-5 h-5" />
-                        <span className="text-sm">Follow on Instagram</span>
-                      </a>
-                    </div>
+                  <div className="flex gap-4 items-center pt-4">
+                    <Button asChild>
+                      <Link href="/brand/topicrem">{"Explore Collection"}</Link>
+                    </Button>
+                    <a
+                      href="https://www.instagram.com/topicrem_jordan?igsh=eDgxajhjc3BjZXU2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <Instagram className="w-5 h-5" />
+                      <span className="text-sm">Follow on Instagram</span>
+                    </a>
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           </motion.div>
 
           {/* Novexpert Brand */}
@@ -213,65 +210,62 @@ export default function HomePage() {
             transition={{ duration: 0.5, delay: 0.4 }}
             whileHover={{ scale: 1.01 }}
           >
-            <Link href="/brand/novexpert" className="group block">
-              <div className="bg-card border-2 border-border rounded-2xl overflow-hidden hover:shadow-2xl hover:border-accent/50 transition-all duration-500">
-                <div className="grid md:grid-cols-2 gap-0">
-                  <div className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950/20 dark:to-slate-900/20 relative overflow-hidden md:order-2">
-                    <Image
-                      src="/luxury-black-skincare-bottles-minimalist-elegant.jpg"
-                      alt="Novexpert Collection"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            <div className="bg-card border-2 border-border rounded-2xl overflow-hidden hover:shadow-2xl hover:border-accent/50 transition-all duration-500">
+              <div className="grid md:grid-cols-2 gap-0">
+                <Link href="/brand/novexpert" className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950/20 dark:to-slate-900/20 relative overflow-hidden md:order-2 group">
+                  <Image
+                    src="/luxury-black-skincare-bottles-minimalist-elegant.jpg"
+                    alt="Novexpert Collection"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                </Link>
+                
+                <div className="p-10 md:p-12 flex flex-col justify-center space-y-6 md:order-1">
+                  <div className="flex items-center gap-4">
+                    <div className="relative w-20 h-20 bg-white rounded-xl p-2 shadow-lg">
+                      <Image
+                        src="/novaexpert.png"
+                        alt="Novexpert Logo"
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
+                    <div>
+                      <h2 className="text-4xl font-bold">{"Novexpert"}</h2>
+                      <p className="text-sm text-muted-foreground mt-1">Made in France</p>
+                    </div>
                   </div>
                   
-                  <div className="p-10 md:p-12 flex flex-col justify-center space-y-6 md:order-1">
-                    <div className="flex items-center gap-4">
-                      <div className="relative w-20 h-20 bg-white rounded-xl p-2 shadow-lg">
-                        <Image
-                          src="/novaexpert.png"
-                          alt="Novexpert Logo"
-                          fill
-                          className="object-contain p-2"
-                        />
-                      </div>
-                      <div>
-                        <h2 className="text-4xl font-bold">{"Novexpert"}</h2>
-                        <p className="text-sm text-muted-foreground mt-1">Made in France</p>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-3">
-                      <p className="text-lg font-semibold text-accent">
-                        {"Expert Science, Natural Innovation"}
-                      </p>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {
-                          "Novexpert combines scientific expertise with natural ingredients to create powerful anti-aging and skin health solutions. Made in France with proven efficacy and eco-conscious formulations."
-                        }
-                      </p>
-                    </div>
+                  <div className="space-y-3">
+                    <p className="text-lg font-semibold text-accent">
+                      {"Expert Science, Natural Innovation"}
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {
+                        "Novexpert combines scientific expertise with natural ingredients to create powerful anti-aging and skin health solutions. Made in France with proven efficacy and eco-conscious formulations."
+                      }
+                    </p>
+                  </div>
 
-                    <div className="flex gap-4 items-center pt-4">
-                      <Button variant="outline" className="group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-colors">
-                        {"Explore Collection"}
-                      </Button>
-                      <a
-                        href="https://www.instagram.com/novexpertjo?igsh=c3B0eXJyZWU0b3pi"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
-                      >
-                        <Instagram className="w-5 h-5" />
-                        <span className="text-sm">Follow on Instagram</span>
-                      </a>
-                    </div>
+                  <div className="flex gap-4 items-center pt-4">
+                    <Button variant="outline" asChild>
+                      <Link href="/brand/novexpert">{"Explore Collection"}</Link>
+                    </Button>
+                    <a
+                      href="https://www.instagram.com/novexpertjo?igsh=c3B0eXJyZWU0b3pi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      <Instagram className="w-5 h-5" />
+                      <span className="text-sm">Follow on Instagram</span>
+                    </a>
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           </motion.div>
         </div>
       </section>
