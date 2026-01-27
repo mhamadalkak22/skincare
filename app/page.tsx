@@ -149,12 +149,12 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <Link href="/brand/topicrem" className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/20 dark:to-pink-900/20 relative overflow-hidden group">
                   <Image
-                    src="/luxury-pink-skincare-bottles-elegant-minimal.jpg"
+                    src="/topicremimage/HYDRA_PROTECTIVE_DAY_CREAM__40ML.png"
                     alt="Topicrem Collection"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent" />
                 </Link>
                 
                 <div className="p-10 md:p-12 flex flex-col justify-center space-y-6">
@@ -214,12 +214,12 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <Link href="/brand/novexpert" className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950/20 dark:to-slate-900/20 relative overflow-hidden md:order-2 group">
                   <Image
-                    src="/luxury-black-skincare-bottles-minimalist-elegant.jpg"
+                    src="/novaexpertimage/BOOSTER WITH VITAMIN C_2000x2000px.png"
                     alt="Novexpert Collection"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent" />
                 </Link>
                 
                 <div className="p-10 md:p-12 flex flex-col justify-center space-y-6 md:order-1">

@@ -94,10 +94,10 @@ export default function CheckoutPage() {
       message += `${index + 1}. ${item.name}\n`
       message += `   Brand: ${item.brand}\n`
       message += `   Quantity: ${item.quantity}\n`
-      message += `   Price: $${(item.price * item.quantity).toFixed(2)}\n\n`
+      message += `   Price: ${(item.price * item.quantity).toFixed(2)} JOD\n\n`
     })
 
-    message += `*Total: $${total.toFixed(2)}*\n`
+    message += `*Total: ${total.toFixed(2)} JOD*\n`
 
     if (formData.notes) {
       message += `\nNotes: ${formData.notes}`
@@ -271,7 +271,7 @@ export default function CheckoutPage() {
                               <p className="font-medium truncate">{item.name}</p>
                               <p className="text-muted-foreground text-xs">{`Qty: ${item.quantity}`}</p>
                             </div>
-                            <span className="font-medium ml-2">{`$${(item.price * item.quantity).toFixed(2)}`}</span>
+                            <span className="font-medium ml-2">{`${(item.price * item.quantity).toFixed(2)} JOD`}</span>
                           </motion.div>
                         ))}
                       </div>
@@ -279,7 +279,7 @@ export default function CheckoutPage() {
                       <div className="border-t border-border pt-3 space-y-2">
                         <div className="flex justify-between text-sm">
                           <span className="text-muted-foreground">{"Subtotal"}</span>
-                          <span className="font-medium">{`$${total.toFixed(2)}`}</span>
+                          <span className="font-medium">{`${total.toFixed(2)} JOD`}</span>
                         </div>
                         <div className="flex justify-between text-sm">
                           <span className="text-muted-foreground">{"Shipping"}</span>
@@ -288,7 +288,7 @@ export default function CheckoutPage() {
                         <div className="border-t border-border pt-2">
                           <div className="flex justify-between">
                             <span className="font-bold text-lg">{"Total"}</span>
-                            <span className="font-bold text-2xl">{`$${total.toFixed(2)}`}</span>
+                            <span className="font-bold text-2xl">{`${total.toFixed(2)} JOD`}</span>
                           </div>
                         </div>
                       </div>

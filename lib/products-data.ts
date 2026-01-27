@@ -48,9 +48,12 @@ function generateProductId(brand: string, name: string, index: number): string {
 }
 
 // Helper function to map product image - EXACT 1-to-1 mapping
-function mapProductImage(productName: string, brand: string): string {
+function mapProductImage(productName: string, brand: string, line?: string): string {
   // Clean the product name - trim spaces
   const cleanName = productName.trim()
+  
+  // Create a unique key combining line and name for duplicates
+  const uniqueKey = line ? `${line}|${cleanName}` : cleanName
   
   // NOVEXPERT: EXACT mapping - 19 products to 19 images
   // Image names from public/novaexpertimage/ folder
@@ -76,6 +79,74 @@ function mapProductImage(productName: string, brand: string): string {
     "Micellar Water With HA": "MICELLAR WATER WITH HA_2000x2000px.png",
   }
 
+  // TOPICREM: COMPLETE mapping - all products to their specific images
+  // Image names from public/topicremimage/ folder
+  const topicremImageMap: Record<string, string> = {
+    // HYDRA + Line
+    "Protective Day Cream SPF50+ 40ml": "HYDRA_PROTECTIVE_DAY_CREAM__40ML.png",
+    "Lip Balm": "HYDRA_LIP_BALM_4G.png",
+    "Gentle Micellar Water": "HYDRA_GENTLE_MICELLAR_WATER_200ML.png",
+    "Gentle Cleansing Milk": "HYDRA_GENTLE_CLEANSING_MILK_200ML.png",
+    "Radiance Tinted   Cream SPF50+   LIGHT": "HYDRA_RADIANCE_TINTED_CREAM_LIGHT_40ML.png",
+    "Radiance Tinted   Cream SPF50+   MEDIUM": "HYDRA_RADIANCE_TINTED_CREAM_MEDIUM_40ML.png",
+    "Gentle Cleansing Gel": "HYDRA_GENTLE_CLEANSING_GEL_200ML.png",
+    "Radiance Eye Contour": "HYDRA_RADIANCE_EYE_CONTOUR_15ML.png",
+    "Light  Radiance  Cream": "HYDRA_LIGHT_RADIANCE_CREAM_40ML.png",
+    "Rich  Radiance  Cream": "HYDRA_RICH_RADIANCE_CREAM_40ML.png",
+    "Radiance Cream Gel": "HYDRA_RADIANCE_CREAM_GEL_40ML.png",
+    "Moisturizing Radiance Serum": "HYDRA_MOISTURIZING_RADIANCE_SERUM_30ML.png",
+    
+    // CALM + Line
+    "AR Anti- Redness Daily Cream SPF50+": "CALM_AR_ANTI-REDNESS_DAILY_CREAM_40ML (1).png",
+    "Soothing Fluid": "CALM_SOOTHING_FLUID_40ML.png",
+    "CALM +|Soothing Cream": "CALM_SOOTHING_CREAM_40ML.png",
+    
+    // MELA Line
+    "Intensive Radiance Serum": "MELA_ANTI-DARK_SPOT_RADIANCE_SERUM_30ML.png",
+    "Unifying Day Cream SPF 50+": "MELA_ANTI-DARK_SPOT_UNIFYING_DAY_CREAM_40ML.png",
+    "Gentle Peeling Night Cream": "MELA_ANTI-DARK_SPOT_GENTLE_PEELING_NIGHT_CREAM_40ML.png",
+    "Unifying Exfoliating Bar": "MELA_UNIFYING_EXFOLIATING_BAR.png",
+    "Unifying Ultra-Moisturizing Milk SPF 15+": "MELA_UNIFYING_ULTRA-MOISTURIZING_MILK_500ML.png",
+    
+    // AC CONTROL Line
+    "AC Purifying Cleansing Gel": "AC_CONTROL_PURIFYING_CLEANSING_GEL.png",
+    "Mattifying Fluid": "AC_CONTROL_MATTIFYING_FLUID_40ML.png",
+    "Compensating Moisturizing Cream": "AC_CONTROL_COMPENSATING_MOISTURIZING_CREAM_40ML.png",
+    "Balancing Anti-Blemish Care": "AC_CONTROL_BALANCING_ANTI_BLEMISH_CARE_40ML.png",
+    "Intensive Serum": "AC_CONTROL_INTENSIVE_SERUM_34ML.png",
+    
+    // AH3 ANTI-AGING Line
+    "Anti-Aging Global Serum": "AH3_ANTI-AGING_GLOBAL_SERUM.png",
+    "Global Anti-Aging Fluid": "AH3_GLOBAL_ANTI-AGING_FLUID_FACE.png",
+    "Global Anti-Aging Cream": "AH3_GLOBAL_ANTI-AGIN_CREAM.png",
+    "Global Anti- Aging Eye Contour": "AH3_GLOBAL_ANTI-AGING_EYE_CONTOUR.png",
+    
+    // CICA Line
+    "CICA|Soothing Cream": "CICA_SOOTHING_CREAM.png",
+    
+    // DERMO SPECIFIC Line
+    "UR10 - Anti-calluses Foot Cream": "DERMO_SPECIFIC_UR-10_ANTI-CALLUSES_FOOT_CREAM_BACK_75ML.png",
+    "UR10 Anti-Roughness Smoothing Cream": "DERMO_SPECIFIC_UR-10_ANTI-ROUGHNESS_SMOOTHING_CREAM_200ML.png",
+    "PV/DS Cleansing Gel": "DERMO_SPECIFIC_PV-DS_CLEANSING_TREATMENT_GEL_200ML.png",
+    "PH5 Gentle Shampoo": "DERMO_SPECIFIC_PH5_GENTLE_SHAMPOO_500ML.png",
+    
+    // DA Line
+    "Emollient Balm": "DA_PROTECT_EMOLLIENT_BALM_500ML.png",
+    "Ultra- Rich Cleansing Gel": "DA_PROTECT_ULTRA-RICH_CLEANSING_GEL_500ML.png",
+    
+    // KARITE Line
+    "Gentle Fortifying Shampoo": "KARITE_GENTLE_FORTIFYING_SHAMPOO_200ML.png",
+    "Nourishing Fortifying Cream": "KARITE_NOURISHING_FORTIFYING_CREAM_200ML.png",
+    "Intense Fortifying Mask": "KARITE_INTENSE_FORTIFYING_MASK_250ML.png",
+    
+    // SUN RANGE
+    "Moisturizing Sun Milk SPF50+": "SUN_PROTECT_MOISTURIZING_SUN_MILK_200ML.png",
+    
+    // UM Line
+    "Ultra-Moisturizing 3-IN-1 Gentle Scrub": "UM_3IN1_GENTLE_SCRUB_200ML.png",
+    "Ultra-Moisturizing Hand Cream": "UM_HAND_CREAM_50ML.png",
+  }
+
   // For NOVEXPERT - return image path from /novaexpertimage/ folder
   if (brand === "NOVEXPERT") {
     const imageName = novexpertImageMap[cleanName]
@@ -86,8 +157,14 @@ function mapProductImage(productName: string, brand: string): string {
     return "/placeholder.jpg"
   }
 
-  // For TOPICREM, use category-based placeholders
+  // For TOPICREM, first try specific image map, then fall back to category-based placeholders
   if (brand === "TOPICREM") {
+    // Try unique key first (for duplicates like "Soothing Cream")
+    const specificImage = topicremImageMap[uniqueKey] || topicremImageMap[cleanName]
+    if (specificImage) {
+      return `/topicremimage/${specificImage}`
+    }
+
     const upperName = cleanName.toUpperCase()
     if (upperName.includes("SPF") || upperName.includes("SUN")) {
       return "/pink-sunscreen-tube.jpg"
@@ -114,19 +191,19 @@ function mapProductImage(productName: string, brand: string): string {
 
 // Products to EXCLUDE - no images available
 const excludedProducts = [
+  // Novexpert products without images
   "Booster Serum Polyphenols",
   "Targeted Dark Spot Corrector", 
-  "Pro Collagen Booster Serum"
+  "Pro Collagen Booster Serum",
+  // Topicrem products without images
+  "Ultra Moisturizing Body Milk",
 ]
 
 // Transform the JSON data - FILTER OUT products without images
 export const allProducts: Product[] = productsJson
   .filter((item: any) => {
-    // Remove Novexpert products that don't have images
-    if (item.brand === "NOVEXPERT") {
-      return !excludedProducts.includes(item.name.trim())
-    }
-    return true
+    // Remove products that don't have images (both brands)
+    return !excludedProducts.includes(item.name.trim())
   })
   .map((item: any, index: number) => {
     const brand = item.brand === "TOPICREM" ? "topicrem" : "novexpert"
@@ -146,7 +223,7 @@ export const allProducts: Product[] = productsJson
       benefits,
       ingredients: item.ingredients,
       usage: item.usage,
-      image: mapProductImage(item.name, item.brand),
+      image: mapProductImage(item.name, item.brand, item.line),
     }
   })
 
