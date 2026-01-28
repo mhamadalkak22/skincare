@@ -149,7 +149,7 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <Link href="/brand/topicrem" className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/20 dark:to-pink-900/20 relative overflow-hidden group">
                   <Image
-                    src="/topicremimage/HYDRA_PROTECTIVE_DAY_CREAM__40ML.png"
+                    src="/topicremimage/HYDRA_PROTECTIVE_DAY_CREAM__40ML.webp"
                     alt="Topicrem Collection"
                     fill
                     className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
