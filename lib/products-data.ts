@@ -56,27 +56,27 @@ function mapProductImage(productName: string, brand: string, line?: string): str
   const uniqueKey = line ? `${line}|${cleanName}` : cleanName
   
   // NOVEXPERT: EXACT mapping - 19 products to 19 images
-  // Image names from public/novaexpertimage/ folder
+  // Image names from public/novaexpertimage/ folder (WebP format)
   const novexpertImageMap: Record<string, string> = {
-    "Vitamin C Serum 25%": "BOOSTER WITH VITAMIN C_2000x2000px.png",
-    "The Peeling Night Cream": "THE PEELING NIGHT CREAM_2000x2000px.png",
-    "HA Serum Booster 3.2%": "BOOSTER SERUM WITH HA_2000x2000px.png",
-    "Expert Anti Aging Cream": "THE EXPERT ANTI-AGING CREAM_2000x2000px.png",
-    "Expert Anti Aging Fluid": "THE EXPERT ANTI-AGING FLUID_2000x2000px.png",
-    "LipUp": "LIP'UP_2000x2000px.png",
-    "Expert Antiaging Eye Contour": "EXPERT ANTI-AGING EYE CONTOUR_2000x2000px.png",
-    "Radiance Lifting Eye Contour": "RADIANCE LIFTING EYE CONTOUR_2000x2000px.png",
-    "Express Radiant Cleansing Foam": "EXPRESS RADIANT CLEANSING FOAM_2000x2000px.png",
-    "Expert Exfoliator": "THE EXPERT EXFOLIATOR_2000x2000px.png",
-    "Velvety Hydrobiotic Cream": "VELVETY HYDRO-BIOTIC CREAM_2000x2000px.png",
-    "Magnesium Mist": "MAGNESIUM MIST_2000x2000px.png",
-    "Milky Cleanser Hydro-Biotic": "MILKY CLEANSER HYDRO-BIOTIC_2000x2000px.png",
-    "Purifying Gel": "PURIFYING GEL_2000x2000px.png",
-    "Express Blemish Care": "EXPRESS BLEMISH CARE_2000x2000px.png",
-    "Clear Skin Foaming Gel": "CLEAR SKIN FOAMING GEL_2000x2000px.png",
-    "The Caramel Cream light -N 1": "THE CARAMEL CREAM N°1_2000x2000px.png",
-    "The Caramel Cream medium -N 2": "THE CARAMEL CREAM N°2_2000x2000px.png",
-    "Micellar Water With HA": "MICELLAR WATER WITH HA_2000x2000px.png",
+    "Vitamin C Serum 25%": "BOOSTER WITH VITAMIN C_2000x2000px.webp",
+    "The Peeling Night Cream": "THE PEELING NIGHT CREAM_2000x2000px.webp",
+    "HA Serum Booster 3.2%": "BOOSTER SERUM WITH HA_2000x2000px.webp",
+    "Expert Anti Aging Cream": "THE EXPERT ANTI-AGING CREAM_2000x2000px.webp",
+    "Expert Anti Aging Fluid": "THE EXPERT ANTI-AGING FLUID_2000x2000px.webp",
+    "LipUp": "LIP'UP_2000x2000px.webp",
+    "Expert Antiaging Eye Contour": "EXPERT ANTI-AGING EYE CONTOUR_2000x2000px.webp",
+    "Radiance Lifting Eye Contour": "RADIANCE LIFTING EYE CONTOUR_2000x2000px.webp",
+    "Express Radiant Cleansing Foam": "EXPRESS RADIANT CLEANSING FOAM_2000x2000px.webp",
+    "Expert Exfoliator": "THE EXPERT EXFOLIATOR_2000x2000px.webp",
+    "Velvety Hydrobiotic Cream": "VELVETY HYDRO-BIOTIC CREAM_2000x2000px.webp",
+    "Magnesium Mist": "MAGNESIUM MIST_2000x2000px.webp",
+    "Milky Cleanser Hydro-Biotic": "MILKY CLEANSER HYDRO-BIOTIC_2000x2000px.webp",
+    "Purifying Gel": "PURIFYING GEL_2000x2000px.webp",
+    "Express Blemish Care": "EXPRESS BLEMISH CARE_2000x2000px.webp",
+    "Clear Skin Foaming Gel": "CLEAR SKIN FOAMING GEL_2000x2000px.webp",
+    "The Caramel Cream light -N 1": "THE CARAMEL CREAM N°1_2000x2000px.webp",
+    "The Caramel Cream medium -N 2": "THE CARAMEL CREAM N°2_2000x2000px.webp",
+    "Micellar Water With HA": "MICELLAR WATER WITH HA_2000x2000px.webp",
   }
 
   // TOPICREM: COMPLETE mapping - all products to their specific images

@@ -214,7 +214,7 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <Link href="/brand/novexpert" className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950/20 dark:to-slate-900/20 relative overflow-hidden md:order-2 group">
                   <Image
-                    src="/novaexpertimage/BOOSTER WITH VITAMIN C_2000x2000px.png"
+                    src="/novaexpertimage/BOOSTER WITH VITAMIN C_2000x2000px.webp"
                     alt="Novexpert Collection"
                     fill
                     className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
