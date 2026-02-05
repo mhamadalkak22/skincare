@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/src/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -9,8 +9,10 @@ import { SiteHeader } from "@/components/site-header";
 import { Minus, Plus, Trash2, ShoppingBag, Tag, Check, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function CartPage() {
+  const t = useTranslations("Cart");
   const { items, updateQuantity, removeFromCart, total, itemCount } = useCart();
   const [couponCode, setCouponCode] = useState("");
   const [couponApplied, setCouponApplied] = useState(false);
@@ -24,7 +26,7 @@ export default function CartPage() {
       setCouponApplied(true);
       setCouponError("");
     } else {
-      setCouponError("Invalid coupon code");
+      setCouponError(t("invalidCoupon"));
       setCouponApplied(false);
     }
   };
@@ -64,7 +66,7 @@ export default function CartPage() {
               transition={{ delay: 0.2 }}
               className="text-3xl font-bold"
             >
-              {"Your cart is empty"}
+              {t("empty")}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -72,9 +74,7 @@ export default function CartPage() {
               transition={{ delay: 0.3 }}
               className="text-muted-foreground"
             >
-              {
-                "Add some luxurious skincare products to your cart and start your journey to radiant skin."
-              }
+              {t("emptyDescription")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export default function CartPage() {
               transition={{ delay: 0.4 }}
             >
               <Link href="/">
-                <Button size="lg">{"Continue Shopping"}</Button>
+                <Button size="lg">{t("continueShopping")}</Button>
               </Link>
             </motion.div>
           </div>
@@ -104,10 +104,10 @@ export default function CartPage() {
             transition={{ duration: 0.4 }}
             className="mb-8"
           >
-            <h1 className="text-3xl font-bold mb-2">{"Shopping Cart"}</h1>
+            <h1 className="text-3xl font-bold mb-2">{t("title")}</h1>
             <p className="text-muted-foreground">{`${itemCount} ${
-              itemCount === 1 ? "item" : "items"
-            } in your cart`}</p>
+              itemCount === 1 ? t("itemsInCart") : t("itemsInCartPlural")
+            }`}</p>
           </motion.div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -217,12 +217,12 @@ export default function CartPage() {
                                 >
                                   {`${(item.price * item.quantity).toFixed(
                                     2
-                                  )} JOD`}
+                                  )} ${t("jod")}`}
                                 </motion.p>
                                 {item.quantity > 1 && (
                                   <p className="text-xs text-muted-foreground">{`${item.price.toFixed(
                                     2
-                                  )} JOD each`}</p>
+                                  )} ${t("jod")} ${t("each")}`}</p>
                                 )}
                               </div>
                             </div>
@@ -244,14 +244,14 @@ export default function CartPage() {
               >
                 <Card className="sticky top-24">
                   <CardContent className="p-6 space-y-6">
-                    <h2 className="text-xl font-bold">{"Order Summary"}</h2>
+                    <h2 className="text-xl font-bold">{t("orderSummary")}</h2>
 
                     {/* Coupon Code Section */}
                     <div className="space-y-3">
                       <div className="flex items-center gap-2">
                         <Tag className="h-4 w-4 text-primary" />
                         <span className="text-sm font-medium">
-                          {"Have a coupon code?"}
+                          {t("haveCoupon")}
                         </span>
                       </div>
 
@@ -259,7 +259,7 @@ export default function CartPage() {
                         <div className="space-y-2">
                           <div className="flex gap-2">
                             <Input
-                              placeholder="Enter code (e.g., SKIN20)"
+                              placeholder={t("enterCode")}
                               value={couponCode}
                               onChange={(e) => {
                                 setCouponCode(e.target.value.toUpperCase());
@@ -272,7 +272,7 @@ export default function CartPage() {
                               variant="outline"
                               className="whitespace-nowrap"
                             >
-                              {"Apply"}
+                              {t("apply")}
                             </Button>
                           </div>
                           {couponError && (
@@ -295,7 +295,7 @@ export default function CartPage() {
                           <div className="flex items-center gap-2">
                             <Check className="h-4 w-4 text-green-600 dark:text-green-400" />
                             <span className="text-sm font-medium text-green-700 dark:text-green-300">
-                              {`Coupon "${VALID_COUPON}" applied!`}
+                              {t("couponApplied")}
                             </span>
                           </div>
                           <Button
@@ -304,7 +304,7 @@ export default function CartPage() {
                             size="sm"
                             className="h-6 px-2 text-xs"
                           >
-                            {"Remove"}
+                            {t("remove")}
                           </Button>
                         </motion.div>
                       )}
@@ -313,7 +313,7 @@ export default function CartPage() {
                     <div className="space-y-3 border-t border-border pt-4">
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">
-                          {"Subtotal"}
+                          {t("subtotal")}
                         </span>
                         <motion.span
                           key={total}
@@ -321,7 +321,7 @@ export default function CartPage() {
                           animate={{ scale: 1 }}
                           className="font-medium"
                         >
-                          {`${total.toFixed(2)} JOD`}
+                          {`${total.toFixed(2)} ${t("jod")}`}
                         </motion.span>
                       </div>
 
@@ -332,31 +332,33 @@ export default function CartPage() {
                           className="flex justify-between text-sm"
                         >
                           <span className="text-green-600 dark:text-green-400">
-                            {`Discount (${DISCOUNT_PERCENTAGE}%)`}
+                            {`${t("discount")} (${DISCOUNT_PERCENTAGE}%)`}
                           </span>
                           <span className="font-medium text-green-600 dark:text-green-400">
-                            {`-${discount.toFixed(2)} JOD`}
+                            {`-${discount.toFixed(2)} ${t("jod")}`}
                           </span>
                         </motion.div>
                       )}
 
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">
-                          {"Shipping"}
+                          {t("shipping")}
                         </span>
-                        <span className="font-medium">{"FREE"}</span>
+                        <span className="font-medium">{t("free")}</span>
                       </div>
 
                       <div className="border-t border-border pt-3">
                         <div className="flex justify-between">
-                          <span className="font-bold text-lg">{"Total"}</span>
+                          <span className="font-bold text-lg">
+                            {t("total")}
+                          </span>
                           <motion.span
                             key={finalTotal}
                             initial={{ scale: 1.2 }}
                             animate={{ scale: 1 }}
                             className="font-bold text-2xl"
                           >
-                            {`${finalTotal.toFixed(2)} JOD`}
+                            {`${finalTotal.toFixed(2)} ${t("jod")}`}
                           </motion.span>
                         </div>
                       </div>
@@ -368,7 +370,7 @@ export default function CartPage() {
                     >
                       <Link href="/checkout">
                         <Button size="lg" className="w-full">
-                          {"Proceed to Checkout"}
+                          {t("proceedToCheckout")}
                         </Button>
                       </Link>
                     </motion.div>
@@ -382,7 +384,7 @@ export default function CartPage() {
                           variant="outline"
                           className="w-full bg-transparent"
                         >
-                          {"Continue Shopping"}
+                          {t("continueShopping")}
                         </Button>
                       </Link>
                     </motion.div>

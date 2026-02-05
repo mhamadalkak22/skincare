@@ -1,33 +1,34 @@
-"use client"
+"use client";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { useCart } from "@/components/cart-provider"
-import type { Product } from "@/lib/products"
-import { ShoppingCart, Check } from "lucide-react"
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "@/src/i18n/navigation";
+import type { Product } from "@/lib/products-data";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface ProductCardProps {
-  product: Product
+  product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const { addToCart, items } = useCart()
-  const [justAdded, setJustAdded] = useState(false)
-  const isInCart = items.some((item) => item.id === product.id)
+  const t = useTranslations("Product");
+  const tCommon = useTranslations("Common");
 
-  const handleAddToCart = () => {
-    addToCart({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      brand: product.brand,
-      image: product.image,
-    })
-    setJustAdded(true)
-    setTimeout(() => setJustAdded(false), 2000)
-  }
+  // Get the first variant's price for display
+  const price =
+    typeof product.variants[0]?.price === "string"
+      ? parseFloat(product.variants[0].price)
+      : product.variants[0]?.price || 0;
+
+  // Get first variant size
+  const size = product.variants[0]?.size || "";
+
+  // Get description - take first item if array
+  const description = Array.isArray(product.description?.en)
+    ? product.description.en[0]
+    : product.description?.en || "";
 
   return (
     <motion.div
@@ -36,115 +37,78 @@ export function ProductCard({ product }: ProductCardProps) {
       transition={{ duration: 0.4 }}
       whileHover={{ y: -8, transition: { duration: 0.2 } }}
     >
-      <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300 h-full border-2 hover:border-primary/20">
-        <motion.div
-          className="aspect-square bg-secondary relative overflow-hidden"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-        >
-          <img
-            src={product.image || "/placeholder.svg"}
-            alt={product.name}
-            className="w-full h-full object-cover"
-          />
-          {/* Overlay effect on hover */}
+      <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-300 h-full border-2 hover:border-primary/20 bg-gradient-to-b from-white to-gray-50">
+        <Link href={`/product/${product.id}`}>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileHover={{ opacity: 1 }}
+            className="aspect-square bg-white relative overflow-hidden"
+            whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
-          />
-        </motion.div>
-        
-        <CardContent className="p-6 space-y-4">
-          <div className="space-y-2">
-            <motion.span
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-xs uppercase tracking-wider text-muted-foreground font-semibold"
-            >
-              {product.category}
-            </motion.span>
-            
-            <motion.h3
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="font-bold text-lg leading-tight group-hover:text-primary transition-colors"
-            >
-              {product.name}
-            </motion.h3>
-            
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-sm text-muted-foreground line-clamp-2"
-            >
-              {product.description}
-            </motion.p>
+          >
+            <Image
+              src={product.image || "/placeholder.svg"}
+              alt={product.name}
+              fill
+              className="object-contain p-8"
+            />
+          </motion.div>
+        </Link>
+
+        <CardContent className="p-6 space-y-3">
+          {/* Line/Category */}
+          {product.line && (
+            <div className="bg-gray-100 px-3 py-1 inline-block rounded">
+              <p className="text-xs uppercase tracking-wider text-gray-600 font-semibold">
+                {product.line}
+              </p>
+            </div>
+          )}
+
+          {/* Product Name */}
+          <h3 className="font-bold text-xl leading-tight min-h-[3rem]">
+            {product.name}
+          </h3>
+
+          {/* Description */}
+          {description && (
+            <p className="text-sm text-muted-foreground line-clamp-2 min-h-[2.5rem]">
+              {description}
+            </p>
+          )}
+
+          {/* Price and Size */}
+          <div className="pt-2 border-t border-gray-200">
+            <div className="flex items-baseline gap-2 mb-1">
+              <span className="text-3xl font-bold text-foreground">
+                {price.toFixed(2)}
+              </span>
+              <span className="text-lg text-muted-foreground font-medium">
+                {tCommon("jod")}
+              </span>
+            </div>
+            <p className="text-sm text-muted-foreground">{size}</p>
           </div>
 
-          <div className="flex items-center justify-between pt-2">
-            <motion.span
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4, type: "spring" }}
-              className="text-2xl font-bold"
-            >
-              {`$${product.price.toFixed(2)}`}
-            </motion.span>
-            
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button onClick={handleAddToCart} className="gap-2" disabled={justAdded}>
-                <AnimatePresence mode="wait">
-                  {justAdded ? (
-                    <motion.div
-                      key="added"
-                      initial={{ scale: 0, rotate: -180 }}
-                      animate={{ scale: 1, rotate: 0 }}
-                      exit={{ scale: 0, rotate: 180 }}
-                      className="flex items-center gap-2"
-                    >
-                      <Check className="h-4 w-4" />
-                      {"Added"}
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      key="add"
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      exit={{ scale: 0 }}
-                      className="flex items-center gap-2"
-                    >
-                      <ShoppingCart className="h-4 w-4" />
-                      {"Add"}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </Button>
-            </motion.div>
-          </div>
+          {/* Skin Type */}
+          {product.skinType && (
+            <div className="pt-2">
+              <p className="text-xs text-muted-foreground uppercase tracking-wide">
+                <span className="font-semibold">For:</span> {product.skinType}
+              </p>
+            </div>
+          )}
 
-          <AnimatePresence>
-            {isInCart && !justAdded && (
-              <motion.p
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className="text-xs text-primary font-semibold flex items-center gap-1"
-              >
-                <Check className="h-3 w-3" />
-                {"In cart"}
-              </motion.p>
-            )}
-          </AnimatePresence>
+          {/* View Button */}
+          <div className="pt-3">
+            <Button
+              asChild
+              className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold"
+              size="lg"
+            >
+              <Link href={`/product/${product.id}`}>{t("viewDetails")}</Link>
+            </Button>
+          </div>
         </CardContent>
       </Card>
     </motion.div>
-  )
+  );
 }

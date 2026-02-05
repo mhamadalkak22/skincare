@@ -1,17 +1,21 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Instagram, Mail, Phone } from "lucide-react"
-import { motion } from "framer-motion"
+import { Link } from "@/src/i18n/navigation";
+import { useTranslations } from "next-intl";
+import { Instagram, Mail, Phone } from "lucide-react";
+import { motion } from "framer-motion";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.5 }
-}
+  transition: { duration: 0.5 },
+};
 
 export function SiteFooter() {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Nav");
+
   return (
     <footer className="border-t border-border bg-card mt-16">
       <div className="container mx-auto px-4 py-12">
@@ -24,9 +28,9 @@ export function SiteFooter() {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <h3 className="font-bold text-xl">{"Topicrem & Novexpert"}</h3>
+            <h3 className="font-bold text-xl">{t("tagline")}</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              {"Premium French skincare brands. Dermatologically tested, clinically proven results."}
+              {t("description")}
             </p>
             <div className="space-y-2">
               <motion.a
@@ -58,26 +62,38 @@ export function SiteFooter() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="space-y-3"
           >
-            <h4 className="font-bold text-sm">{"Navigation"}</h4>
+            <h4 className="font-bold text-sm">{t("quickLinks")}</h4>
             <ul className="space-y-2 text-sm">
               <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {"Home"}
+                <Link
+                  href="/"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {tNav("home")}
                 </Link>
               </motion.li>
               <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {"About Us"}
+                <Link
+                  href="/about"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {tNav("about")}
                 </Link>
               </motion.li>
               <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {"Contact"}
+                <Link
+                  href="/contact"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {tNav("contact")}
                 </Link>
               </motion.li>
               <motion.li whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                <Link href="/cart" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {"Shopping Cart"}
+                <Link
+                  href="/cart"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {tNav("cart")}
                 </Link>
               </motion.li>
             </ul>
@@ -91,15 +107,18 @@ export function SiteFooter() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-3"
           >
-            <h4 className="font-bold text-sm">{"Our Brands"}</h4>
+            <h4 className="font-bold text-sm">{t("ourBrands")}</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                <motion.div
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.2 }}
+                >
                   <Link
                     href="/brand/topicrem"
                     className="text-muted-foreground hover:text-foreground transition-colors block"
                   >
-                    {"Topicrem"}
+                    {tNav("topicrem")}
                   </Link>
                 </motion.div>
                 <motion.a
@@ -115,12 +134,15 @@ export function SiteFooter() {
                 </motion.a>
               </li>
               <li className="pt-2">
-                <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                <motion.div
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.2 }}
+                >
                   <Link
                     href="/brand/novexpert"
                     className="text-muted-foreground hover:text-foreground transition-colors block"
                   >
-                    {"Novexpert"}
+                    {tNav("novexpert")}
                   </Link>
                 </motion.div>
                 <motion.a
@@ -146,10 +168,12 @@ export function SiteFooter() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="space-y-3"
           >
-            <h4 className="font-bold text-sm">{"Connect With Us"}</h4>
+            <h4 className="font-bold text-sm">{t("followUs")}</h4>
             <div className="space-y-3">
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Follow Topicrem</p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  {tNav("topicrem")}
+                </p>
                 <motion.a
                   href="https://www.instagram.com/topicrem_jordan?igsh=eDgxajhjc3BjZXU2"
                   target="_blank"
@@ -163,7 +187,9 @@ export function SiteFooter() {
                 </motion.a>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Follow Novexpert</p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  {tNav("novexpert")}
+                </p>
                 <motion.a
                   href="https://www.instagram.com/novexpertjo?igsh=c3B0eXJyZWU0b3pi"
                   target="_blank"
@@ -188,10 +214,10 @@ export function SiteFooter() {
           className="border-t border-border pt-8"
         >
           <p className="text-center text-muted-foreground text-sm">
-            {"© 2026 Topicrem & Novexpert. Premium French Skincare."}
+            © 2026 {t("tagline")}. {t("rights")}.
           </p>
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

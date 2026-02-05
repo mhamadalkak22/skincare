@@ -1,28 +1,53 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { CartButton } from "@/components/cart-button"
-import { ChevronLeft, Menu, X } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import { useState } from "react";
+import { Link } from "@/src/i18n/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname } from "@/src/i18n/navigation";
+import { Button } from "@/components/ui/button";
+import { CartButton } from "@/components/cart-button";
+import { ChevronLeft, Menu, Languages } from "lucide-react";
+import { motion } from "framer-motion";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 interface SiteHeaderProps {
-  showBackButton?: boolean
-  backHref?: string
+  showBackButton?: boolean;
+  backHref?: string;
 }
 
-export function SiteHeader({ showBackButton = false, backHref = "/" }: SiteHeaderProps) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+export function SiteHeader({
+  showBackButton = false,
+  backHref = "/",
+}: SiteHeaderProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations("Nav");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
-    { href: "/brand/topicrem", label: "Topicrem" },
-    { href: "/brand/novexpert", label: "Novexpert" },
-  ]
+    { href: "/", label: t("home") },
+    { href: "/about", label: t("about") },
+    { href: "/contact", label: t("contact") },
+    { href: "/brand/topicrem", label: t("topicrem") },
+    { href: "/brand/novexpert", label: t("novexpert") },
+  ];
+
+  const switchLocale = (newLocale: string) => {
+    router.replace(pathname, { locale: newLocale as any });
+  };
 
   return (
     <motion.header
@@ -41,7 +66,10 @@ export function SiteHeader({ showBackButton = false, backHref = "/" }: SiteHeade
                 </Button>
               </Link>
             )}
-            <Link href="/" className="text-xl md:text-2xl font-bold tracking-tight text-foreground">
+            <Link
+              href="/"
+              className="text-xl md:text-2xl font-bold tracking-tight text-foreground"
+            >
               {"Topicrem & Novexpert"}
             </Link>
           </div>
@@ -60,6 +88,29 @@ export function SiteHeader({ showBackButton = false, backHref = "/" }: SiteHeade
           </nav>
 
           <div className="flex items-center gap-2">
+            {/* Language Switcher */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Languages className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem
+                  onClick={() => switchLocale("ar")}
+                  className={locale === "ar" ? "bg-accent" : ""}
+                >
+                  العربية
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => switchLocale("en")}
+                  className={locale === "en" ? "bg-accent" : ""}
+                >
+                  English
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             {/* Mobile Menu Button */}
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -67,9 +118,14 @@ export function SiteHeader({ showBackButton = false, backHref = "/" }: SiteHeade
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent
+                side={locale === "ar" ? "left" : "right"}
+                className="w-[300px] sm:w-[400px]"
+              >
                 <SheetHeader>
-                  <SheetTitle>Menu</SheetTitle>
+                  <SheetTitle>
+                    {locale === "ar" ? "القائمة" : "Menu"}
+                  </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col gap-4 mt-8">
                   {navLinks.map((link) => (
@@ -91,5 +147,5 @@ export function SiteHeader({ showBackButton = false, backHref = "/" }: SiteHeade
         </div>
       </div>
     </motion.header>
-  )
+  );
 }

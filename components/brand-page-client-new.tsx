@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Instagram } from "lucide-react";
 import type { Product } from "@/lib/products-data";
-import { ProductCard } from "@/components/product-card";
+import { ProductCard } from "@/components/product-card-new";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -171,8 +171,12 @@ export function BrandPageClient({
                     </p>
                   </div>
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {lineProducts.map((product) => (
-                      <ProductCard key={product.id} product={product} />
+                    {lineProducts.map((product, index) => (
+                      <ProductCard
+                        key={product.id}
+                        product={product}
+                        index={index}
+                      />
                     ))}
                   </div>
                 </motion.div>
@@ -190,8 +194,8 @@ export function BrandPageClient({
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {filteredProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
+              {filteredProducts.map((product, index) => (
+                <ProductCard key={product.id} product={product} index={index} />
               ))}
             </div>
           </div>

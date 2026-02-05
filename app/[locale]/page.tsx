@@ -1,6 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/src/i18n/navigation";
+import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -10,6 +12,10 @@ import { Instagram, Shield, Sparkles, Heart } from "lucide-react";
 import { getProductsByBrand } from "@/lib/products-data";
 
 export default function HomePage() {
+  const t = useTranslations("Home");
+  const tNav = useTranslations("Nav");
+  const tCommon = useTranslations("Common");
+
   const topicremProducts = getProductsByBrand("topicrem");
   const novexpertProducts = getProductsByBrand("novexpert");
 
@@ -31,12 +37,12 @@ export default function HomePage() {
             transition={{ duration: 0.3, delay: 0.2 }}
             className="text-sm md:text-base font-semibold"
           >
-            🎉 <span className="font-bold">SPECIAL OFFER!</span> Get 20% OFF on
-            all products! Use code:{" "}
+            🎉 <span className="font-bold">{t("specialOffer")}</span>{" "}
+            {t("discount")}{" "}
             <span className="bg-white text-primary px-3 py-1 rounded-md font-bold mx-2">
               SKIN20
             </span>{" "}
-            at checkout 🎉
+            {t("atCheckout")} 🎉
           </motion.p>
         </div>
       </motion.div>
@@ -56,13 +62,13 @@ export default function HomePage() {
               className="mb-6"
             >
               <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-balance mb-4">
-                {"Premium Skincare"}
+                {t("hero.title")}
                 <span className="block text-primary mt-2">
-                  {"Topicrem & Novexpert"}
+                  {t("hero.brands")}
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mt-4">
-                French Dermatological Excellence
+                {t("hero.subtitle")}
               </p>
             </motion.div>
 
@@ -72,9 +78,7 @@ export default function HomePage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed"
             >
-              {
-                "Two leading French skincare brands trusted by dermatologists worldwide. Discover the perfect blend of dermatological expertise and natural innovation."
-              }
+              {t("hero.description")}
             </motion.p>
 
             <motion.div
@@ -88,7 +92,7 @@ export default function HomePage() {
                 className="text-lg px-8 pointer-events-auto"
                 asChild
               >
-                <Link href="/brand/topicrem">{"Explore Topicrem"}</Link>
+                <Link href="/brand/topicrem">{t("hero.exploreTopicrem")}</Link>
               </Button>
               <Button
                 size="lg"
@@ -96,7 +100,9 @@ export default function HomePage() {
                 className="text-lg px-8 pointer-events-auto"
                 asChild
               >
-                <Link href="/brand/novexpert">{"Explore Novexpert"}</Link>
+                <Link href="/brand/novexpert">
+                  {t("hero.exploreNovexpert")}
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -112,7 +118,7 @@ export default function HomePage() {
           className="max-w-6xl mx-auto"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            {"Why Choose Our Brands"}
+            {t("whyChoose.title")}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -126,11 +132,10 @@ export default function HomePage() {
                 <Shield className="w-10 h-10 text-primary" />
               </div>
               <h3 className="font-bold text-xl mb-3">
-                Dermatologically Tested
+                {t("whyChoose.dermatologicallyTested.title")}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                All products are clinically tested and approved by
-                dermatologists for safety and efficacy
+                {t("whyChoose.dermatologicallyTested.description")}
               </p>
             </motion.div>
 
@@ -143,10 +148,11 @@ export default function HomePage() {
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Sparkles className="w-10 h-10 text-primary" />
               </div>
-              <h3 className="font-bold text-xl mb-3">Premium Formulations</h3>
+              <h3 className="font-bold text-xl mb-3">
+                {t("whyChoose.frenchExpertise.title")}
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                European-quality skincare with scientifically proven ingredients
-                and innovative formulas
+                {t("whyChoose.frenchExpertise.description")}
               </p>
             </motion.div>
 
@@ -159,21 +165,85 @@ export default function HomePage() {
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Heart className="w-10 h-10 text-primary" />
               </div>
-              <h3 className="font-bold text-xl mb-3">For All Skin Types</h3>
+              <h3 className="font-bold text-xl mb-3">
+                {t("whyChoose.naturalInnovation.title")}
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Gentle formulations suitable for sensitive skin, tested on all
-                skin types and tones
+                {t("whyChoose.naturalInnovation.description")}
               </p>
             </motion.div>
           </div>
         </motion.div>
       </section>
 
+      {/* Trust Indicators */}
+      <section className="bg-primary/5 py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-center"
+            >
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                {topicremProducts.length + novexpertProducts.length}+
+              </div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">
+                {t("trustIndicators.premiumProducts")}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3 }}
+              className="text-center"
+            >
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                2
+              </div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">
+                {t("trustIndicators.trustedBrands")}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+              className="text-center"
+            >
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                100%
+              </div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">
+                {t("trustIndicators.freeShipping")}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5 }}
+              className="text-center"
+            >
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                ✓
+              </div>
+              <div className="text-sm md:text-base text-muted-foreground font-medium">
+                {t("trustIndicators.onAllOrders")}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Brand Sections */}
       <section className="container mx-auto px-4 py-20">
         <div className="max-w-7xl mx-auto space-y-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            {"Our Premium Brands"}
+            {t("ourBrands")}
           </h2>
 
           {/* Topicrem Brand */}
@@ -209,27 +279,27 @@ export default function HomePage() {
                       />
                     </div>
                     <div>
-                      <h2 className="text-4xl font-bold">{"Topicrem"}</h2>
+                      <h2 className="text-4xl font-bold">{tNav("topicrem")}</h2>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Made in France
+                        {t("madeInFrance")}
                       </p>
                     </div>
                   </div>
 
                   <div className="space-y-3">
                     <p className="text-lg font-semibold text-primary">
-                      {"Dermatological Expertise for All Skin Types"}
+                      {t("topicrem.tagline")}
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      {
-                        "Topicrem offers dermatologically tested skincare solutions designed for sensitive and demanding skin. Trusted by dermatologists worldwide for over 20 years, our products combine efficacy with gentleness."
-                      }
+                      {t("topicrem.description")}
                     </p>
                   </div>
 
                   <div className="flex gap-4 items-center pt-4">
                     <Button asChild>
-                      <Link href="/brand/topicrem">{"Explore Collection"}</Link>
+                      <Link href="/brand/topicrem">
+                        {t("topicrem.exploreCollection")}
+                      </Link>
                     </Button>
                     <a
                       href="https://www.instagram.com/topicrem_jordan?igsh=eDgxajhjc3BjZXU2"
@@ -238,7 +308,9 @@ export default function HomePage() {
                       className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                     >
                       <Instagram className="w-5 h-5" />
-                      <span className="text-sm">Follow on Instagram</span>
+                      <span className="text-sm">
+                        {t("topicrem.followOnInstagram")}
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -279,38 +351,40 @@ export default function HomePage() {
                       />
                     </div>
                     <div>
-                      <h2 className="text-4xl font-bold">{"Novexpert"}</h2>
+                      <h2 className="text-4xl font-bold">
+                        {tNav("novexpert")}
+                      </h2>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Made in France
+                        {t("madeInFrance")}
                       </p>
                     </div>
                   </div>
 
                   <div className="space-y-3">
-                    <p className="text-lg font-semibold text-accent">
-                      {"Expert Science, Natural Innovation"}
+                    <p className="text-lg font-semibold text-primary">
+                      {t("novexpert.tagline")}
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      {
-                        "Novexpert combines scientific expertise with natural ingredients to create powerful anti-aging and skin health solutions. Made in France with proven efficacy and eco-conscious formulations."
-                      }
+                      {t("novexpert.description")}
                     </p>
                   </div>
 
                   <div className="flex gap-4 items-center pt-4">
-                    <Button variant="outline" asChild>
+                    <Button asChild>
                       <Link href="/brand/novexpert">
-                        {"Explore Collection"}
+                        {t("novexpert.exploreCollection")}
                       </Link>
                     </Button>
                     <a
                       href="https://www.instagram.com/novexpertjo?igsh=c3B0eXJyZWU0b3pi"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                     >
                       <Instagram className="w-5 h-5" />
-                      <span className="text-sm">Follow on Instagram</span>
+                      <span className="text-sm">
+                        {t("novexpert.followOnInstagram")}
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -318,62 +392,6 @@ export default function HomePage() {
             </div>
           </motion.div>
         </div>
-      </section>
-
-      {/* Trust Indicators */}
-      <section className="bg-muted/30 py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">
-                  {topicremProducts.length + novexpertProducts.length}+
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  Premium Products
-                </p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">100%</div>
-                <p className="text-sm text-muted-foreground">
-                  Dermatologically Tested
-                </p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">🇫🇷</div>
-                <p className="text-sm text-muted-foreground">Made in France</p>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">2</div>
-                <p className="text-sm text-muted-foreground">Premium Brands</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="container mx-auto px-4 py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="max-w-4xl mx-auto text-center bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-2xl p-12 md:p-16"
-        >
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            {"Ready to Transform Your Skin?"}
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {
-              "Discover our curated collection of premium European skincare products. Experience the difference that quality makes."
-            }
-          </p>
-          <Link href="/contact">
-            <Button size="lg" className="text-lg px-8">
-              {"Get in Touch"}
-            </Button>
-          </Link>
-        </motion.div>
       </section>
 
       <SiteFooter />

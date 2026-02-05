@@ -1,23 +1,25 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { useCart } from "@/components/cart-provider"
-import { SiteHeader } from "@/components/site-header"
-import { ShoppingBag } from "lucide-react"
-import { motion } from "framer-motion"
+import { useState } from "react";
+import { Link, useRouter } from "@/src/i18n/navigation";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { useCart } from "@/components/cart-provider";
+import { SiteHeader } from "@/components/site-header";
+import { ShoppingBag } from "lucide-react";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function CheckoutPage() {
-  const router = useRouter()
-  const { items, total, clearCart } = useCart()
+  const router = useRouter();
+  const t = useTranslations("Checkout");
+  const tCart = useTranslations("Cart");
+  const { items, total, clearCart } = useCart();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -25,7 +27,7 @@ export default function CheckoutPage() {
     address: "",
     city: "",
     notes: "",
-  })
+  });
 
   if (items.length === 0) {
     return (
@@ -53,7 +55,7 @@ export default function CheckoutPage() {
               transition={{ delay: 0.2 }}
               className="text-3xl font-bold"
             >
-              {"Your cart is empty"}
+              {tCart("empty")}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -61,7 +63,7 @@ export default function CheckoutPage() {
               transition={{ delay: 0.3 }}
               className="text-muted-foreground"
             >
-              {"Add products to your cart before checking out."}
+              {tCart("emptyDescription")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -69,61 +71,64 @@ export default function CheckoutPage() {
               transition={{ delay: 0.4 }}
             >
               <Link href="/">
-                <Button size="lg">{"Continue Shopping"}</Button>
+                <Button size="lg">{t("continueShopping")}</Button>
               </Link>
             </motion.div>
           </div>
         </motion.div>
       </div>
-    )
+    );
   }
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
 
     // Create order message for WhatsApp
-    let message = `*New Order - Topicrem & Novexpert*\n\n`
-    message += `*Customer Information:*\n`
-    message += `Name: ${formData.name}\n`
-    message += `Phone: ${formData.phone}\n`
-    message += `Email: ${formData.email}\n`
-    message += `Address: ${formData.address}, ${formData.city}\n\n`
+    let message = `*${t("title")} - Topicrem & Novexpert*\n\n`;
+    message += `*${t("customerInformation")}:*\n`;
+    message += `${t("fullName")}: ${formData.name}\n`;
+    message += `${t("phone")}: ${formData.phone}\n`;
+    message += `${t("email")}: ${formData.email}\n`;
+    message += `${t("address")}: ${formData.address}, ${formData.city}\n\n`;
 
-    message += `*Order Details:*\n`
+    message += `*${t("orderSummary")}:*\n`;
     items.forEach((item, index) => {
-      message += `${index + 1}. ${item.name}\n`
-      message += `   Brand: ${item.brand}\n`
-      message += `   Quantity: ${item.quantity}\n`
-      message += `   Price: ${(item.price * item.quantity).toFixed(2)} JOD\n\n`
-    })
+      message += `${index + 1}. ${item.name}\n`;
+      message += `   ${t("qty")}: ${item.quantity}\n`;
+      message += `   ${(item.price * item.quantity).toFixed(2)} ${tCart(
+        "jod"
+      )}\n\n`;
+    });
 
-    message += `*Total: ${total.toFixed(2)} JOD*\n`
+    message += `*${t("total")}: ${total.toFixed(2)} ${tCart("jod")}*\n`;
 
     if (formData.notes) {
-      message += `\nNotes: ${formData.notes}`
+      message += `\n${t("notes")}: ${formData.notes}`;
     }
 
     // Encode message for WhatsApp URL
-    const encodedMessage = encodeURIComponent(message)
-    const whatsappNumber = "962780686156"
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappNumber = "962780686156";
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
     // Clear cart and redirect
-    clearCart()
+    clearCart();
 
     // Open WhatsApp in new tab
-    window.open(whatsappURL, "_blank")
+    window.open(whatsappURL, "_blank");
 
     // Redirect to confirmation page
-    router.push("/order-confirmed")
-  }
+    router.push("/order-confirmed");
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
-    }))
-  }
+    }));
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -138,7 +143,7 @@ export default function CheckoutPage() {
             transition={{ duration: 0.4 }}
             className="text-3xl font-bold mb-8"
           >
-            {"Checkout"}
+            {t("title")}
           </motion.h1>
 
           <form onSubmit={handleSubmit}>
@@ -152,23 +157,22 @@ export default function CheckoutPage() {
                 >
                   <Card>
                     <CardHeader>
-                      <CardTitle>{"Contact Information"}</CardTitle>
+                      <CardTitle>{t("customerInformation")}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name">{"Full Name *"}</Label>
+                        <Label htmlFor="name">{t("fullName")} *</Label>
                         <Input
                           id="name"
                           name="name"
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          placeholder="John Doe"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="phone">{"Phone Number *"}</Label>
+                        <Label htmlFor="phone">{t("phone")} *</Label>
                         <Input
                           id="phone"
                           name="phone"
@@ -181,7 +185,7 @@ export default function CheckoutPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="email">{"Email Address *"}</Label>
+                        <Label htmlFor="email">{t("email")} *</Label>
                         <Input
                           id="email"
                           name="email"
@@ -189,55 +193,39 @@ export default function CheckoutPage() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          placeholder="john@example.com"
                         />
                       </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                >
-                  <Card>
-                    <CardHeader>
-                      <CardTitle>{"Delivery Address"}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
                       <div className="space-y-2">
-                        <Label htmlFor="address">{"Street Address *"}</Label>
+                        <Label htmlFor="address">{t("address")} *</Label>
                         <Input
                           id="address"
                           name="address"
                           required
                           value={formData.address}
                           onChange={handleChange}
-                          placeholder="123 Main Street, Apt 4B"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="city">{"City *"}</Label>
+                        <Label htmlFor="city">{t("city")} *</Label>
                         <Input
                           id="city"
                           name="city"
                           required
                           value={formData.city}
                           onChange={handleChange}
-                          placeholder="Amman"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="notes">{"Order Notes (Optional)"}</Label>
+                        <Label htmlFor="notes">{t("notes")}</Label>
                         <Textarea
                           id="notes"
                           name="notes"
                           value={formData.notes}
                           onChange={handleChange}
-                          placeholder="Add any special instructions for your order..."
+                          placeholder={t("notesPlaceholder")}
                           rows={3}
                         />
                       </div>
@@ -255,7 +243,7 @@ export default function CheckoutPage() {
                 >
                   <Card className="sticky top-24">
                     <CardHeader>
-                      <CardTitle>{"Order Summary"}</CardTitle>
+                      <CardTitle>{t("orderSummary")}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <div className="space-y-3">
@@ -268,40 +256,55 @@ export default function CheckoutPage() {
                             className="flex justify-between text-sm"
                           >
                             <div className="flex-1 min-w-0">
-                              <p className="font-medium truncate">{item.name}</p>
-                              <p className="text-muted-foreground text-xs">{`Qty: ${item.quantity}`}</p>
+                              <p className="font-medium truncate">
+                                {item.name}
+                              </p>
+                              <p className="text-muted-foreground text-xs">{`${t(
+                                "qty"
+                              )}: ${item.quantity}`}</p>
                             </div>
-                            <span className="font-medium ml-2">{`${(item.price * item.quantity).toFixed(2)} JOD`}</span>
+                            <span className="font-medium ml-2">{`${(
+                              item.price * item.quantity
+                            ).toFixed(2)} ${tCart("jod")}`}</span>
                           </motion.div>
                         ))}
                       </div>
 
                       <div className="border-t border-border pt-3 space-y-2">
                         <div className="flex justify-between text-sm">
-                          <span className="text-muted-foreground">{"Subtotal"}</span>
-                          <span className="font-medium">{`${total.toFixed(2)} JOD`}</span>
+                          <span className="text-muted-foreground">
+                            {t("subtotal")}
+                          </span>
+                          <span className="font-medium">{`${total.toFixed(
+                            2
+                          )} ${tCart("jod")}`}</span>
                         </div>
                         <div className="flex justify-between text-sm">
-                          <span className="text-muted-foreground">{"Shipping"}</span>
-                          <span className="font-medium">{"FREE"}</span>
+                          <span className="text-muted-foreground">
+                            {t("shipping")}
+                          </span>
+                          <span className="font-medium">{t("free")}</span>
                         </div>
                         <div className="border-t border-border pt-2">
                           <div className="flex justify-between">
-                            <span className="font-bold text-lg">{"Total"}</span>
-                            <span className="font-bold text-2xl">{`${total.toFixed(2)} JOD`}</span>
+                            <span className="font-bold text-lg">
+                              {t("total")}
+                            </span>
+                            <span className="font-bold text-2xl">{`${total.toFixed(
+                              2
+                            )} ${tCart("jod")}`}</span>
                           </div>
                         </div>
                       </div>
 
-                      <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                      <motion.div
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
                         <Button type="submit" size="lg" className="w-full">
-                          {"Send Order via WhatsApp"}
+                          {t("placeOrder")}
                         </Button>
                       </motion.div>
-
-                      <p className="text-xs text-muted-foreground text-center">
-                        {"Your order will be sent to us via WhatsApp for confirmation"}
-                      </p>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -311,5 +314,5 @@ export default function CheckoutPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
