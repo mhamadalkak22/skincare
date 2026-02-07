@@ -179,6 +179,20 @@
     "madeInFrance": "Made in France",
     "jod": "JOD"
   },
+  "BrandPages": {
+    "topicrem": {
+      "title": "Topicrem",
+      "tagline": "Dermatological Expertise for All Skin Types",
+      "description": "Topicrem offers dermatologically tested skincare solutions designed for sensitive and demanding skin. Trusted by dermatologists worldwide for over 20 years.",
+      "followButton": "Follow us on Instagram"
+    },
+    "novexpert": {
+      "title": "Novexpert",
+      "tagline": "Expert Science, Natural Innovation",
+      "description": "Novexpert combines scientific expertise with natural ingredients to create powerful anti-aging and skin health solutions. Made in France with proven efficacy.",
+      "followButton": "Follow us on Instagram"
+    }
+  },
   "Footer": {
     "tagline": "Topicrem & Novexpert",
     "description": "Premium French skincare brands available in Jordan. Professional skincare products trusted by dermatologists.",

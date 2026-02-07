@@ -3,7 +3,7 @@
 import { use } from "react";
 import { notFound } from "next/navigation";
 import { Link } from "@/src/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { getProductById } from "@/lib/products-data";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -30,6 +30,7 @@ export default function ProductDetailPage({
   const t = useTranslations("Product");
   const tCommon = useTranslations("Common");
   const tNav = useTranslations("Nav");
+  const locale = useLocale();
   const { id } = use(params);
   const product = getProductById(id);
   const { addToCart } = useCart();
@@ -46,9 +47,45 @@ export default function ProductDetailPage({
       ? parseFloat(currentVariant.price)
       : currentVariant.price;
 
-  const descriptionArray = Array.isArray(product.description.en)
-    ? product.description.en
-    : [product.description.en];
+  // Safe extraction helper
+  const getLocalizedValue = (field: any, useLocale: boolean = true): string => {
+    if (!field) return "";
+    if (typeof field === "string") return field;
+    if (typeof field === "object" && field !== null) {
+      if (useLocale && locale === "ar" && field.ar) return field.ar;
+      return field.en || field.ar || "";
+    }
+    return String(field);
+  };
+
+  // Safe array extraction helper
+  const getLocalizedArray = (
+    field: any,
+    useLocale: boolean = true
+  ): string[] => {
+    if (!field) return [];
+    if (Array.isArray(field)) {
+      return field.filter((item) => typeof item === "string");
+    }
+    if (typeof field === "object" && field !== null) {
+      const value =
+        useLocale && locale === "ar" && field.ar
+          ? field.ar
+          : field.en || field.ar;
+      // Handle both array and string values
+      if (Array.isArray(value)) {
+        return value.filter((item) => typeof item === "string");
+      } else if (typeof value === "string") {
+        return [value];
+      }
+      return [];
+    }
+    if (typeof field === "string") return [field];
+    return [];
+  };
+
+  // Get description based on locale
+  const descriptionArray = getLocalizedArray(product.description, true);
 
   const handleAddToCart = () => {
     addToCart({
@@ -187,7 +224,24 @@ export default function ProductDetailPage({
                         <p className="text-xs text-muted-foreground mb-1">
                           {t("texture")}
                         </p>
-                        <p className="font-medium text-sm">{product.texture}</p>
+                        <p className="font-medium text-sm">
+                          {(() => {
+                            if (typeof product.texture === "string") {
+                              return product.texture;
+                            }
+                            if (
+                              product.texture &&
+                              typeof product.texture === "object"
+                            ) {
+                              const textureValue =
+                                locale === "ar"
+                                  ? product.texture.ar || product.texture.en
+                                  : product.texture.en || product.texture.ar;
+                              return textureValue || "";
+                            }
+                            return "";
+                          })()}
+                        </p>
                       </div>
                     </div>
                   )}
@@ -199,7 +253,22 @@ export default function ProductDetailPage({
                           {t("skinType")}
                         </p>
                         <p className="font-medium text-sm">
-                          {product.skinType}
+                          {(() => {
+                            if (typeof product.skinType === "string") {
+                              return product.skinType;
+                            }
+                            if (
+                              product.skinType &&
+                              typeof product.skinType === "object"
+                            ) {
+                              const skinTypeValue =
+                                locale === "ar"
+                                  ? product.skinType.ar || product.skinType.en
+                                  : product.skinType.en || product.skinType.ar;
+                              return skinTypeValue || "";
+                            }
+                            return "";
+                          })()}
                         </p>
                       </div>
                     </div>
@@ -221,22 +290,24 @@ export default function ProductDetailPage({
                     {t("description")}
                   </h2>
                   <ul className="space-y-2">
-                    {descriptionArray.map((desc, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-2 text-muted-foreground"
-                      >
-                        <span className="text-primary mt-1">•</span>
-                        <span>{desc}</span>
-                      </li>
-                    ))}
+                    {descriptionArray
+                      .filter((d) => d && typeof d === "string")
+                      .map((desc, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-muted-foreground"
+                        >
+                          <span className="text-primary mt-1">•</span>
+                          <span>{desc}</span>
+                        </li>
+                      ))}
                   </ul>
                 </CardContent>
               </Card>
             </motion.div>
 
             {/* Benefits */}
-            {product.benefits && product.benefits.length > 0 && (
+            {product.benefits && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -249,8 +320,8 @@ export default function ProductDetailPage({
                       {t("benefits")}
                     </h2>
                     <ul className="space-y-2">
-                      {Array.isArray(product.benefits) ? (
-                        product.benefits.map((benefit, index) => (
+                      {getLocalizedArray(product.benefits, true).map(
+                        (benefit, index) => (
                           <li
                             key={index}
                             className="flex items-start gap-2 text-muted-foreground"
@@ -258,12 +329,7 @@ export default function ProductDetailPage({
                             <span className="text-primary mt-1">✓</span>
                             <span>{benefit}</span>
                           </li>
-                        ))
-                      ) : (
-                        <li className="flex items-start gap-2 text-muted-foreground">
-                          <span className="text-primary mt-1">✓</span>
-                          <span>{product.benefits}</span>
-                        </li>
+                        )
                       )}
                     </ul>
                   </CardContent>
@@ -288,39 +354,42 @@ export default function ProductDetailPage({
                           {t("spotlight")}
                         </p>
                         <p className="text-sm">
-                          {product.ingredients.spotlight}
+                          {getLocalizedValue(
+                            product.ingredients.spotlight,
+                            false
+                          )}
                         </p>
                       </div>
                     )}
 
-                    {product.ingredients.main &&
-                      product.ingredients.main.length > 0 && (
-                        <div>
-                          <p className="text-sm font-medium mb-2">
-                            {t("keyIngredients")}
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            {product.ingredients.main.map(
-                              (ingredient, index) => (
-                                <Badge
-                                  key={index}
-                                  variant="secondary"
-                                  className="text-xs"
-                                >
-                                  {ingredient}
-                                </Badge>
-                              )
-                            )}
-                          </div>
+                    {product.ingredients.main && (
+                      <div>
+                        <p className="text-sm font-medium mb-2">
+                          {t("keyIngredients")}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {getLocalizedArray(
+                            product.ingredients.main,
+                            false
+                          ).map((ingredient, index) => (
+                            <Badge
+                              key={index}
+                              variant="secondary"
+                              className="text-xs"
+                            >
+                              {ingredient}
+                            </Badge>
+                          ))}
                         </div>
-                      )}
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </motion.div>
             )}
 
             {/* Usage */}
-            {product.usage?.en && (
+            {product.usage && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -330,7 +399,7 @@ export default function ProductDetailPage({
                   <CardContent className="p-6 space-y-3">
                     <h2 className="text-2xl font-bold">{t("usage")}</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      {product.usage.en}
+                      {getLocalizedValue(product.usage, true)}
                     </p>
                   </CardContent>
                 </Card>

@@ -17,20 +17,43 @@
       ],
       "ar": "واقي مع حمايه قصوى ومرطب للوجه في آن واحد لجميع انواع البشره الحساسه ولا يسبب تهيجا للعينين  ولا يترك آثار بيضاء سهل الامتصاص ولا يعمل على تكون البثور.خالي من العطور ويمكن استخدامه كأساس للمكياج."
     },
-    "texture": "Light texture",
-    "skinType": "All Skin Types , Sensitive Skin",
-    "benefits": [
-      "Non comedogenic",
-      "Good makeup base",
-      "Fragrance free",
-      "No white marks"
-    ],
-    "ingredients": {
-      "main": [
-        "Moisturizing Postbiotic Complex",
-        "Broadspectrum sun filters UVA/UVB SFP50 PA++++"
+    "texture": {
+      "en": "Light texture",
+      "ar": "ملمس خفيف"
+    },
+    "skinType": {
+      "en": "All Skin Types , Sensitive Skin",
+      "ar": "جميع أنواع البشرة، البشرة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "Non comedogenic",
+        "Good makeup base",
+        "Fragrance free",
+        "No white marks"
       ],
-      "spotlight": "maximum hydration & sun protection"
+      "ar": [
+        "لا يسبب انسداد المسام",
+        "أساس مكياج ممتاز",
+        "خالٍ من العطور",
+        "لا يترك علامات بيضاء"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Moisturizing Postbiotic Complex",
+          "Broadspectrum sun filters UVA/UVB SFP50 PA++++"
+        ],
+        "ar": [
+          "مركب بوستبيوتيك مرطب",
+          "فلاتر شمسية واسعة الطيف UVA/UVB SPF50 PA++++"
+        ]
+      },
+      "spotlight": {
+        "en": "maximum hydration & sun protection",
+        "ar": "ترطيب قصوى وحماية من الشمس"
+      }
     },
     "usage": {
       "en": "Apply 1 to 2 times a day to the face, neck and décolleté.\r\n",
@@ -56,24 +79,51 @@
       ],
       "ar": "واقي مع حمايه قصوى ومرطب للوجه في آن واحد لجميع انواع البشره الحساسه جدا ويخفف من احمرار البشره ويعمل على تلطيفها ولا يسبب تهيجا للعينين  ولا يترك آثار بيضاء سهل الامتصاص ولا يعمل على تكون البثور.خالي من العطور ويمكن استخدامه كأساس للمكياج. "
     },
-    "texture": "Creamy texture ",
-    "skinType": "All Skin Types , Hypersensitive Skin ( intolerant skin )",
-    "benefits": [
-      "Visibly reduces redness",
-      "-30% redness in 28 days",
-      "Acts on inflammation and vascularisation",
-      "Non comodegenic",
-      "Excellente makeup base",
-      "No white marks"
-    ],
-    "ingredients": {
-      "main": [
-        "Centella Asiatica Extract",
-        "Allantoin",
-        "Vegetable Glycerin",
-        "SPF50+ Sun Filters"
+    "texture": {
+      "en": "Creamy texture",
+      "ar": "ملمس كريمي"
+    },
+    "skinType": {
+      "en": "All Skin Types , Hypersensitive Skin ( intolerant skin )",
+      "ar": "جميع أنواع البشرة، البشرة شديدة الحساسية"
+    },
+    "benefits": {
+      "en": [
+        "Visibly reduces redness",
+        "-30% redness in 28 days",
+        "Acts on inflammation and vascularisation",
+        "Non comodegenic",
+        "Excellente makeup base",
+        "No white marks"
       ],
-      "spotlight": "maximum hydration & sun protection, prevent redness, soothes"
+      "ar": [
+        "يقلل الاحمرار بشكل ملحوظ",
+        "تقليل الاحمرار بنسبة 30% في 28 يوم",
+        "يعمل على الالتهاب والأوعية الدموية",
+        "لا يسبب انسداد المسام",
+        "أساس مكياج ممتاز",
+        "لا يترك علامات بيضاء"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Centella Asiatica Extract",
+          "Allantoin",
+          "Vegetable Glycerin",
+          "SPF50+ Sun Filters"
+        ],
+        "ar": [
+          "Centella Asiatica Extract",
+          "Allantoin",
+          "Vegetable Glycerin",
+          "SPF50+ Sun Filters"
+        ]
+      },
+      "spotlight": {
+        "en": "maximum hydration & sun protection, prevent redness, soothes",
+        "ar": "ترطيب قصوى & حماية من الشمس, يمنع الاحمرار, يهدئ البشرة"
+      }
     },
     "usage": {
       "en": "Apply 1 to 2 times a day to the face, neck and décolleté.\r\n",
@@ -97,21 +147,45 @@
       ],
       "ar": "مرطب للشفاه للكبار والاطفال برائحة الفانيلا ويعمل على تغذية وحماية الشفاه ويستخدم للشفاه الحساسه ويعمل على ترميمها وحمايتها من الجفاف"
     },
-    "texture": "Balm texture ",
-    "skinType": "Sensitive lips",
-    "benefits": [
-      "Delicate vanilla flavor",
-      "-87% pain or  discomfort on the lips",
-      "Apply as often as necessary"
-    ],
-    "ingredients": {
-      "main": [
-        "Beeswax",
-        "Carnauba wax",
-        "Candellila wax",
-        "Shea Butter"
+    "texture": {
+      "en": "Balm texture",
+      "ar": "ملمس بلسم"
+    },
+    "skinType": {
+      "en": "Sensitive lips",
+      "ar": "الشفاه الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "Delicate vanilla flavor",
+        "-87% pain or  discomfort on the lips",
+        "Apply as often as necessary"
       ],
-      "spotlight": "intensively repairs lips against dryness( wax mix)"
+      "ar": [
+        "نكهة الفانيليا اللطيفة",
+        "تقليل الألم أو عدم الراحة على الشفاه بنسبة 87%",
+        "يوضع حسب الحاجة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Beeswax",
+          "Carnauba wax",
+          "Candellila wax",
+          "Shea Butter"
+        ],
+        "ar": [
+          "Beeswax",
+          "Carnauba wax",
+          "Candellila wax",
+          "Shea Butter"
+        ]
+      },
+      "spotlight": {
+        "en": "intensively repairs lips against dryness( wax mix)",
+        "ar": "intensively يرمم lips ضد الجفاف( مزيج الشمع)"
+      }
     },
     "usage": {
       "en": "Apply as often as necessary",
@@ -135,19 +209,41 @@
       ],
       "ar": "ماء تنظيف الوجه والعيون من المكياج ويترك البشره رطبه ويستخدم للبشره الحساسه"
     },
-    "texture": "Fresh and pleasant water",
-    "skinType": "Sensitive all Skin types",
-    "benefits": [
-      "Cleanses and removes makeup",
-      "Efficient even on waterproof makeup",
-      "Face and eyes"
-    ],
-    "ingredients": {
-      "main": [
-        "Soft Micelles",
-        "Betain"
+    "texture": {
+      "en": "Fresh and pleasant water",
+      "ar": "ماء منعش ولطيف"
+    },
+    "skinType": {
+      "en": "Sensitive all Skin types",
+      "ar": "جميع أنواع البشرة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "Cleanses and removes makeup",
+        "Efficient even on waterproof makeup",
+        "Face and eyes"
       ],
-      "spotlight": "Removes make-up, cleanses, moisturizes"
+      "ar": [
+        "ينظف ويزيل المكياج",
+        "فعّال حتى على المكياج المقاوم للماء",
+        "للوجه والعينين"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Soft Micelles",
+          "Betain"
+        ],
+        "ar": [
+          "Soft Micelles",
+          "Betain"
+        ]
+      },
+      "spotlight": {
+        "en": "Removes make-up, cleanses, moisturizes",
+        "ar": "يزيل المكياج, ينظف, يرطب"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening using a cotton pad. Without rinsing",
@@ -172,20 +268,43 @@
       ],
       "ar": "حليب تنظيف الوجه والعيون من المكياج ويترك البشره رطبه ويستخدم للبشره الحساسه ومناسب جدا لأزالة المكياج المقاوم للماء"
     },
-    "texture": "Cream texture.",
-    "skinType": "Sensitive dry Skin",
-    "benefits": [
-      "Cleanses and removes makeup",
-      "Efficient even on waterproof makeup",
-      "Perfect for dry skins",
-      "Face and eyes"
-    ],
-    "ingredients": {
-      "main": [
-        "Fatty Cleansing Agents",
-        "Beeswax"
+    "texture": {
+      "en": "Cream texture.",
+      "ar": "Cream texture."
+    },
+    "skinType": {
+      "en": "Sensitive dry Skin",
+      "ar": "البشرة الجافة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "Cleanses and removes makeup",
+        "Efficient even on waterproof makeup",
+        "Perfect for dry skins",
+        "Face and eyes"
       ],
-      "spotlight": "Removes make-up, cleanses, moisturizes"
+      "ar": [
+        "ينظف ويزيل المكياج",
+        "فعّال حتى على المكياج المقاوم للماء",
+        "مثالي للبشرة الجافة",
+        "للوجه والعينين"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Fatty Cleansing Agents",
+          "Beeswax"
+        ],
+        "ar": [
+          "Fatty Cleansing Agents",
+          "Beeswax"
+        ]
+      },
+      "spotlight": {
+        "en": "Removes make-up, cleanses, moisturizes",
+        "ar": "يزيل المكياج, ينظف, يرطب"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening using a cotton pad. Without rinsing",
@@ -210,22 +329,47 @@
       ],
       "ar": "كريم اساس  ذو لون فاتح لأخفاء عيوب البشره  وترطيبها مع حمايه قصوى من الشمس ولبشره اكثر اشراقا ويوحد من لونها ويعطيها بريقا"
     },
-    "texture": "Light texture",
-    "skinType": "Sensitive Skin",
-    "benefits": [
-      "3 in 1 Action",
-      "Coverage , Hydration",
-      "Evens & Brightens",
-      "High SPF Protection"
-    ],
-    "ingredients": {
-      "main": [
-        "Glycerin",
-        "Bioactive Water",
-        "UVA / UVB Sun Filters",
-        "Moringa Extract"
+    "texture": {
+      "en": "Light texture",
+      "ar": "ملمس خفيف"
+    },
+    "skinType": {
+      "en": "Sensitive Skin",
+      "ar": "البشرة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "3 in 1 Action",
+        "Coverage , Hydration",
+        "Evens & Brightens",
+        "High SPF Protection"
       ],
-      "spotlight": "Conceals Irregularities & Imperfections & Revives Radiance"
+      "ar": [
+        "فعالية 3 في 1",
+        "تغطية، ترطيب",
+        "يوحد ويُنير",
+        "حماية عالية من الشمس"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Glycerin",
+          "Bioactive Water",
+          "UVA / UVB Sun Filters",
+          "Moringa Extract"
+        ],
+        "ar": [
+          "Glycerin",
+          "Bioactive Water",
+          "UVA / UVB Sun Filters",
+          "Moringa Extract"
+        ]
+      },
+      "spotlight": {
+        "en": "Conceals Irregularities & Imperfections & Revives Radiance",
+        "ar": "conceals irregularities & imperfections & revives radiance"
+      }
     },
     "usage": {
       "en": "Apply in the morning  on the face and neck & Decollete",
@@ -250,22 +394,47 @@
       ],
       "ar": "كريم اساس  ذو لون متوسط لأخفاء عيوب البشره  وترطيبها مع حمايه قصوى من الشمس ولبشره اكثر اشراقا ويوحد من لونها ويعطيها بريقا"
     },
-    "texture": "Light texture",
-    "skinType": "Sensitive Skin",
-    "benefits": [
-      "3 in 1 Action",
-      "Coverage , Hydration",
-      "Evens & Brightens",
-      "High SPF Protection"
-    ],
-    "ingredients": {
-      "main": [
-        "Glycerin",
-        "Bioactive Water",
-        "UVA / UVB Sun Filters",
-        "Moringa Extract"
+    "texture": {
+      "en": "Light texture",
+      "ar": "ملمس خفيف"
+    },
+    "skinType": {
+      "en": "Sensitive Skin",
+      "ar": "البشرة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "3 in 1 Action",
+        "Coverage , Hydration",
+        "Evens & Brightens",
+        "High SPF Protection"
       ],
-      "spotlight": "Conceals Irregularities & Imperfections & Revives Radiance"
+      "ar": [
+        "فعالية 3 في 1",
+        "تغطية، ترطيب",
+        "يوحد ويُنير",
+        "حماية عالية من الشمس"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Glycerin",
+          "Bioactive Water",
+          "UVA / UVB Sun Filters",
+          "Moringa Extract"
+        ],
+        "ar": [
+          "Glycerin",
+          "Bioactive Water",
+          "UVA / UVB Sun Filters",
+          "Moringa Extract"
+        ]
+      },
+      "spotlight": {
+        "en": "Conceals Irregularities & Imperfections & Revives Radiance",
+        "ar": "conceals irregularities & imperfections & revives radiance"
+      }
     },
     "usage": {
       "en": "Apply in the morning  on the face and neck & Decollete",
@@ -289,23 +458,49 @@
       ],
       "ar": "سيروم مركز للوجه للبقع البنيه والتصبغات لتوحيد وتفتيح لون البشره ويعمل على ترطيبها أيضا. لا يسبب تحسس من الأشعه. مناسب للبشره الحساسه. نتائج واضخه خلال سبعة ايام"
     },
-    "texture": "Fresh, ultra-light and fluid",
-    "skinType": "all sesitive skin types",
-    "benefits": [
-      "360° anti-dark spot action",
-      "Efficacy even on installed dark spots and melasma",
-      "Non photosensitizing",
-      "OK eye contour",
-      "Visible results in 7 days on dark spots",
-      "98% corrects dark spots"
-    ],
-    "ingredients": {
-      "main": [
-        "Patented MELA complex [Niacinamide + Algae extract]",
-        "Schisandre Berries (Extract from)",
-        "Glycerin"
+    "texture": {
+      "en": "Fresh, ultra-light and fluid",
+      "ar": "Fresh, ultra-light and fluid"
+    },
+    "skinType": {
+      "en": "all sesitive skin types",
+      "ar": "all sesitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "360° anti-dark spot action",
+        "Efficacy even on installed dark spots and melasma",
+        "Non photosensitizing",
+        "OK eye contour",
+        "Visible results in 7 days on dark spots",
+        "98% corrects dark spots"
       ],
-      "spotlight": "Intensely corrects, unifies ( concentrated)"
+      "ar": [
+        "فعالية 360° ضد البقع الداكنة",
+        "فعال حتى على البقع الداكنة الثابتة والكلف",
+        "غير محسس للضوء",
+        "آمن لمحيط العين",
+        "نتائج مرئية في 7 أيام على البقع الداكنة",
+        "تصحيح البقع الداكنة بنسبة 98%"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Patented MELA complex [Niacinamide + Algae extract]",
+          "Schisandre Berries (Extract from)",
+          "Glycerin"
+        ],
+        "ar": [
+          "Patented MELA complex [Niacinamide + Algae extract]",
+          "Schisandre Berries (Extract from)",
+          "Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Intensely corrects, unifies ( concentrated)",
+        "ar": "intensely corrects, unifies ( concentrated)"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening",
@@ -329,16 +524,39 @@
       ],
       "ar": "كريم تفتيح نهاري مع واقي شمس + SPF 50 لتوحيد  لون البشره ويعمل على ترطيبها أيضا."
     },
-    "texture": "Creamy, non-sticky and non-greasy",
-    "skinType": "all sesitive skin types",
-    "benefits": "Efficacy even on installed dark spots and melasma",
-    "ingredients": {
-      "main": [
-        "Patented MELA complex [Niacinamide + Algae extract]",
-        "Solar Filters",
-        "Dipeptide"
+    "texture": {
+      "en": "Creamy, non-sticky and non-greasy",
+      "ar": "Creamy, non-sticky and non-greasy"
+    },
+    "skinType": {
+      "en": "all sesitive skin types",
+      "ar": "all sesitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Efficacy even on installed dark spots and melasma"
       ],
-      "spotlight": " corrects, unifies"
+      "ar": [
+        "فعال حتى على البقع الداكنة الثابتة والكلف"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Patented MELA complex [Niacinamide + Algae extract]",
+          "Solar Filters",
+          "Dipeptide"
+        ],
+        "ar": [
+          "Patented MELA complex [Niacinamide + Algae extract]",
+          "Solar Filters",
+          "Dipeptide"
+        ]
+      },
+      "spotlight": {
+        "en": " corrects, unifies",
+        "ar": " corrects, unifies"
+      }
     },
     "usage": {
       "en": "morning",
@@ -362,16 +580,39 @@
       ],
       "ar": "كريم تفتيح ليلي لتوحيد لون البشره ويعمل على ترطيبها أيضا. "
     },
-    "texture": "Creamy, non-sticky and non-greasy",
-    "skinType": "all sesitive skin types",
-    "benefits": "Efficacy even on installed dark spots and melasma",
-    "ingredients": {
-      "main": [
-        "Patented MELA complex [Niacinamide + Algae extract]",
-        "Gluconolactone",
-        "Keratolytic Enzyme"
+    "texture": {
+      "en": "Creamy, non-sticky and non-greasy",
+      "ar": "Creamy, non-sticky and non-greasy"
+    },
+    "skinType": {
+      "en": "all sesitive skin types",
+      "ar": "all sesitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Efficacy even on installed dark spots and melasma"
       ],
-      "spotlight": " corrects, unifies"
+      "ar": [
+        "فعال حتى على البقع الداكنة الثابتة والكلف"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Patented MELA complex [Niacinamide + Algae extract]",
+          "Gluconolactone",
+          "Keratolytic Enzyme"
+        ],
+        "ar": [
+          "Patented MELA complex [Niacinamide + Algae extract]",
+          "Gluconolactone",
+          "Keratolytic Enzyme"
+        ]
+      },
+      "spotlight": {
+        "en": " corrects, unifies",
+        "ar": " corrects, unifies"
+      }
     },
     "usage": {
       "en": "night",
@@ -396,16 +637,39 @@
       ],
       "ar": "صابونه طبيه ذات خصائص تقشيريه لتفتيح وتوحيد لون البشره والتقليل من التصبغات للوجه والجسم في آن واحد ولا تسبب جفاف للبشره وتتركها رطبه"
     },
-    "texture": "Creamy exfoliating foam",
-    "skinType": "all sesitive skin types",
-    "benefits": "Complementary product, perfect to help reducing dark spots",
-    "ingredients": {
-      "main": [
-        "Olive Oil and Coprah",
-        "Apricot Kernel Granules",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Creamy exfoliating foam",
+      "ar": "Creamy exfoliating foam"
+    },
+    "skinType": {
+      "en": "all sesitive skin types",
+      "ar": "all sesitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Complementary product, perfect to help reducing dark spots"
       ],
-      "spotlight": " corrects, unifies"
+      "ar": [
+        "منتج تكميلي، مثالي للمساعدة في تقليل البقع الداكنة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Olive Oil and Coprah",
+          "Apricot Kernel Granules",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Olive Oil and Coprah",
+          "Apricot Kernel Granules",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": " corrects, unifies",
+        "ar": " corrects, unifies"
+      }
     },
     "usage": {
       "en": "1 to 2 times a week, apply to damp face using a gentle lather, then rinse thoroughly with clean water. Can be used directly on the skin.",
@@ -431,22 +695,47 @@
       ],
       "ar": "كريم حليبي لتفتيح الجسم وضد التصبغات ومرطب ويحمي من اشعة الشمس في آن واحد  +SPF15 ويعمل على منع ظهور تصبغات جديده ويمكن استحدامه للمناطق الحساسه"
     },
-    "texture": "Light and pleasant",
-    "skinType": "all sesitive skin types",
-    "benefits": [
-      "N°1 of Depigmenting Body Milk",
-      "Corrects, prevents & protects",
-      "No white marks"
-    ],
-    "ingredients": {
-      "main": [
-        "Octadecenedioic Acid",
-        "Acetyl Glucosamine",
-        "Beeswax",
-        "Vegetable Glycerin",
-        "Solar Filters SPF15"
+    "texture": {
+      "en": "Light and pleasant",
+      "ar": "Light and pleasant"
+    },
+    "skinType": {
+      "en": "all sesitive skin types",
+      "ar": "all sesitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "N°1 of Depigmenting Body Milk",
+        "Corrects, prevents & protects",
+        "No white marks"
       ],
-      "spotlight": " corrects, unifies"
+      "ar": [
+        "رقم 1 في حليب الجسم المزيل للتصبغ",
+        "يصحح، يمنع ويحمي",
+        "لا يترك علامات بيضاء"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Octadecenedioic Acid",
+          "Acetyl Glucosamine",
+          "Beeswax",
+          "Vegetable Glycerin",
+          "Solar Filters SPF15"
+        ],
+        "ar": [
+          "Octadecenedioic Acid",
+          "Acetyl Glucosamine",
+          "Beeswax",
+          "Vegetable Glycerin",
+          "Solar Filters SPF15"
+        ]
+      },
+      "spotlight": {
+        "en": " corrects, unifies",
+        "ar": " corrects, unifies"
+      }
     },
     "usage": {
       "en": "2 to 3 times a day on the body, apply with light massages.",
@@ -473,21 +762,45 @@
       ],
       "ar": "جل غسول طبي خال من الصابون للبشره الدهنيه والمختلطه والتي تعاني من حب الشباب للكبار والمراهقينو يقلل من لمعان البشره  . لايسبب جفاف للبشره ويتركها رطبه. لا يدمع العينين ويمكن استخدامه لازالة المكياج"
     },
-    "texture": "Fresh lotion",
-    "skinType": "Combination to oily skin",
-    "benefits": [
-      "Cleanses and removes makeup",
-      "Teenagers and adults",
-      "Reduces shines"
-    ],
-    "ingredients": {
-      "main": [
-        "Soft surfactant",
-        "Myristyl PCA",
-        "Allantoin",
-        "Vegetal glycerin"
+    "texture": {
+      "en": "Fresh lotion",
+      "ar": "Fresh lotion"
+    },
+    "skinType": {
+      "en": "Combination to oily skin",
+      "ar": "Combination to oily skin"
+    },
+    "benefits": {
+      "en": [
+        "Cleanses and removes makeup",
+        "Teenagers and adults",
+        "Reduces shines"
       ],
-      "spotlight": " cleanses, purifies"
+      "ar": [
+        "ينظف ويزيل المكياج",
+        "للمراهقين والبالغين",
+        "يقلل اللمعان"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Soft surfactant",
+          "Myristyl PCA",
+          "Allantoin",
+          "Vegetal glycerin"
+        ],
+        "ar": [
+          "Soft surfactant",
+          "Myristyl PCA",
+          "Allantoin",
+          "Vegetal glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": " cleanses, purifies",
+        "ar": " ينظف, purifies"
+      }
     },
     "usage": {
       "en": "Morning and/or evening, apply to damp skin on the face and neck ,lather then rinse",
@@ -511,19 +824,41 @@
       ],
       "ar": "جل غسول طبي  ومنظف خالي من الصابون  للبشره الجافه للوجه والجسم والشعر لجميع افراد العائله .لايسبب جفاف البشره ويتركها رطبه. لا يدمع العينين ويمكن استخدامه لازالة المكياج"
     },
-    "texture": "gel texture, creamy foam. ",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "Face, body, hair",
-      "Soap free, does not sting the eyes",
-      "Delicate fragrance of Orange Blossom"
-    ],
-    "ingredients": {
-      "main": [
-        "Soft surfactant",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "gel texture, creamy foam.",
+      "ar": "gel texture, creamy foam."
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Face, body, hair",
+        "Soap free, does not sting the eyes",
+        "Delicate fragrance of Orange Blossom"
       ],
-      "spotlight": "Gently cleanses, removes makeup, moisturizes"
+      "ar": [
+        "للوجه، الجسم والشعر",
+        "خالي من الصابون، لا يلسع العيون",
+        "عطر رقيق من زهر البرتقال"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Soft surfactant",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Soft surfactant",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Gently cleanses, removes makeup, moisturizes",
+        "ar": "gently ينظف, removes makeup, يرطب"
+      }
     },
     "usage": {
       "en": "Apply to damp face, lather then rinse",
@@ -547,18 +882,39 @@
       ],
       "ar": "مرطب خاص لليدين ترطيبه يدوم ل 48 ساعه يحمي ويغذي بشرة اليد"
     },
-    "texture": "Melting texture",
-    "skinType": "sensitive dry skin",
-    "benefits": [
-      "Very dry, damaged hands",
-      "Non greasy, non sticky – quickly penetrates"
-    ],
-    "ingredients": {
-      "main": [
-        "Urea",
-        "Allantoin"
+    "texture": {
+      "en": "Melting texture",
+      "ar": "Melting texture"
+    },
+    "skinType": {
+      "en": "sensitive dry skin",
+      "ar": "sensitive dry skin"
+    },
+    "benefits": {
+      "en": [
+        "Very dry, damaged hands",
+        "Non greasy, non sticky – quickly penetrates"
       ],
-      "spotlight": "Moisturizes, nourishes, protects"
+      "ar": [
+        "للأيدي الجافة جداً والمتضررة",
+        "غير دهني، غير لزج - يتغلغل بسرعة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Urea",
+          "Allantoin"
+        ],
+        "ar": [
+          "Urea",
+          "Allantoin"
+        ]
+      },
+      "spotlight": {
+        "en": "Moisturizes, nourishes, protects",
+        "ar": "يرطب, nourishes, protects"
+      }
     },
     "usage": {
       "en": "Apply once a day",
@@ -584,20 +940,43 @@
       ],
       "ar": "كريم مرطب للقدمين وتشققات الكعبين ترطيبه يدوم ل 24 ساعه يغذي وينعم بشرة القدم"
     },
-    "texture": "Light, non-greasy",
-    "skinType": "damaged areas feet",
-    "benefits": [
-      "Non greasy and light texture",
-      "100% nourished feet after 21 days of application"
-    ],
-    "ingredients": {
-      "main": [
-        "Urea",
-        "Allantoin",
-        "Beeswax",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Light, non-greasy",
+      "ar": "Light, non-greasy"
+    },
+    "skinType": {
+      "en": "damaged areas feet",
+      "ar": "damaged areas feet"
+    },
+    "benefits": {
+      "en": [
+        "Non greasy and light texture",
+        "100% nourished feet after 21 days of application"
       ],
-      "spotlight": "Smoothes, nourishes, repairs"
+      "ar": [
+        "ملمس خفيف وغير دهني",
+        "أقدام مغذية بنسبة 100% بعد 21 يوم"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Urea",
+          "Allantoin",
+          "Beeswax",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Urea",
+          "Allantoin",
+          "Beeswax",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Smoothes, nourishes, repairs",
+        "ar": "smoothes, nourishes, يرمم"
+      }
     },
     "usage": {
       "en": "Apply twice a day, focusing on damaged areas.",
@@ -622,21 +1001,45 @@
       ],
       "ar": "كريم حليبي مرطب للجسم لجميع افراد العائله لترطيب يدوم ل 48 ساعه ذو امتصاص سريع ولحظي للاستخدام اليومي . لا يترك اثار زيتيه . يغذي ويحمي بشرة الجسم . رقم  واحد مبيعا في صيدليات فرنسا"
     },
-    "texture": "Smooth milk",
-    "skinType": "dry body",
-    "benefits": [
-      "N°1 Body Milk",
-      "Long lasting hydration",
-      "For the whole family",
-      "Light texture: immediate dressing"
-    ],
-    "ingredients": {
-      "main": [
-        "Urea",
-        "Beeswax",
-        "Vegetable glycerin"
+    "texture": {
+      "en": "Smooth milk",
+      "ar": "Smooth milk"
+    },
+    "skinType": {
+      "en": "dry body",
+      "ar": "dry body"
+    },
+    "benefits": {
+      "en": [
+        "N°1 Body Milk",
+        "Long lasting hydration",
+        "For the whole family",
+        "Light texture: immediate dressing"
       ],
-      "spotlight": "Moisturizes, nourishes, smoothes"
+      "ar": [
+        "حليب الجسم رقم 1",
+        "ترطيب طويل الأمد",
+        "لجميع أفراد العائلة",
+        "ملمس خفيف: ارتداء الملابس فوري"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Urea",
+          "Beeswax",
+          "Vegetable glycerin"
+        ],
+        "ar": [
+          "Urea",
+          "Beeswax",
+          "Vegetable glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Moisturizes, nourishes, smoothes",
+        "ar": "يرطب, nourishes, smoothes"
+      }
     },
     "usage": {
       "en": "1 to 2 times a day on the body, apply with light massages.",
@@ -662,22 +1065,47 @@
       ],
       "ar": "مرطب للوجه للبشره الدهنيه ( للبشره الحساسه جدا )  التي تعاني من الاحمرار والشعور بالوخز مع خاصية اطفاء وهج البشره"
     },
-    "texture": "Fresh and silky fluid",
-    "skinType": "oily very sensitive skin",
-    "benefits": [
-      "Reduces reactivity of skin and reinforces skin barrier",
-      "Soothes",
-      "Softens",
-      "Mattifies (Fluid)"
-    ],
-    "ingredients": {
-      "main": [
-        "Allantoin",
-        "Plum Oil",
-        "Vegetable Glycerin",
-        "Silica (Fluid)"
+    "texture": {
+      "en": "Fresh and silky fluid",
+      "ar": "Fresh and silky fluid"
+    },
+    "skinType": {
+      "en": "oily very sensitive skin",
+      "ar": "oily very sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "Reduces reactivity of skin and reinforces skin barrier",
+        "Soothes",
+        "Softens",
+        "Mattifies (Fluid)"
       ],
-      "spotlight": "Calms, protects, moisturizes"
+      "ar": [
+        "يقلل تفاعل البشرة ويقوي حاجز البشرة",
+        "يهدئ",
+        "يُنعم",
+        "يمنح مظهر غير لامع (سائل)"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Allantoin",
+          "Plum Oil",
+          "Vegetable Glycerin",
+          "Silica (Fluid)"
+        ],
+        "ar": [
+          "Allantoin",
+          "Plum Oil",
+          "Vegetable Glycerin",
+          "Silica (Fluid)"
+        ]
+      },
+      "spotlight": {
+        "en": "Calms, protects, moisturizes",
+        "ar": "calms, protects, يرطب"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to face and neck.",
@@ -702,20 +1130,43 @@
       ],
       "ar": "مرطب للوجه للبشره الجافه والعاديه ( للبشره الحساسه جدا )  التي تعاني من الاحمرار والشعور بالوخز"
     },
-    "texture": "Melting cream texture",
-    "skinType": "dry very sensitive skin",
-    "benefits": [
-      "Reduces reactivity of skin and reinforces skin barrier",
-      "Soothes",
-      "Softens"
-    ],
-    "ingredients": {
-      "main": [
-        "Allantoin",
-        "Plum Oil",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Melting cream texture",
+      "ar": "Melting cream texture"
+    },
+    "skinType": {
+      "en": "dry very sensitive skin",
+      "ar": "dry very sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "Reduces reactivity of skin and reinforces skin barrier",
+        "Soothes",
+        "Softens"
       ],
-      "spotlight": "Calms, protects, moisturizes"
+      "ar": [
+        "يقلل تفاعل البشرة ويقوي حاجز البشرة",
+        "يهدئ",
+        "يُنعم"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Allantoin",
+          "Plum Oil",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Allantoin",
+          "Plum Oil",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Calms, protects, moisturizes",
+        "ar": "calms, protects, يرطب"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to face and neck.",
@@ -742,22 +1193,47 @@
       ],
       "ar": "سائل لأطفاء وهج البشره الدهنيه لمدة 12 ساعه ويعمل على ترطيبها وتنقيتها ويعمل على شد المسامات وينظم الأفرازات الدهنيه"
     },
-    "texture": "Fresh gel-cream",
-    "skinType": "combination to oily  sensitive skin",
-    "benefits": [
-      "Immediate and until 12hr mattifying effect",
-      "Maintains hydration of the skin",
-      "Refines skin texture"
-    ],
-    "ingredients": {
-      "main": [
-        "MMC powder",
-        "Silica",
-        "Red Clove Extract",
-        "Polysaccharidic Matrix",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Fresh gel-cream",
+      "ar": "Fresh gel-cream"
+    },
+    "skinType": {
+      "en": "combination to oily  sensitive skin",
+      "ar": "combination to oily  sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "Immediate and until 12hr mattifying effect",
+        "Maintains hydration of the skin",
+        "Refines skin texture"
       ],
-      "spotlight": "Mattifies, tightens pores, improves skin quality"
+      "ar": [
+        "تأثير غير لامع فوري ولمدة 12 ساعة",
+        "يحافظ على ترطيب البشرة",
+        "يحسن ملمس البشرة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "MMC powder",
+          "Silica",
+          "Red Clove Extract",
+          "Polysaccharidic Matrix",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "MMC powder",
+          "Silica",
+          "Red Clove Extract",
+          "Polysaccharidic Matrix",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Mattifies, tightens pores, improves skin quality",
+        "ar": "mattifies, tightens pores, improves skin quality"
+      }
     },
     "usage": {
       "en": "Morning and/or evening, apply to face and neck. Excellent makeup base.",
@@ -783,21 +1259,45 @@
       ],
       "ar": "كريم مرطب خاص لتعويض الاثار الناجمه عن اعطاء ادوية علاج حب الشباب التي تسبب الجفاف"
     },
-    "texture": "Melting cream",
-    "skinType": "combination to oily  sensitive skin",
-    "benefits": [
-      "Comfort restored after 3 days of use",
-      "Non photosensitizing",
-      "To use in complement of isotretinoin treatments"
-    ],
-    "ingredients": {
-      "main": [
-        "Allantoin",
-        "Lipidic Complex (omegas 3, 6 & 9)",
-        "Hyaluronic Acid (Medium Molecular Weight)",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Melting cream",
+      "ar": "Melting cream"
+    },
+    "skinType": {
+      "en": "combination to oily  sensitive skin",
+      "ar": "combination to oily  sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "Comfort restored after 3 days of use",
+        "Non photosensitizing",
+        "To use in complement of isotretinoin treatments"
       ],
-      "spotlight": "Restores skin comfort, soothes, moisturizes"
+      "ar": [
+        "استعادة الراحة بعد 3 أيام من الاستخدام",
+        "غير محسس للضوء",
+        "للاستخدام مع علاجات الإيزوتريتينوين"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Allantoin",
+          "Lipidic Complex (omegas 3, 6 & 9)",
+          "Hyaluronic Acid (Medium Molecular Weight)",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Allantoin",
+          "Lipidic Complex (omegas 3, 6 & 9)",
+          "Hyaluronic Acid (Medium Molecular Weight)",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Restores skin comfort, soothes, moisturizes",
+        "ar": "restores skin comfort, يهدئ البشرة, يرطب"
+      }
     },
     "usage": {
       "en": "Morning and/or evening, apply to face and neck.",
@@ -822,21 +1322,45 @@
       ],
       "ar": "كريم لترطيب منطقة ما حول العينين وللهالات السوداء والانتفاخات وللتقليل من الخطوط الرفيعه تحت العينين"
     },
-    "texture": "Ultra-fresh gel-cream",
-    "skinType": "entire eye contour",
-    "benefits": [
-      "Suitable for sensitive eyes and contact lens wearers",
-      "Fragrance free",
-      "95% reduces the appearance of puffiness"
-    ],
-    "ingredients": {
-      "main": [
-        "Caffeine",
-        "Glucosyl Hesperidin",
-        "Hyaluronic Acid (High Molecular Weight)",
-        "Polysaccharide Matrix"
+    "texture": {
+      "en": "Ultra-fresh gel-cream",
+      "ar": "Ultra-fresh gel-cream"
+    },
+    "skinType": {
+      "en": "entire eye contour",
+      "ar": "entire eye contour"
+    },
+    "benefits": {
+      "en": [
+        "Suitable for sensitive eyes and contact lens wearers",
+        "Fragrance free",
+        "95% reduces the appearance of puffiness"
       ],
-      "spotlight": "Acts as an anti-puffiness, anti-dark circles"
+      "ar": [
+        "مناسب للعيون الحساسة ولمستخدمي العدسات اللاصقة",
+        "خالٍ من العطور",
+        "تقليل مظهر الانتفاخ بنسبة 95%"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Caffeine",
+          "Glucosyl Hesperidin",
+          "Hyaluronic Acid (High Molecular Weight)",
+          "Polysaccharide Matrix"
+        ],
+        "ar": [
+          "Caffeine",
+          "Glucosyl Hesperidin",
+          "Hyaluronic Acid (High Molecular Weight)",
+          "Polysaccharide Matrix"
+        ]
+      },
+      "spotlight": {
+        "en": "Acts as an anti-puffiness, anti-dark circles",
+        "ar": "acts as an anti-puffiness, anti-dark circles"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to the entire eye contour",
@@ -861,19 +1385,41 @@
       ],
       "ar": "مقشر للوجه والجسم في آن واحد لجميع انواع البشره يعمل على تنعيمها وصقلها"
     },
-    "texture": "Foaming gel",
-    "skinType": "face , body & bikini sensitive skin",
-    "benefits": [
-      "Face , body & bikini",
-      "Cleanses and exfoliates",
-      "New skin effect"
-    ],
-    "ingredients": {
-      "main": [
-        "Jojoba and cellulose micro- grains (birch, oak, pine, spruce)",
-        "Soft surfactant"
+    "texture": {
+      "en": "Foaming gel",
+      "ar": "Foaming gel"
+    },
+    "skinType": {
+      "en": "face , body & bikini sensitive skin",
+      "ar": "face، body & bikini sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "Face , body & bikini",
+        "Cleanses and exfoliates",
+        "New skin effect"
       ],
-      "spotlight": "Exfoliates, smoothes, cleanses"
+      "ar": [
+        "للوجه، الجسم ومنطقة البكيني",
+        "ينظف ويقشر",
+        "تأثير البشرة الجديدة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Jojoba and cellulose micro- grains (birch, oak, pine, spruce)",
+          "Soft surfactant"
+        ],
+        "ar": [
+          "Jojoba and cellulose micro- grains (birch, oak, pine, spruce)",
+          "Soft surfactant"
+        ]
+      },
+      "spotlight": {
+        "en": "Exfoliates, smoothes, cleanses",
+        "ar": "exfoliates, smoothes, ينظف"
+      }
     },
     "usage": {
       "en": "Apply 1 to 2 times a week to damp skin with a gentle massage on the face, a more vigorous one on the body, then rinse.",
@@ -899,15 +1445,37 @@
       ],
       "ar": "مرطب للوجه للبشره العاديه والمختلطه لبشره اكثر اشراقا ومضاد للتلوث. مناسب للبشره الحساسه .ترطيب يدوم ل 24 ساعه"
     },
-    "texture": "Non-greasy and non-sticky texture.",
-    "skinType": "normal to combination  sensitive skin",
-    "benefits": "Triple action: hydration – radiance – anti-pollution",
-    "ingredients": {
-      "main": [
-        "Polyglucoside Complex",
-        "Polysaccharide Matrix"
+    "texture": {
+      "en": "Non-greasy and non-sticky texture.",
+      "ar": "Non-greasy and non-sticky texture."
+    },
+    "skinType": {
+      "en": "normal to combination  sensitive skin",
+      "ar": "normal to combination  sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "Triple action: hydration – radiance – anti-pollution"
       ],
-      "spotlight": "Moisturizes, awakens radiance, anti-pollution"
+      "ar": [
+        "فعالية ثلاثية: ترطيب - إشراق - مضاد للتلوث"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Polyglucoside Complex",
+          "Polysaccharide Matrix"
+        ],
+        "ar": [
+          "Polyglucoside Complex",
+          "Polysaccharide Matrix"
+        ]
+      },
+      "spotlight": {
+        "en": "Moisturizes, awakens radiance, anti-pollution",
+        "ar": "يرطب, awakens radiance, anti-pollution"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to face and neck",
@@ -933,16 +1501,39 @@
       ],
       "ar": "مرطب للوجه للبشره  الجافه لبشره اكثر اشراقا ومضاد للتلوث. مناسب للبشره الحساسه ترطيب يدوم ل 24 ساعه"
     },
-    "texture": "Non-greasy and non-sticky texture.",
-    "skinType": "dry sensitive skin",
-    "benefits": "Triple action: hydration – radiance – anti-pollution",
-    "ingredients": {
-      "main": [
-        "Polyglucoside Complex",
-        "Polysaccharide Matrix",
-        "Shea Butter + Primrose Oil"
+    "texture": {
+      "en": "Non-greasy and non-sticky texture.",
+      "ar": "Non-greasy and non-sticky texture."
+    },
+    "skinType": {
+      "en": "dry sensitive skin",
+      "ar": "dry sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "Triple action: hydration – radiance – anti-pollution"
       ],
-      "spotlight": "Moisturizes, awakens radiance, anti-pollution"
+      "ar": [
+        "فعالية ثلاثية: ترطيب - إشراق - مضاد للتلوث"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Polyglucoside Complex",
+          "Polysaccharide Matrix",
+          "Shea Butter + Primrose Oil"
+        ],
+        "ar": [
+          "Polyglucoside Complex",
+          "Polysaccharide Matrix",
+          "Shea Butter + Primrose Oil"
+        ]
+      },
+      "spotlight": {
+        "en": "Moisturizes, awakens radiance, anti-pollution",
+        "ar": "يرطب, awakens radiance, anti-pollution"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to face and neck",
@@ -968,19 +1559,41 @@
       ],
       "ar": "جل كريمي مرطب للوجه للبشره الحساسه لجميع انواع البشره لبشره اكثر اشراقا ومضاد للتلوث. مناسب للبشره الحساسه"
     },
-    "texture": "Non-greasy and non-sticky texture.",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "Non comedogenic",
-      "Triple action: hydration – radiance – anti-pollution"
-    ],
-    "ingredients": {
-      "main": [
-        "Polyglucoside Complex",
-        "Polysaccharide Matrix",
-        "Silica"
+    "texture": {
+      "en": "Non-greasy and non-sticky texture.",
+      "ar": "Non-greasy and non-sticky texture."
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Non comedogenic",
+        "Triple action: hydration – radiance – anti-pollution"
       ],
-      "spotlight": "Moisturizes, awakens radiance, anti-pollution"
+      "ar": [
+        "لا يسبب انسداد المسام",
+        "فعالية ثلاثية: ترطيب - إشراق - مضاد للتلوث"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Polyglucoside Complex",
+          "Polysaccharide Matrix",
+          "Silica"
+        ],
+        "ar": [
+          "Polyglucoside Complex",
+          "Polysaccharide Matrix",
+          "Silica"
+        ]
+      },
+      "spotlight": {
+        "en": "Moisturizes, awakens radiance, anti-pollution",
+        "ar": "يرطب, awakens radiance, anti-pollution"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to face and neck",
@@ -1005,19 +1618,41 @@
       ],
       "ar": "سيروم مرطب عميق لبشره اكثر اشراقا ومضاد للتلوث لجميع انواع البشره .ترطيب يدوم ل 24 ساعه"
     },
-    "texture": "Light and refreshing ",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "Non comedogenic",
-      "+115% hydration booster",
-      "Hydration coach for the skin"
-    ],
-    "ingredients": {
-      "main": [
-        "Polyglucoside Complex",
-        "Sophora Japonica Extract"
+    "texture": {
+      "en": "Light and refreshing",
+      "ar": "Light and refreshing"
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Non comedogenic",
+        "+115% hydration booster",
+        "Hydration coach for the skin"
       ],
-      "spotlight": "Moisturizes, awakens radiance, anti-pollution"
+      "ar": [
+        "لا يسبب انسداد المسام",
+        "معزز للترطيب بنسبة 115%",
+        "مدرب الترطيب للبشرة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Polyglucoside Complex",
+          "Sophora Japonica Extract"
+        ],
+        "ar": [
+          "Polyglucoside Complex",
+          "Sophora Japonica Extract"
+        ]
+      },
+      "spotlight": {
+        "en": "Moisturizes, awakens radiance, anti-pollution",
+        "ar": "يرطب, awakens radiance, anti-pollution"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to face and neck",
@@ -1042,19 +1677,41 @@
       ],
       "ar": "كريم علاجي لحب الشباب(الرؤوس السوداء والبيضاء) ويصحح عيوب البشره"
     },
-    "texture": "Light and fluid cream",
-    "skinType": "sensitive Combination to oily skin",
-    "benefits": [
-      "Action on all types of lesions (retentional & inflammatory)",
-      "Non photosensitizing"
-    ],
-    "ingredients": {
-      "main": [
-        "Roucou Extract",
-        "Ingreedient rebalancing microbiome",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Light and fluid cream",
+      "ar": "Light and fluid cream"
+    },
+    "skinType": {
+      "en": "sensitive Combination to oily skin",
+      "ar": "sensitive Combination to oily skin"
+    },
+    "benefits": {
+      "en": [
+        "Action on all types of lesions (retentional & inflammatory)",
+        "Non photosensitizing"
       ],
-      "spotlight": "Rebalances, corrects, mattifies"
+      "ar": [
+        "فعالية على جميع أنواع الآفات (احتباسية والتهابية)",
+        "غير محسس للضوء"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Roucou Extract",
+          "Ingreedient rebalancing microbiome",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Roucou Extract",
+          "Ingreedient rebalancing microbiome",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Rebalances, corrects, mattifies",
+        "ar": "rebalances, corrects, mattifies"
+      }
     },
     "usage": {
       "en": "Apply in the morning and/or evening on the face and neck on clean and dry skin.",
@@ -1080,21 +1737,45 @@
       ],
       "ar": "سيروم مركز علاجي لحب الشباب (الرؤوس السوداء والبيضاء) حيث يعمل على تصحيح عيوب البشره وتنقيتها وتنعيمها والحصول على نتائج واضحه خلال ليلتين كما انه يعمل على الحد من آثار الحبوب"
     },
-    "texture": "Fresh and melting cream",
-    "skinType": "sensitive Combination to oily skin",
-    "benefits": [
-      "Efficacient since 2 nights",
-      "- 28% of imperfections since 2 nights",
-      "Better tolerance than salicylic acid"
-    ],
-    "ingredients": {
-      "main": [
-        "Succinic Acid",
-        "Roucou Extract",
-        "Bisabolol",
-        "Niacinamide"
+    "texture": {
+      "en": "Fresh and melting cream",
+      "ar": "Fresh and melting cream"
+    },
+    "skinType": {
+      "en": "sensitive Combination to oily skin",
+      "ar": "sensitive Combination to oily skin"
+    },
+    "benefits": {
+      "en": [
+        "Efficacient since 2 nights",
+        "- 28% of imperfections since 2 nights",
+        "Better tolerance than salicylic acid"
       ],
-      "spotlight": "Corrects, smoothes, purifies"
+      "ar": [
+        "فعال منذ ليلتين",
+        "تقليل العيوب بنسبة 28% منذ ليلتين",
+        "تحمل أفضل من حمض الساليسيليك"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Succinic Acid",
+          "Roucou Extract",
+          "Bisabolol",
+          "Niacinamide"
+        ],
+        "ar": [
+          "Succinic Acid",
+          "Roucou Extract",
+          "Bisabolol",
+          "Niacinamide"
+        ]
+      },
+      "spotlight": {
+        "en": "Corrects, smoothes, purifies",
+        "ar": "corrects, smoothes, purifies"
+      }
     },
     "usage": {
       "en": "On clean, dry skin, apply the serum alone in the evening to the face, neck and, if necessary, to the décolleté.",
@@ -1120,21 +1801,45 @@
       ],
       "ar": "سيروم مركز لتصحيح التجاعيد واعادة الكثافه للبشره وتوحيد لونها والعمل على ترطيبها لجميع انواع البشره .للحصول على بشره مشرقه"
     },
-    "texture": "Fresh and light texture, melts into the ski",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "4 in 1: wrinkles, slackening, radiance, dark spots",
-      "Results in 28 days",
-      "90% reduced wrinkles"
-    ],
-    "ingredients": {
-      "main": [
-        "Hyaluronic acid",
-        "Vitamin C",
-        "Vitamin E",
-        "Dipeptide"
+    "texture": {
+      "en": "Fresh and light texture, melts into the ski",
+      "ar": "Fresh and light texture, melts into the ski"
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "4 in 1: wrinkles, slackening, radiance, dark spots",
+        "Results in 28 days",
+        "90% reduced wrinkles"
       ],
-      "spotlight": "Concentrate of anti-aging active ingredients on wrinkles, firmness, radiance"
+      "ar": [
+        "4 في 1: التجاعيد، الترهل، الإشراق، البقع الداكنة",
+        "نتائج في 28 يوم",
+        "تقليل التجاعيد بنسبة 90%"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Hyaluronic acid",
+          "Vitamin C",
+          "Vitamin E",
+          "Dipeptide"
+        ],
+        "ar": [
+          "Hyaluronic acid",
+          "Vitamin C",
+          "Vitamin E",
+          "Dipeptide"
+        ]
+      },
+      "spotlight": {
+        "en": "Concentrate of anti-aging active ingredients on wrinkles, firmness, radiance",
+        "ar": "concentrate of anti-aging active ingredients on wrinkles, firmness, radiance"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to the face, neck and décolleté. Then apply the cream or fluid morning and evening",
@@ -1162,21 +1867,45 @@
       ],
       "ar": "سائل لتصحيح التجاعيد واعادة الكثافه للبشره وتوحيد لونها والعمل على ترطيبها للبشره العاديه والمختلطه .للحصول على بشره مشرقه"
     },
-    "texture": "Light texture",
-    "skinType": "normal to combination sensitive skin",
-    "benefits": [
-      "4 in 1: wrinkles, slackening, radiance, dark spots",
-      "Non comedogenic (Fluid)",
-      "Refines skin texture and tightens the pores for combination skins"
-    ],
-    "ingredients": {
-      "main": [
-        "Hyaluronic acid",
-        "Vitamin C",
-        "Vitamin E",
-        "Dipeptide Polysaccharide matrix"
+    "texture": {
+      "en": "Light texture",
+      "ar": "ملمس خفيف"
+    },
+    "skinType": {
+      "en": "normal to combination sensitive skin",
+      "ar": "normal to combination sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "4 in 1: wrinkles, slackening, radiance, dark spots",
+        "Non comedogenic (Fluid)",
+        "Refines skin texture and tightens the pores for combination skins"
       ],
-      "spotlight": "anti-aging active ingredients on wrinkles, firmness, radiance"
+      "ar": [
+        "4 في 1: التجاعيد، الترهل، الإشراق، البقع الداكنة",
+        "لا يسبب انسداد المسام (سائل)",
+        "يحسن ملمس البشرة ويشد المسام للبشرة المختلطة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Hyaluronic acid",
+          "Vitamin C",
+          "Vitamin E",
+          "Dipeptide Polysaccharide matrix"
+        ],
+        "ar": [
+          "Hyaluronic acid",
+          "Vitamin C",
+          "Vitamin E",
+          "Dipeptide Polysaccharide matrix"
+        ]
+      },
+      "spotlight": {
+        "en": "anti-aging active ingredients on wrinkles, firmness, radiance",
+        "ar": "anti-aging active ingredients on wrinkles, firmness, radiance"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to the face, neck and décolleté. For increased effectiveness, first apply the anti-aging global serum.",
@@ -1205,21 +1934,45 @@
       ],
       "ar": "كريم لتصحيح التجاعيد واعادة الكثافه للبشره وتوحيد لونها والعمل على ترطيبها للبشره الجافه .للحصول على بشره مشرقه"
     },
-    "texture": "Creamy, rich and smooth",
-    "skinType": "dry skin sensitive skin",
-    "benefits": [
-      "4 in 1: wrinkles, slackening, radiance, dark spots",
-      "",
-      "Refines skin texture and tightens the pores for combination skins"
-    ],
-    "ingredients": {
-      "main": [
-        "Hyaluronic acid",
-        "Vitamin C",
-        "Vitamin E",
-        "Dipeptide Polysaccharide matrix"
+    "texture": {
+      "en": "Creamy, rich and smooth",
+      "ar": "Creamy, rich and smooth"
+    },
+    "skinType": {
+      "en": "dry skin sensitive skin",
+      "ar": "dry skin sensitive skin"
+    },
+    "benefits": {
+      "en": [
+        "4 in 1: wrinkles, slackening, radiance, dark spots",
+        "",
+        "Refines skin texture and tightens the pores for combination skins"
       ],
-      "spotlight": "anti-aging active ingredients on wrinkles, firmness, radiance"
+      "ar": [
+        "4 في 1: التجاعيد، الترهل، الإشراق، البقع الداكنة",
+        "",
+        "يحسن ملمس البشرة ويشد المسام للبشرة المختلطة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Hyaluronic acid",
+          "Vitamin C",
+          "Vitamin E",
+          "Dipeptide Polysaccharide matrix"
+        ],
+        "ar": [
+          "Hyaluronic acid",
+          "Vitamin C",
+          "Vitamin E",
+          "Dipeptide Polysaccharide matrix"
+        ]
+      },
+      "spotlight": {
+        "en": "anti-aging active ingredients on wrinkles, firmness, radiance",
+        "ar": "anti-aging active ingredients on wrinkles, firmness, radiance"
+      }
     },
     "usage": {
       "en": "Apply morning and/or evening to the face, neck and décolleté. For increased effectiveness, first apply the anti-aging global serum.",
@@ -1247,22 +2000,47 @@
       ],
       "ar": "كريم لتصحيح التجاعيد ومكافحة الشيخوخه والهالات السوداء والانتفاخات حول العينين كما انه يعطي النضاره والاشراق ويوحد لون منطقة ما حول العينين"
     },
-    "texture": "Ultra-comfortable balm ",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "Fragrance free",
-      "4 in 1: wrinkles, slackening, radiance, dark spots",
-      "Anti-dark circle and puffiness",
-      "Suitable for sensitive eyes"
-    ],
-    "ingredients": {
-      "main": [
-        "Hyaluronic acid",
-        "Glucosyl Hesperidin",
-        "Caffeine",
-        "Dipeptide"
+    "texture": {
+      "en": "Ultra-comfortable balm",
+      "ar": "Ultra-comfortable balm"
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Fragrance free",
+        "4 in 1: wrinkles, slackening, radiance, dark spots",
+        "Anti-dark circle and puffiness",
+        "Suitable for sensitive eyes"
       ],
-      "spotlight": "Anti-puffiness, anti-dark circles, global action on wrinkles, firmness, radiance"
+      "ar": [
+        "خالٍ من العطور",
+        "4 في 1: التجاعيد، الترهل، الإشراق، البقع الداكنة",
+        "مضاد للهالات السوداء والانتفاخ",
+        "مناسب للعيون الحساسة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Hyaluronic acid",
+          "Glucosyl Hesperidin",
+          "Caffeine",
+          "Dipeptide"
+        ],
+        "ar": [
+          "Hyaluronic acid",
+          "Glucosyl Hesperidin",
+          "Caffeine",
+          "Dipeptide"
+        ]
+      },
+      "spotlight": {
+        "en": "Anti-puffiness, anti-dark circles, global action on wrinkles, firmness, radiance",
+        "ar": "anti-puffiness, anti-dark circles, global action on wrinkles, firmness, radiance"
+      }
     },
     "usage": {
       "en": "Morning and/or evening, apply to the eye contour.",
@@ -1288,23 +2066,49 @@
       ],
       "ar": "كريم لترميم وتلطيف البشره المتهيجه والمتضرره للوجه والجسم والاغشيه المخاطيه لجميع افراد العائله. يمكن استخدامه للمنطقه الحساسه"
     },
-    "texture": "Non-sticky, fragrance-free melting texture",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "Repairs in 3 days",
-      "For the whole family",
-      "Face, body, external intimate mucosa",
-      "Fragrance free"
-    ],
-    "ingredients": {
-      "main": [
-        "Zinc, Manganese and Copper Gluconates",
-        "Hyaluronic Acid (Medium Molecular Weight)",
-        "Bisabolol",
-        "Beeswax",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Non-sticky, fragrance-free melting texture",
+      "ar": "Non-sticky, fragrance-free melting texture"
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Repairs in 3 days",
+        "For the whole family",
+        "Face, body, external intimate mucosa",
+        "Fragrance free"
       ],
-      "spotlight": "Purifies, repairs"
+      "ar": [
+        "إصلاح في 3 أيام",
+        "لجميع أفراد العائلة",
+        "للوجه، الجسم والمناطق الحميمة الخارجية",
+        "خالٍ من العطور"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Zinc, Manganese and Copper Gluconates",
+          "Hyaluronic Acid (Medium Molecular Weight)",
+          "Bisabolol",
+          "Beeswax",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Zinc, Manganese and Copper Gluconates",
+          "Hyaluronic Acid (Medium Molecular Weight)",
+          "Bisabolol",
+          "Beeswax",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Purifies, repairs",
+        "ar": "purifies, يرمم"
+      }
     },
     "usage": {
       "en": "Apply 1 to 2 times a day to cleansed skin.",
@@ -1329,15 +2133,37 @@
       ],
       "ar": "كريم عالي الترطيب لحالات الجفاف الشديده جدا للجسم بما فيها الصدفيه ولحالات الشعر تحت الجلد وجلد الأوزه . ويستخدم لتنعيم بشرة الجسم"
     },
-    "texture": "Smooth cream",
-    "skinType": "all skin types",
-    "benefits": "Smoothes, soothes, nourishes",
-    "ingredients": {
-      "main": [
-        "Urea 10%",
-        "Beeswax"
+    "texture": {
+      "en": "Smooth cream",
+      "ar": "Smooth cream"
+    },
+    "skinType": {
+      "en": "all skin types",
+      "ar": "all skin types"
+    },
+    "benefits": {
+      "en": [
+        "Smoothes, soothes, nourishes"
       ],
-      "spotlight": "Purifies, repairs"
+      "ar": [
+        "ينعم، يهدئ، يغذي"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Urea 10%",
+          "Beeswax"
+        ],
+        "ar": [
+          "Urea 10%",
+          "Beeswax"
+        ]
+      },
+      "spotlight": {
+        "en": "Purifies, repairs",
+        "ar": "purifies, يرمم"
+      }
     },
     "usage": {
       "en": "Apply with emphasis on rough areas of the body (arms, elbows, legs, heels) with a tendency to keratosis.",
@@ -1362,22 +2188,47 @@
       ],
       "ar": "منتج مخصوص لحالات الاكزيما للوجه والجسم حيث يخفف من الحكه وتهيج البشره لجميع افراد العائله. يغذي ويحمي ويرطب البشره."
     },
-    "texture": "Creamy and melting texture.",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "For the whole family",
-      "Face, body",
-      "-90% of itching after 28 days of application"
-    ],
-    "ingredients": {
-      "main": [
-        "Linseed Oil",
-        "Shea Butter",
-        "Beeswax",
-        "Allantoin",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Creamy and melting texture.",
+      "ar": "Creamy and melting texture."
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "For the whole family",
+        "Face, body",
+        "-90% of itching after 28 days of application"
       ],
-      "spotlight": "Replenishing, soothes, anti-itching, anti-irritation"
+      "ar": [
+        "لجميع أفراد العائلة",
+        "للوجه والجسم",
+        "تقليل الحكة بنسبة 90% بعد 28 يوم من الاستخدام"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Linseed Oil",
+          "Shea Butter",
+          "Beeswax",
+          "Allantoin",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Linseed Oil",
+          "Shea Butter",
+          "Beeswax",
+          "Allantoin",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Replenishing, soothes, anti-itching, anti-irritation",
+        "ar": "replenishing, يهدئ البشرة, anti-itching, anti-irritation"
+      }
     },
     "usage": {
       "en": "1 to 2 times a day on the face and body, apply with light massages.",
@@ -1403,21 +2254,45 @@
       ],
       "ar": "جل غسول طبي خال من الصابون للوجه والجسم للبشره التي تعاني من الاكزيما لجميع افراد العائله. يترك البشره رطبه. لا يسبب جفافها . لا يدمع العيون "
     },
-    "texture": "Creamy and melting texture.",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "For the whole family",
-      "Face, body and babies’ scalp",
-      "84% reduction of feeling of itching"
-    ],
-    "ingredients": {
-      "main": [
-        "Linseed Oil",
-        "Soft Cleansing Base",
-        "Biolipide",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Creamy and melting texture.",
+      "ar": "Creamy and melting texture."
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "For the whole family",
+        "Face, body and babies’ scalp",
+        "84% reduction of feeling of itching"
       ],
-      "spotlight": "Cleans, soothes, protects"
+      "ar": [
+        "لجميع أفراد العائلة",
+        "Face, body and babies’ scalp",
+        "تقليل الشعور بالحكة بنسبة 84%"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Linseed Oil",
+          "Soft Cleansing Base",
+          "Biolipide",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Linseed Oil",
+          "Soft Cleansing Base",
+          "Biolipide",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Cleans, soothes, protects",
+        "ar": "cleans, يهدئ البشرة, protects"
+      }
     },
     "usage": {
       "en": "Morning and/or evening, apply to damp skin on the face and body, lather then rinse.",
@@ -1442,20 +2317,43 @@
       ],
       "ar": "جل غسول للوجه والجسم وفروة الرأس التي تعاني من الالتهابات الجلديه الفطريه "
     },
-    "texture": "Foaming gel",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "Face, body, scalp, intimate external mucosa",
-      "Children and adults"
-    ],
-    "ingredients": {
-      "main": [
-        "Piroctone Olamine",
-        "Allantoin",
-        "Biolipide",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Foaming gel",
+      "ar": "Foaming gel"
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Face, body, scalp, intimate external mucosa",
+        "Children and adults"
       ],
-      "spotlight": "Cleans, purifies, soothes"
+      "ar": [
+        "للوجه، الجسم، فروة الرأس والمناطق الحميمة الخارجية",
+        "للأطفال والبالغين"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Piroctone Olamine",
+          "Allantoin",
+          "Biolipide",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Piroctone Olamine",
+          "Allantoin",
+          "Biolipide",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Cleans, purifies, soothes",
+        "ar": "cleans, purifies, يهدئ البشرة"
+      }
     },
     "usage": {
       "en": "Apply once a day to damp skin and hair. Suitable for the external intimate area of ​​adults. Rinse thoroughly.",
@@ -1481,21 +2379,45 @@
       ],
       "ar": "شامبو حليبي لطيف لتغذية وحماية وترطيب جميع انواع الشعر للكبار ولأطفال. مناسب لفروة الرأس الحساسه. لا يدمع العيون"
     },
-    "texture": "Light foam easy to rinse.",
-    "skinType": "all sensitive scalp types",
-    "benefits": [
-      "Pleasant foam, easy to rinse",
-      "Does not sting the eyes",
-      "Frequent use",
-      "Children and adults"
-    ],
-    "ingredients": {
-      "main": [
-        "Soft surfactant",
-        "Diglycerol",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Light foam easy to rinse.",
+      "ar": "Light foam easy to rinse."
+    },
+    "skinType": {
+      "en": "all sensitive scalp types",
+      "ar": "all sensitive scalp types"
+    },
+    "benefits": {
+      "en": [
+        "Pleasant foam, easy to rinse",
+        "Does not sting the eyes",
+        "Frequent use",
+        "Children and adults"
       ],
-      "spotlight": "Cleans, protects, strengthens"
+      "ar": [
+        "رغوة لطيفة، سهلة الشطف",
+        "لا يلسع العيون",
+        "للاستخدام المتكرر",
+        "للأطفال والبالغين"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Soft surfactant",
+          "Diglycerol",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Soft surfactant",
+          "Diglycerol",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Cleans, protects, strengthens",
+        "ar": "cleans, protects, strengthens"
+      }
     },
     "usage": {
       "en": "Frequent use, apply to wet hair, massage then rinse. ",
@@ -1521,21 +2443,45 @@
       ],
       "ar": "شامبو لطيف للشعر المجعد والملتف والملتوي لتغذيته ومنع تقصفه وتقويته ولفروة الرأس الحساسه للاستخدام اليومي . للكبار والأطفال فوق 3 سنوات"
     },
-    "texture": "Pleasant fluid texture with delicate foam",
-    "skinType": "all sensitive scalp types, al hair types",
-    "benefits": [
-      "Does not weigh hair down",
-      "Children from 3 y.o., adults",
-      "Sulfate and silicone free",
-      "Delicious and addictive fragrance"
-    ],
-    "ingredients": {
-      "main": [
-        "Shea Butter & Amla Extract",
-        "Panthenol",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Pleasant fluid texture with delicate foam",
+      "ar": "Pleasant fluid texture with delicate foam"
+    },
+    "skinType": {
+      "en": "all sensitive scalp types, al hair types",
+      "ar": "all sensitive scalp types، al hair types"
+    },
+    "benefits": {
+      "en": [
+        "Does not weigh hair down",
+        "Children from 3 y.o., adults",
+        "Sulfate and silicone free",
+        "Delicious and addictive fragrance"
       ],
-      "spotlight": "Cleans, limits brokenness, soothes"
+      "ar": [
+        "لا يثقل الشعر",
+        "للأطفال من 3 سنوات والبالغين",
+        "خالي من الكبريتات والسيليكون",
+        "عطر لذيذ وممتع"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Shea Butter & Amla Extract",
+          "Panthenol",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Shea Butter & Amla Extract",
+          "Panthenol",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Cleans, limits brokenness, soothes",
+        "ar": "cleans, limits brokenness, يهدئ البشرة"
+      }
     },
     "usage": {
       "en": "Lather then rinse. Repeat the operation if necessary. Up to 3 times a week.",
@@ -1559,20 +2505,43 @@
       ],
       "ar": "كريم خاص لتغذية الشعر المجعد واعادة ترتيبه والحد من تقصفه وحمايته من الرطوبه والتجعد زيترك على الشعر ولا يغسل. للكبار والأطفال فوق 3 سنوات"
     },
-    "texture": "Pleasant and creamy cream texture",
-    "skinType": "all sensitive scalp types, al hair types",
-    "benefits": [
-      "Children from 3 y.o., adults",
-      "96% prettier hair curls",
-      "100% perfectly nourished hair",
-      "Application on dry or wet hair"
-    ],
-    "ingredients": {
-      "main": [
-        "Shea Butter & Amla Extract",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Pleasant and creamy cream texture",
+      "ar": "Pleasant and creamy cream texture"
+    },
+    "skinType": {
+      "en": "all sensitive scalp types, al hair types",
+      "ar": "all sensitive scalp types، al hair types"
+    },
+    "benefits": {
+      "en": [
+        "Children from 3 y.o., adults",
+        "96% prettier hair curls",
+        "100% perfectly nourished hair",
+        "Application on dry or wet hair"
       ],
-      "spotlight": "Redefines curls, limits brokenness, protects"
+      "ar": [
+        "للأطفال من 3 سنوات والبالغين",
+        "تحسين تجاعيد الشعر بنسبة 96%",
+        "شعر مغذى بنسبة 100%",
+        "للاستخدام على الشعر الجاف أو الرطب"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Shea Butter & Amla Extract",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Shea Butter & Amla Extract",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Redefines curls, limits brokenness, protects",
+        "ar": "redefines curls, limits brokenness, protects"
+      }
     },
     "usage": {
       "en": "Apply to damp or dry hair. Without rinsing.",
@@ -1597,21 +2566,45 @@
       ],
       "ar": "قناع للشعر المجعد للحصول على شعر سهل التصفيف والتقليل من تقصفه ويعيد ترتيب ضفائر الشعر ويعمل على تغذية الشعر من جذوره لفروة الرأس الحساسه . للكبار والأطفال فوق 3 سنوات"
     },
-    "texture": "Pleasant and creamy balm texture",
-    "skinType": "all sensitive scalp types, al hair types",
-    "benefits": [
-      "100% hydration & nutrition bath",
-      "Children from 3 y.o., adults",
-      "+111% resistance of hair",
-      "Delicious and addictive fragrance"
-    ],
-    "ingredients": {
-      "main": [
-        "Shea Butter & Amla Extract",
-        "Panthenol",
-        "Vegetable Glycerin"
+    "texture": {
+      "en": "Pleasant and creamy balm texture",
+      "ar": "Pleasant and creamy balm texture"
+    },
+    "skinType": {
+      "en": "all sensitive scalp types, al hair types",
+      "ar": "all sensitive scalp types، al hair types"
+    },
+    "benefits": {
+      "en": [
+        "100% hydration & nutrition bath",
+        "Children from 3 y.o., adults",
+        "+111% resistance of hair",
+        "Delicious and addictive fragrance"
       ],
-      "spotlight": "Nourishes, limits breakage, redefines curls"
+      "ar": [
+        "حمام ترطيب وتغذية بنسبة 100%",
+        "للأطفال من 3 سنوات والبالغين",
+        "زيادة مقاومة الشعر بنسبة 111%",
+        "عطر لذيذ وممتع"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Shea Butter & Amla Extract",
+          "Panthenol",
+          "Vegetable Glycerin"
+        ],
+        "ar": [
+          "Shea Butter & Amla Extract",
+          "Panthenol",
+          "Vegetable Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "Nourishes, limits breakage, redefines curls",
+        "ar": "nourishes, limits breakage, redefines curls"
+      }
     },
     "usage": {
       "en": "Leave on for 10 to 15 minutes then rinse. 2 times per week",
@@ -1635,21 +2628,45 @@
       ],
       "ar": "واقي شمس للوجه والجسم بحمايه قصوى ذو ملمس حليبي سريع الامتصاص ولا يترك آثار بيضاء وغير دهني مناسب للكبار والأطفال فوق 3 سنوات ذو رائحه لطيفه وجذابه ويحتوي على مواد مضاده للأكسده لا يسبب تهيج للعينين ولا يسبب حبوب كما أنه مقاوم للماء والتراب"
     },
-    "texture": "Fluid Milk Texture, No White Marks",
-    "skinType": "Sensitive Skin",
-    "benefits": [
-      "Very high sun protection",
-      "Hydrates",
-      "Powerfull Antioxidant",
-      "Delicious and addictive fragrance"
-    ],
-    "ingredients": {
-      "main": [
-        "Echinacea extract",
-        "Organic Sun Filters",
-        "Glycerin"
+    "texture": {
+      "en": "Fluid Milk Texture, No White Marks",
+      "ar": "Fluid Milk Texture, No White Marks"
+    },
+    "skinType": {
+      "en": "Sensitive Skin",
+      "ar": "البشرة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "Very high sun protection",
+        "Hydrates",
+        "Powerfull Antioxidant",
+        "Delicious and addictive fragrance"
       ],
-      "spotlight": "very high sun protection , hydrates ,antioxidant"
+      "ar": [
+        "حماية عالية جداً من الشمس",
+        "يرطب",
+        "مضاد أكسدة قوي",
+        "عطر لذيذ وممتع"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Echinacea extract",
+          "Organic Sun Filters",
+          "Glycerin"
+        ],
+        "ar": [
+          "Echinacea extract",
+          "Organic Sun Filters",
+          "Glycerin"
+        ]
+      },
+      "spotlight": {
+        "en": "very high sun protection , hydrates ,antioxidant",
+        "ar": "very high حماية من الشمس , hydrates ,antioxidant"
+      }
     },
     "usage": {
       "en": "Apply generously to face and body before exposure. Renew frequently",
@@ -1674,19 +2691,41 @@
       ],
       "ar": "مضاد قوي للاكسده ولبشره اكثر اشراقا ومضاد للتصبغات ( اعلى تركيز فيتامين سي 25% ) مناسب للبشره الحساسه يحتوي على نوعين من الفيتامين سي"
     },
-    "texture": "very light & fluid",
-    "skinType": "all sensitive skin types",
-    "benefits": [
-      "Radiant  Complexion",
-      "Anti-Ageing",
-      "A powerful Antioxidant"
-    ],
-    "ingredients": {
-      "main": [
-        "Ascorbyl Methylsilanol Pectinate",
-        "3-O- Ethyl Ascorbic Acid"
+    "texture": {
+      "en": "very light & fluid",
+      "ar": "خفيف جداً وسائل"
+    },
+    "skinType": {
+      "en": "all sensitive skin types",
+      "ar": "all sensitive skin types"
+    },
+    "benefits": {
+      "en": [
+        "Radiant  Complexion",
+        "Anti-Ageing",
+        "A powerful Antioxidant"
       ],
-      "spotlight": "•      ULTRA-HIGH CONCENTRATION: 25% of a stabilised vitamin C complex\r\n•      Certified non-photoallergenic, non-phototoxic and non-photosensitising\r\n•     Can be used for Sensitive Skin"
+      "ar": [
+        "بشرة مشرقة",
+        "مضاد للشيخوخة",
+        "مضاد أكسدة قوي"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Ascorbyl Methylsilanol Pectinate",
+          "3-O- Ethyl Ascorbic Acid"
+        ],
+        "ar": [
+          "Ascorbyl Methylsilanol Pectinate",
+          "3-O- Ethyl Ascorbic Acid"
+        ]
+      },
+      "spotlight": {
+        "en": "•      ULTRA-HIGH CONCENTRATION: 25% of a stabilised vitamin C complex\r\n•      Certified non-photoallergenic, non-phototoxic and non-photosensitising\r\n•     Can be used for Sensitive Skin",
+        "ar": "•      ultra-high concentration: 25% of a stabilised vitamin c complex\r\n•      certified non-photoallergenic, non-phototoxic and non-photosensitising\r\n•     can be used for sensitive skin"
+      }
     },
     "usage": {
       "en": "Take one or two dabs then distribute the Vitamin C Booster over the entire face and targeted areas (pigment spots and wrinkles).",
@@ -1712,21 +2751,45 @@
       ],
       "ar": "كريم ليلي يحتوي على فيتامين سي للحصول على بشره ناعمه ومشرقه ويقلل من التصبغات الموجوده "
     },
-    "texture": "Cream texture.",
-    "skinType": "NORMAL TO OILY SKIN.",
-    "benefits": [
-      "Radiant  Complexion",
-      "Anti-Ageing",
-      "smoothed skin relief"
-    ],
-    "ingredients": {
-      "main": [
-        "Aloe Vera Gel",
-        "ASCORBYL GLUCOSIDE",
-        "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
-        "GLUCONOLACTONE"
+    "texture": {
+      "en": "Cream texture.",
+      "ar": "Cream texture."
+    },
+    "skinType": {
+      "en": "NORMAL TO OILY SKIN.",
+      "ar": "NORMAL TO OILY SKIN."
+    },
+    "benefits": {
+      "en": [
+        "Radiant  Complexion",
+        "Anti-Ageing",
+        "smoothed skin relief"
       ],
-      "spotlight": "•      A “NEW SKIN” effect thanks to a trio of gentle peeling active ingredients: gluconolactone, lactic acid and a complex of lactic acid and arginine. These active ingredients are released throughout the night for continued action\r\n\r\n\r\n"
+      "ar": [
+        "بشرة مشرقة",
+        "مضاد للشيخوخة",
+        "ملمس بشرة ناعم"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Aloe Vera Gel",
+          "ASCORBYL GLUCOSIDE",
+          "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+          "GLUCONOLACTONE"
+        ],
+        "ar": [
+          "Aloe Vera Gel",
+          "ASCORBYL GLUCOSIDE",
+          "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+          "GLUCONOLACTONE"
+        ]
+      },
+      "spotlight": {
+        "en": "•      A “NEW SKIN” effect thanks to a trio of gentle peeling active ingredients: gluconolactone, lactic acid and a complex of lactic acid and arginine. These active ingredients are released throughout the night for continued action\r\n\r\n\r\n",
+        "ar": "•      a “new skin” effect thanks to a trio of gentle peeling active ingredients: gluconolactone, lactic acid and a complex of lactic acid and arginine. these active ingredients are released throughout the night for continued action\r\n\r\n\r\n"
+      }
     },
     "usage": {
       "en": "Apply to the face, avoiding the eye area, lips and sides of the nose.",
@@ -1752,17 +2815,41 @@
       ],
       "ar": "مضاد للتجاعيد ومرطب قوي ويحافظ على قوام البشره وحجمها ( اعلى تركيز من حامض الهايالورينك ) العبوه كامله تعادل 40 ابرة فيلر. يحتوي على 4 انواع من حامض الهايالورينك تغطي جميع طبقات البشره."
     },
-    "texture": "Serum Texture",
-    "skinType": "All Skin Types except Oily",
-    "benefits": "The Booster Serum has established itself as one of the indisputable references in anti-aging care with Hyaluronic Acid.",
-    "ingredients": {
-      "main": [
-        "Aloe Vera Gel",
-        "SODIUM HYALURONATE",
-        "GLYCERIN",
-        "ANHYDROXYLITOL"
+    "texture": {
+      "en": "Serum Texture",
+      "ar": "Serum Texture"
+    },
+    "skinType": {
+      "en": "All Skin Types except Oily",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "The Booster Serum has established itself as one of the indisputable references in anti-aging care with Hyaluronic Acid."
       ],
-      "spotlight": "•      hyaluronic acid is, rightly, an anti-aging star.\r\n\r\nWithin the skin, this 100% natural active ingredient plays two main roles:\r\n1/ MOISTURIZING: it prevents dehydration by forming a gel with water.\r\n2/ ANTI-AGING: it ensures plump skin and stimulates collagen.\r\n"
+      "ar": [
+        "مصل معزز أصبح واحداً من المراجع الأساسية في العناية المضادة للشيخوخة مع حمض الهيالورونيك"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Aloe Vera Gel",
+          "SODIUM HYALURONATE",
+          "GLYCERIN",
+          "ANHYDROXYLITOL"
+        ],
+        "ar": [
+          "Aloe Vera Gel",
+          "SODIUM HYALURONATE",
+          "GLYCERIN",
+          "ANHYDROXYLITOL"
+        ]
+      },
+      "spotlight": {
+        "en": "•      hyaluronic acid is, rightly, an anti-aging star.\r\n\r\nWithin the skin, this 100% natural active ingredient plays two main roles:\r\n1/ MOISTURIZING: it prevents dehydration by forming a gel with water.\r\n2/ ANTI-AGING: it ensures plump skin and stimulates collagen.\r\n",
+        "ar": "•      hyaluronic acid is, rightly, an anti-aging star.\r\n\r\nwithin the skin, this 100% natural active ingredient plays two main roles:\r\n1/ moisturizing: it prevents dehydration by forming a gel with water.\r\n2/ anti-aging: it ensures plump skin and stimulates collagen.\r\n"
+      }
     },
     "usage": {
       "en": "•      Apply a few drops every day to the entire face and neck. The Booster Serum can be used alone or just before your usual cream. You don't need to wait between applying this serum and applying your makeup.\r\n•      Indicative quantity of serum to apply:\r\nCombination skin: 1 to 2 drops.\r\nNormal skin: 2 to 3 drops.\r\nDry skin: 3 drops and more.",
@@ -1783,17 +2870,41 @@
       "en": "slows down skin aging thanks to an exclusive patented active ingredient, Novaxilyne, which activates the youth gene. This epigenetic feat helps reduce the depth of wrinkles by up to 37%* in a few weeks",
       "ar": "كريم عميق ومضاد لجميع انواع التجاعيد للبشره الجافه"
     },
-    "texture": "Cream texture.",
-    "skinType": "Dry Skin  skin",
-    "benefits": "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger",
-    "ingredients": {
-      "main": [
-        "Aloevera Gel",
-        "ADENOSINE",
-        "Novaxyline",
-        "ALARIA ESCULENTA EXTRACT"
+    "texture": {
+      "en": "Cream texture.",
+      "ar": "Cream texture."
+    },
+    "skinType": {
+      "en": "Dry Skin  skin",
+      "ar": "البشرة الجافة"
+    },
+    "benefits": {
+      "en": [
+        "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
       ],
-      "spotlight": "•      In this formula 3 types of collagen (III, IV &amp; VII) are stimulated thanks to a brown algae extract\r\n"
+      "ar": [
+        "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Aloevera Gel",
+          "ADENOSINE",
+          "Novaxyline",
+          "ALARIA ESCULENTA EXTRACT"
+        ],
+        "ar": [
+          "Aloevera Gel",
+          "ADENOSINE",
+          "Novaxyline",
+          "ALARIA ESCULENTA EXTRACT"
+        ]
+      },
+      "spotlight": {
+        "en": "•      In this formula 3 types of collagen (III, IV &amp; VII) are stimulated thanks to a brown algae extract\r\n",
+        "ar": "•      in this formula 3 types of collagen (iii, iv &amp; vii) are stimulated thanks to a brown algae extract\r\n"
+      }
     },
     "usage": {
       "en": "•      Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient.\r\n",
@@ -1814,17 +2925,41 @@
       "en": "slows down skin aging thanks to an exclusive patented active ingredient, Novaxilyne, which activates the youth gene. This epigenetic feat helps reduce the depth of wrinkles by up to 37%* in a few weeks",
       "ar": "كريم عميق ومضاد لجميع انواع التجاعيد للبشره العاديه والمختلطه"
     },
-    "texture": "Fluid texture",
-    "skinType": "Normal to combination Skin",
-    "benefits": "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger",
-    "ingredients": {
-      "main": [
-        "Aloevera Gel",
-        "ADENOSINE",
-        "Novaxyline",
-        "ALARIA ESCULENTA EXTRACT"
+    "texture": {
+      "en": "Fluid texture",
+      "ar": "ملمس سائل"
+    },
+    "skinType": {
+      "en": "Normal to combination Skin",
+      "ar": "Normal to combination Skin"
+    },
+    "benefits": {
+      "en": [
+        "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
       ],
-      "spotlight": "•      In this formula 3 types of collagen (III, IV &amp; VII) are stimulated thanks to a brown algae extract\r\n"
+      "ar": [
+        "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Aloevera Gel",
+          "ADENOSINE",
+          "Novaxyline",
+          "ALARIA ESCULENTA EXTRACT"
+        ],
+        "ar": [
+          "Aloevera Gel",
+          "ADENOSINE",
+          "Novaxyline",
+          "ALARIA ESCULENTA EXTRACT"
+        ]
+      },
+      "spotlight": {
+        "en": "•      In this formula 3 types of collagen (III, IV &amp; VII) are stimulated thanks to a brown algae extract\r\n",
+        "ar": "•      in this formula 3 types of collagen (iii, iv &amp; vii) are stimulated thanks to a brown algae extract\r\n"
+      }
     },
     "usage": {
       "en": "•      Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient.\r\n",
@@ -1845,20 +2980,43 @@
       "en": "A volumizing, anti-wrinkle and nourishing treatment.",
       "ar": "لترطيب وتحجيم وتحديد وتغذية ولمعان الشفاه ( اللون الوردي الطبيعي للشفاه ) وضد التشققات ومضاد للتجاعيد"
     },
-    "texture": "Gel Texture",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "3-in-1 AESTHETIC treatment: +10.6% volume*, a natural gloss effect* for 92% of women and a redefined lip contour* for 88% of them.",
-      "2-in-1 COSMETIC treatment: smoothing treatment with -23.6% microgrooves* and 21.3% more even lip color*.",
-      "2-in-1 DERMATOLOGICAL treatment: +38.2% intense nutrition* for guaranteed anti-chapping action and repaired lips* for 96% of users."
-    ],
-    "ingredients": {
-      "main": [
-        "ALARIA ESCULENTA EXTRACT",
-        "BISABOLOL",
-        "(SHEA) BUTTER UNSAPONIFIABLES (Soothing Shea Butter)"
+    "texture": {
+      "en": "Gel Texture",
+      "ar": "Gel Texture"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "3-in-1 AESTHETIC treatment: +10.6% volume*, a natural gloss effect* for 92% of women and a redefined lip contour* for 88% of them.",
+        "2-in-1 COSMETIC treatment: smoothing treatment with -23.6% microgrooves* and 21.3% more even lip color*.",
+        "2-in-1 DERMATOLOGICAL treatment: +38.2% intense nutrition* for guaranteed anti-chapping action and repaired lips* for 96% of users."
       ],
-      "spotlight": "•      The performance of Lip'Up for volume gain is explained in particular by the use of a plant extract nicknamed in Brazil natural Viagra®!\r\n"
+      "ar": [
+        "علاج جمالي 3 في 1: حجم أكبر بنسبة 10.6%*، تأثير لمعان طبيعي* لـ 92% من النساء وتحديد محيط الشفاه* لـ 88% منهن",
+        "علاج تجميلي 2 في 1: علاج تنعيم مع تقليل التجاعيد الدقيقة بنسبة 23.6%* ولون شفاه أكثر توحيداً بنسبة 21.3%*",
+        "علاج جلدي 2 في 1: تغذية مكثفة بنسبة 38.2%* لفعالية مضمونة ضد التشقق وشفاه مصلحة* لـ 96% من المستخدمين"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "ALARIA ESCULENTA EXTRACT",
+          "BISABOLOL",
+          "(SHEA) BUTTER UNSAPONIFIABLES (Soothing Shea Butter)"
+        ],
+        "ar": [
+          "ALARIA ESCULENTA EXTRACT",
+          "BISABOLOL",
+          "(SHEA) BUTTER UNSAPONIFIABLES (Soothing Shea Butter)"
+        ]
+      },
+      "spotlight": {
+        "en": "•      The performance of Lip'Up for volume gain is explained in particular by the use of a plant extract nicknamed in Brazil natural Viagra®!\r\n",
+        "ar": "•      the performance of lip'up for volume gain is explained in particular by the use of a plant extract nicknamed in brazil natural viagra®!\r\n"
+      }
     },
     "usage": {
       "en": "•     Apply to the lips. If you want to combine Lip'Up with your lipstick, 2 options are possible:\r\n1/ MATTE effect: apply the Lip'Up, leave to act for 15 min then apply your lipstick.\r\n2/ GLOSSY effect: Apply your lipstick followed immediately by Lip'Up.",
@@ -1879,19 +3037,41 @@
       "en": "A 3-in-1 eye contour: anti-wrinkle, anti-puffiness & anti-dark circles,",
       "ar": "مضاد للتجاعيد والهالات السوداء والانتفاخات لمنطقة ما حول العينين"
     },
-    "texture": "Light cream ",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "ANTI-WRINKLES: up to 50% fewer wrinkles around the eye in 21 days*",
-      "ANTI-DARK CIRCLES &amp; ANTI-POCKETS: 95% of users find their dark circles less visible and their bags reduced in 21 days"
-    ],
-    "ingredients": {
-      "main": [
-        "ALARIA ESCULENTA EXTRACT",
-        "Aloe Vera Gel",
-        "ADENOSINE"
+    "texture": {
+      "en": "Light cream",
+      "ar": "Light cream"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "ANTI-WRINKLES: up to 50% fewer wrinkles around the eye in 21 days*",
+        "ANTI-DARK CIRCLES &amp; ANTI-POCKETS: 95% of users find their dark circles less visible and their bags reduced in 21 days"
       ],
-      "spotlight": "•       ANTI-AGING active ingredients such as Novaxyline, a patented active ingredient acting on youth proteins, hyaluronic acid or even an anti-aging amino acid. -wrinkles. Alongside them, TENSIFYING active ingredients acting on BLOOD CIRCULATION to limit dark circles and puffiness: algae extracts, coffee extracts, ferments, etc.\r\n\r\n"
+      "ar": [
+        "مضاد للتجاعيد: تقليل التجاعيد حول العين بنسبة 50% في 21 يوم*",
+        "مضاد للهالات والانتفاخ: 95% من المستخدمين وجدوا هالاتهم أقل وضوحاً وانتفاخهم مقلل في 21 يوم"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "ALARIA ESCULENTA EXTRACT",
+          "Aloe Vera Gel",
+          "ADENOSINE"
+        ],
+        "ar": [
+          "ALARIA ESCULENTA EXTRACT",
+          "Aloe Vera Gel",
+          "ADENOSINE"
+        ]
+      },
+      "spotlight": {
+        "en": "•       ANTI-AGING active ingredients such as Novaxyline, a patented active ingredient acting on youth proteins, hyaluronic acid or even an anti-aging amino acid. -wrinkles. Alongside them, TENSIFYING active ingredients acting on BLOOD CIRCULATION to limit dark circles and puffiness: algae extracts, coffee extracts, ferments, etc.\r\n\r\n",
+        "ar": "•       anti-aging active ingredients such as novaxyline, a patented active ingredient acting on youth proteins, hyaluronic acid or even an anti-aging amino acid. -wrinkles. alongside them, tensifying active ingredients acting on blood circulation to limit dark circles and puffiness: algae extracts, coffee extracts, ferments, etc.\r\n\r\n"
+      }
     },
     "usage": {
       "en": "After cleansing and before using a serum or cream, apply Expert Anti-Aging Eye Contour to the lower eyelid, starting from the inner corner of the eye towards the end of the wrinkles on the paw. goose. A small amount of product is sufficient.",
@@ -1912,20 +3092,43 @@
       "en": "To instantly illuminate and lift your eye contour. A localized treatment that acts on the surface as well as in depth to smooth the lines",
       "ar": "لمنطقة ما حول العينين اقل تعبا واكثراشراقا بشكل فوري"
     },
-    "texture": "Gel Texture",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "INSTANT LIFTING action",
-      "DEEP ANTI-AGING action",
-      "RADIANCE OF THE EYES action"
-    ],
-    "ingredients": {
-      "main": [
-        "high molecular weight hyaluronic acid or baobab pulp",
-        "a vitamin C complex",
-        "Novaxyline"
+    "texture": {
+      "en": "Gel Texture",
+      "ar": "Gel Texture"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "INSTANT LIFTING action",
+        "DEEP ANTI-AGING action",
+        "RADIANCE OF THE EYES action"
       ],
-      "spotlight": "•      INSTANT LIFTING action: thanks to 5 ingredients with immediate effect including high molecular weight hyaluronic acid or baobab pulp\r\n•      DEEP ANTI-AGING action: thanks to 5 anti-aging components including Novaxyline,\r\n•     RADIANCE OF THE EYES action: thanks to the unique combination of hyaluronic acid, which fills skin microdepressions, and a vitamin C complex for a brighter look."
+      "ar": [
+        "فعالية رفع فورية",
+        "فعالية عميقة مضادة للشيخوخة",
+        "فعالية إشراق العيون"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "high molecular weight hyaluronic acid or baobab pulp",
+          "a vitamin C complex",
+          "Novaxyline"
+        ],
+        "ar": [
+          "high molecular weight hyaluronic acid or baobab pulp",
+          "a vitamin C complex",
+          "Novaxyline"
+        ]
+      },
+      "spotlight": {
+        "en": "•      INSTANT LIFTING action: thanks to 5 ingredients with immediate effect including high molecular weight hyaluronic acid or baobab pulp\r\n•      DEEP ANTI-AGING action: thanks to 5 anti-aging components including Novaxyline,\r\n•     RADIANCE OF THE EYES action: thanks to the unique combination of hyaluronic acid, which fills skin microdepressions, and a vitamin C complex for a brighter look.",
+        "ar": "•      instant lifting action: thanks to 5 ingredients with immediate effect including high molecular weight hyaluronic acid or baobab pulp\r\n•      deep anti-aging action: thanks to 5 anti-aging components including novaxyline,\r\n•     radiance of the eyes action: thanks to the unique combination of hyaluronic acid, which fills skin microdepressions, and a vitamin c complex for a brighter look."
+      }
     },
     "usage": {
       "en": "•   Gently apply a small amount of product to the lower eyelid, starting from the inner corner of the eye towards the end of the crow's feet wrinkles.\r\nApply makeup immediately so as not to remove the tensor film.",
@@ -1949,17 +3152,41 @@
       ],
       "ar": "مقشرلطيف وغسول رغوي لبشره ناعمه ونظيفه ومشرقه ( غسول ألأضاءه )"
     },
-    "texture": " creamy foam texture",
-    "skinType": "All Skin Types",
-    "benefits": "Clear, smooth skin in 20 seconds flat! And here’s how the Flash Radiance Cleansing Foam works:",
-    "ingredients": {
-      "main": [
-        "Aloevera Gel",
-        "ASCORBYL GLUCOSIDE",
-        "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
-        "GLUCONOLACTONE"
+    "texture": {
+      "en": "creamy foam texture",
+      "ar": "creamy foam texture"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "Clear, smooth skin in 20 seconds flat! And here’s how the Flash Radiance Cleansing Foam works:"
       ],
-      "spotlight": "•      Peel off dead skin. ENZYMATIC PEEL: dissociate dead skin from its residual attachments with papaya enzymes.\r\n\r\n•      Remove dead skin. ORGANIC PEEL: sweep away dead skin using exfoliating PHAs.\r\n•     No Preservatives"
+      "ar": [
+        "Clear, smooth skin in 20 seconds flat! And here’s how the Flash Radiance Cleansing Foam works:"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Aloevera Gel",
+          "ASCORBYL GLUCOSIDE",
+          "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+          "GLUCONOLACTONE"
+        ],
+        "ar": [
+          "Aloevera Gel",
+          "ASCORBYL GLUCOSIDE",
+          "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+          "GLUCONOLACTONE"
+        ]
+      },
+      "spotlight": {
+        "en": "•      Peel off dead skin. ENZYMATIC PEEL: dissociate dead skin from its residual attachments with papaya enzymes.\r\n\r\n•      Remove dead skin. ORGANIC PEEL: sweep away dead skin using exfoliating PHAs.\r\n•     No Preservatives",
+        "ar": "•      peel off dead skin. enzymatic peel: dissociate dead skin from its residual attachments with papaya enzymes.\r\n\r\n•      remove dead skin. organic peel: sweep away dead skin using exfoliating phas.\r\n•     no preservatives"
+      }
     },
     "usage": {
       "en": "•   Apply the Flash Radiance Cleansing Foam to a damp face, leave on for 20 seconds then massage for 10 seconds, rinse and dry.",
@@ -1980,20 +3207,43 @@
       "en": "2-in-1 product that is both a peeling mask and a scrub that leaves your skin smooth and clear from the first application",
       "ar": "مقشر خاص لتنعيم البشره لبشره اكثر اشراقا ويمكن استخدامه كقناع لمدة 5 دقائق ومن ثم يدلك ويغسل"
     },
-    "texture": "Gel with biodegradable exfoliating particles",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "A MASK for a radiant complexion: in just a few minutes, the Expert Exfoliant illuminates the complexion",
-      "A SCRUB for smoothed skin: this time, it's mechanical peeling that comes into action"
-    ],
-    "ingredients": {
-      "main": [
-        "Aloevera Gel",
-        "ASCORBYL GLUCOSIDE",
-        "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
-        "GLUCONOLACTONE"
+    "texture": {
+      "en": "Gel with biodegradable exfoliating particles",
+      "ar": "Gel with biodegradable exfoliating particles"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "A MASK for a radiant complexion: in just a few minutes, the Expert Exfoliant illuminates the complexion",
+        "A SCRUB for smoothed skin: this time, it's mechanical peeling that comes into action"
       ],
-      "spotlight": "•      biological peeling provided by gluconolactone (PHA) combined with vitamin C. During this first stage, dead cells are separated from the epidermis.\r\n•      exfoliating jojoba microspheres, polishing bamboo silica and exfoliating apricot kernel powder. Dead cells are then removed and the epidermis smoothed\r\n"
+      "ar": [
+        "قناع لبشرة مشرقة: في دقائق قليلة، يضيء المقشر الخبير البشرة",
+        "مقشر لبشرة ناعمة: هذه المرة، التقشير الميكانيكي هو الذي يعمل"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "Aloevera Gel",
+          "ASCORBYL GLUCOSIDE",
+          "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+          "GLUCONOLACTONE"
+        ],
+        "ar": [
+          "Aloevera Gel",
+          "ASCORBYL GLUCOSIDE",
+          "CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+          "GLUCONOLACTONE"
+        ]
+      },
+      "spotlight": {
+        "en": "•      biological peeling provided by gluconolactone (PHA) combined with vitamin C. During this first stage, dead cells are separated from the epidermis.\r\n•      exfoliating jojoba microspheres, polishing bamboo silica and exfoliating apricot kernel powder. Dead cells are then removed and the epidermis smoothed\r\n",
+        "ar": "•      biological peeling provided by gluconolactone (pha) combined with vitamin c. during this first stage, dead cells are separated from the epidermis.\r\n•      exfoliating jojoba microspheres, polishing bamboo silica and exfoliating apricot kernel powder. dead cells are then removed and the epidermis smoothed\r\n"
+      }
     },
     "usage": {
       "en": "•   STEP 1: apply the Exfoliant like a mask to the face, avoiding the eye and lip area. Leave on for 5 minutes. STEP 2: massage very gently with damp hands for 1 minute. Rinse with cold water and pat dry..",
@@ -2017,21 +3267,45 @@
       ],
       "ar": "كريم خاص للبشره الحساسسه والتي تعاني من الاحمرار و الأكزيما ويعمل على التقليل من تهيج البشره وتلطيفها ويحتوي على البروبايوتيك والبريبيوتيك للمحافظه على البكيريا النافعه وبالتالي يرفع من مناعة البشره"
     },
-    "texture": "Cream texture.",
-    "skinType": "Dry to very Dry Skin",
-    "benefits": [
-      "Soothing Effect",
-      "For Irritated Skin & Genetic Dryness",
-      "For Atopic Skin"
-    ],
-    "ingredients": {
-      "main": [
-        "MAGNESIUM PCA MAGNESIUM",
-        "ALPHA-GLUCAN OLIGOSACCHARIDE",
-        "GLYCERIN",
-        "LACTOBACILLUS FERMENT"
+    "texture": {
+      "en": "Cream texture.",
+      "ar": "Cream texture."
+    },
+    "skinType": {
+      "en": "Dry to very Dry Skin",
+      "ar": "البشرة الجافة"
+    },
+    "benefits": {
+      "en": [
+        "Soothing Effect",
+        "For Irritated Skin & Genetic Dryness",
+        "For Atopic Skin"
       ],
-      "spotlight": "•      Magnesium is recognized for its relaxing and anti-stress properties\r\n\r\n"
+      "ar": [
+        "تأثير مهدئ",
+        "للبشرة المتهيجة والجفاف الوراثي",
+        "للبشرة الأتوبية"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "MAGNESIUM PCA MAGNESIUM",
+          "ALPHA-GLUCAN OLIGOSACCHARIDE",
+          "GLYCERIN",
+          "LACTOBACILLUS FERMENT"
+        ],
+        "ar": [
+          "MAGNESIUM PCA MAGNESIUM",
+          "ALPHA-GLUCAN OLIGOSACCHARIDE",
+          "GLYCERIN",
+          "LACTOBACILLUS FERMENT"
+        ]
+      },
+      "spotlight": {
+        "en": "•      Magnesium is recognized for its relaxing and anti-stress properties\r\n\r\n",
+        "ar": "•      magnesium is recognized for its relaxing and anti-stress properties\r\n\r\n"
+      }
     },
     "usage": {
       "en": "•   Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient.\r\n\r\nBefore applying makeup, leave to penetrate for 5 minutes.",
@@ -2052,24 +3326,51 @@
       "en": "The Magnesium Mist concentrates in its droplets the benefits of Magnesium salt from the Dead Sea. It combines a high concentration of natural magnesium and ultra-pure water. A soothing and protective spray for instant hydration",
       "ar": "بخاخ حاص يحتوي على المغنيسيوم لترطيب  وتلطيف البشره المتهيجه وحمايتها من عوامل التلوث ومضاد للاكسده يستخدم لجميع الاعمار للرجال والنساء. يستخدم بعد الحلاقه والتعرض لأشعة الشمس ويمكن استحامه ك  TONER ومثبت للمكياج ويستخدم للبشره المتحسسه وحالات الأكزيما واحمرار الوجه "
     },
-    "texture": "Pure , Sterile Mist",
-    "skinType": "All Sensitive Skin Types",
-    "benefits": [
-      "4-IN-1 COSMETIC TREATMENT:",
-      "- Tonic (after cleansing)",
-      "- Makeup fixative",
-      "- Anti pollution*",
-      "- Hydration booster*",
-      "4-IN-1 DERMATOLOGICAL CARE:",
-      "- In case of redness",
-      "- In case of discomfort"
-    ],
-    "ingredients": {
-      "main": [
-        "MARIS SAL (SEA SALT)",
-        "ultra-pure water"
+    "texture": {
+      "en": "Pure , Sterile Mist",
+      "ar": "Pure , Sterile Mist"
+    },
+    "skinType": {
+      "en": "All Sensitive Skin Types",
+      "ar": "البشرة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "4-IN-1 COSMETIC TREATMENT:",
+        "- Tonic (after cleansing)",
+        "- Makeup fixative",
+        "- Anti pollution*",
+        "- Hydration booster*",
+        "4-IN-1 DERMATOLOGICAL CARE:",
+        "- In case of redness",
+        "- In case of discomfort"
       ],
-      "spotlight": "•      The performance of the Magnesium Mist offers hydration increased by 71%*, oxidation reduced by 40%* and inflammation immediately reduced by 27%*. This mist is a real 360° SOS treatment for sensitive skin.\r\n"
+      "ar": [
+        "علاج تجميلي 4 في 1:",
+        "- منشط (بعد التنظيف)",
+        "- مثبت مكياج",
+        "- Anti pollution*",
+        "- Hydration booster*",
+        "عناية جلدية 4 في 1:",
+        "- في حالة الاحمرار",
+        "- في حالة عدم الراحة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "MARIS SAL (SEA SALT)",
+          "ultra-pure water"
+        ],
+        "ar": [
+          "MARIS SAL (SEA SALT)",
+          "ultra-pure water"
+        ]
+      },
+      "spotlight": {
+        "en": "•      The performance of the Magnesium Mist offers hydration increased by 71%*, oxidation reduced by 40%* and inflammation immediately reduced by 27%*. This mist is a real 360° SOS treatment for sensitive skin.\r\n",
+        "ar": "•      the performance of the magnesium mist offers hydration increased by 71%*, oxidation reduced by 40%* and inflammation immediately reduced by 27%*. this mist is a real 360° sos treatment for sensitive skin.\r\n"
+      }
     },
     "usage": {
       "en": "•   Hold 30 cm from the face, close your eyes and spray 2 or 3 times to cover the entire face.\r\nLeave on for 15 seconds and dry. Also use after removing makeup, cleansing, before treatment or even after makeup in the morning or during the day.",
@@ -2093,21 +3394,45 @@
       ],
       "ar": "غسول علاجي للبشره المتحسسه والمتهيجه والفاقده للرطوبه والدهون والبشره التي تعاني من الاكزيما او الصدفيه ويترك البشره رطبه مع المحافظه على البكتيريا النافعه في البشره"
     },
-    "texture": "a velvety, milky texture",
-    "skinType": "All Sensitive Skin Types",
-    "benefits": [
-      "- NOURISH",
-      "- PROTECT",
-      "- SOOTH"
-    ],
-    "ingredients": {
-      "main": [
-        "ALPHA-GLUCAN OLIGOSACCHARIDE",
-        "LACTOBACILLUS FERMENT",
-        "MAGNESIUM PCA MAGNESIUM",
-        "TOCOPHEROL"
+    "texture": {
+      "en": "a velvety, milky texture",
+      "ar": "a velvety, milky texture"
+    },
+    "skinType": {
+      "en": "All Sensitive Skin Types",
+      "ar": "البشرة الحساسة"
+    },
+    "benefits": {
+      "en": [
+        "- NOURISH",
+        "- PROTECT",
+        "- SOOTH"
       ],
-      "spotlight": "•      omega 6 &amp; 9 to nourish the epidermis.\r\n prebiotics &amp; postbiotics to protect the flora.\r\n magnesium to soothe skin nerves and reduce the symptoms of sensitive skin\r\n"
+      "ar": [
+        "- تغذية",
+        "- حماية",
+        "- تهدئة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "ALPHA-GLUCAN OLIGOSACCHARIDE",
+          "LACTOBACILLUS FERMENT",
+          "MAGNESIUM PCA MAGNESIUM",
+          "TOCOPHEROL"
+        ],
+        "ar": [
+          "ALPHA-GLUCAN OLIGOSACCHARIDE",
+          "LACTOBACILLUS FERMENT",
+          "MAGNESIUM PCA MAGNESIUM",
+          "TOCOPHEROL"
+        ]
+      },
+      "spotlight": {
+        "en": "•      omega 6 &amp; 9 to nourish the epidermis.\r\n prebiotics &amp; postbiotics to protect the flora.\r\n magnesium to soothe skin nerves and reduce the symptoms of sensitive skin\r\n",
+        "ar": "•      omega 6 &amp; 9 to nourish the epidermis.\r\n prebiotics &amp; postbiotics to protect the flora.\r\n magnesium to soothe skin nerves and reduce the symptoms of sensitive skin\r\n"
+      }
     },
     "usage": {
       "en": "• JAPANESE METHOD: Apply with fingertips, massage and rinse with lukewarm or cold water.\r\n\r\nEUROPEAN METHOD: Apply using a cotton pad or, more environmentally friendly, a reusable wipe and remove everything with the cotton pad or wipe.\r\n\r\nThen spray the Magnesium Mist.",
@@ -2131,20 +3456,43 @@
       ],
       "ar": "جل علاجي مخصوص لتنقية البشره الدهنيه والمعرضه لحب الشباب ويقلل من لمعانها"
     },
-    "texture": "Gel Texture",
-    "skinType": "NORMAL TO OILY SKIN",
-    "benefits": [
-      "Anti-imperfection action",
-      "Anti-aging action"
-    ],
-    "ingredients": {
-      "main": [
-        "BAKUCHIOL",
-        "ZINC GLUCONATE",
-        "ZINC LACTATE",
-        "ZINC PCA"
+    "texture": {
+      "en": "Gel Texture",
+      "ar": "Gel Texture"
+    },
+    "skinType": {
+      "en": "NORMAL TO OILY SKIN",
+      "ar": "NORMAL TO OILY SKIN"
+    },
+    "benefits": {
+      "en": [
+        "Anti-imperfection action",
+        "Anti-aging action"
       ],
-      "spotlight": "• Thanks to the three forms of Zinc integrated into this treatment, the activity of a pro-acne factor (released in the event of a too sugary diet in particular) is radically reduced, offering you the chance to find clear skin,\r\n•      Three actions to act at the origin of imperfections: reduction of sebum production*, soothing effect* and inhibition of the bacteria responsible for spots*.\r\n"
+      "ar": [
+        "فعالية مضادة للعيوب",
+        "فعالية مضادة للشيخوخة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "BAKUCHIOL",
+          "ZINC GLUCONATE",
+          "ZINC LACTATE",
+          "ZINC PCA"
+        ],
+        "ar": [
+          "BAKUCHIOL",
+          "ZINC GLUCONATE",
+          "ZINC LACTATE",
+          "ZINC PCA"
+        ]
+      },
+      "spotlight": {
+        "en": "• Thanks to the three forms of Zinc integrated into this treatment, the activity of a pro-acne factor (released in the event of a too sugary diet in particular) is radically reduced, offering you the chance to find clear skin,\r\n•      Three actions to act at the origin of imperfections: reduction of sebum production*, soothing effect* and inhibition of the bacteria responsible for spots*.\r\n",
+        "ar": "• thanks to the three forms of zinc integrated into this treatment, the activity of a pro-acne factor (released in the event of a too sugary diet in particular) is radically reduced, offering you the chance to find clear skin,\r\n•      three actions to act at the origin of imperfections: reduction of sebum production*, soothing effect* and inhibition of the bacteria responsible for spots*.\r\n"
+      }
     },
     "usage": {
       "en": "•   Apply in small touches over the entire face and massage in using upward circular massages. A small amount of product is sufficient. Before applying makeup, leave to penetrate for 5 minutes",
@@ -2168,21 +3516,45 @@
       ],
       "ar": "منتج مخصوص لمعالجة البثور ويعمل عل تجفيفها وتقليلها ويمنع رجوعها يوضع على الحبوب 3 مرات يوميا لمدة 5 ايام ويمكن وضعه على موضع الألم والأحمرار قبل ظهور الحبه كوقايه."
     },
-    "texture": "Gel Texture",
-    "skinType": "NORMAL TO OILY SKIN",
-    "benefits": [
-      "PREVENTION of  inflammation",
-      "CORRECTION of pimples",
-      "Anti  hyperpigmented scars"
-    ],
-    "ingredients": {
-      "main": [
-        "ALCOHOL",
-        "GLUCONOLACTONE",
-        "LACTIC ACID",
-        "3 types of zinc pca ,gluconate ,lactate"
+    "texture": {
+      "en": "Gel Texture",
+      "ar": "Gel Texture"
+    },
+    "skinType": {
+      "en": "NORMAL TO OILY SKIN",
+      "ar": "NORMAL TO OILY SKIN"
+    },
+    "benefits": {
+      "en": [
+        "PREVENTION of  inflammation",
+        "CORRECTION of pimples",
+        "Anti  hyperpigmented scars"
       ],
-      "spotlight": "•      Zinc is the essential trace element for all oily skin with or without imperfections:\r\n\r\nANTI-BACTERIAL: it helps eliminate the bacteria causing pimples, C.acnes.\r\n\r\nANTI-INFLAMMATORY: it reduces the severity of imperfections.\r\n\r\nANTIOXIDANT: it protects sebum lipids from oxidation, a factor that aggravates imperfections.\r\n"
+      "ar": [
+        "الوقاية من الالتهاب",
+        "تصحيح البثور",
+        "مضاد لندبات فرط التصبغ"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "ALCOHOL",
+          "GLUCONOLACTONE",
+          "LACTIC ACID",
+          "3 types of zinc pca ,gluconate ,lactate"
+        ],
+        "ar": [
+          "ALCOHOL",
+          "GLUCONOLACTONE",
+          "LACTIC ACID",
+          "3 types of zinc pca ,gluconate ,lactate"
+        ]
+      },
+      "spotlight": {
+        "en": "•      Zinc is the essential trace element for all oily skin with or without imperfections:\r\n\r\nANTI-BACTERIAL: it helps eliminate the bacteria causing pimples, C.acnes.\r\n\r\nANTI-INFLAMMATORY: it reduces the severity of imperfections.\r\n\r\nANTIOXIDANT: it protects sebum lipids from oxidation, a factor that aggravates imperfections.\r\n",
+        "ar": "•      zinc is the essential trace element for all oily skin with or without imperfections:\r\n\r\nanti-bacterial: it helps eliminate the bacteria causing pimples, c.acnes.\r\n\r\nanti-inflammatory: it reduces the severity of imperfections.\r\n\r\nantioxidant: it protects sebum lipids from oxidation, a factor that aggravates imperfections.\r\n"
+      }
     },
     "usage": {
       "en": "•  FOR PREVENTION: at the first sensation of pain or the beginning of redness (prior to a pimple). FIXED: if the button is already visible. Stop Bouton Express is always applied to bare skin. Leave at least 10 minutes before applying your cream or makeup.",
@@ -2206,23 +3578,49 @@
       ],
       "ar": "غسول جل رغوي لتنقية البشره الدهنيه والبشره المعرضه لحب الشباب"
     },
-    "texture": "Foaming gel",
-    "skinType": "NORMAL TO OILY SKIN",
-    "benefits": [
-      "AN ANTI-POLLUTION CLEANER",
-      "A 3-IN-1 ANTI-IMPERFECTION TREATMENT",
-      "Purifying action.",
-      "Mattifying action",
-      "Anti-blemish action"
-    ],
-    "ingredients": {
-      "main": [
-        "COCO-GLUCOSIDE CLEANING AGENT",
-        "COPPER PCA",
-        "OLEANOLIC ACID",
-        "3 types of zinc pca ,gluconate ,lactate"
+    "texture": {
+      "en": "Foaming gel",
+      "ar": "Foaming gel"
+    },
+    "skinType": {
+      "en": "NORMAL TO OILY SKIN",
+      "ar": "NORMAL TO OILY SKIN"
+    },
+    "benefits": {
+      "en": [
+        "AN ANTI-POLLUTION CLEANER",
+        "A 3-IN-1 ANTI-IMPERFECTION TREATMENT",
+        "Purifying action.",
+        "Mattifying action",
+        "Anti-blemish action"
       ],
-      "spotlight": "•      Clinically proven effectiveness while excluding the aggressive and controversial ingredients found in the majority of anti-acne cleansers: 0% alcohol, 0% SLS/SLES and 0% glycolic acid/salicylic acid!\r\n\r\n"
+      "ar": [
+        "منظف مضاد للتلوث",
+        "علاج 3 في 1 مضاد للعيوب",
+        "فعالية تنقية",
+        "فعالية غير لامعة",
+        "فعالية مضادة للعيوب"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "COCO-GLUCOSIDE CLEANING AGENT",
+          "COPPER PCA",
+          "OLEANOLIC ACID",
+          "3 types of zinc pca ,gluconate ,lactate"
+        ],
+        "ar": [
+          "COCO-GLUCOSIDE CLEANING AGENT",
+          "COPPER PCA",
+          "OLEANOLIC ACID",
+          "3 types of zinc pca ,gluconate ,lactate"
+        ]
+      },
+      "spotlight": {
+        "en": "•      Clinically proven effectiveness while excluding the aggressive and controversial ingredients found in the majority of anti-acne cleansers: 0% alcohol, 0% SLS/SLES and 0% glycolic acid/salicylic acid!\r\n\r\n",
+        "ar": "•      clinically proven effectiveness while excluding the aggressive and controversial ingredients found in the majority of anti-acne cleansers: 0% alcohol, 0% sls/sles and 0% glycolic acid/salicylic acid!\r\n\r\n"
+      }
     },
     "usage": {
       "en": "•   Apply to damp face, massage and rinse",
@@ -2246,20 +3644,43 @@
       ],
       "ar": "سيروم مركز من خلاصة الشاي الاخضر كمضاد قوي لجميع انواع التصبغات والبقع الداكنه ومضاد فوي للأكسده ومضاد للتجاعيد ومضاد قوي للبشره الباهته للحصول على بشره مشرقه وذات نضاره "
     },
-    "texture": "very light & fluid",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "A serum that reduces spots in less than 2 months, whereas they take several years to form!",
-      "It also contains an active ingredient that stimulates the protein responsible for the absence of spots on the palms of the hands. Using what the skin knows how to do by itself to reduce spots, nothing more natural!"
-    ],
-    "ingredients": {
-      "main": [
-        "EPIGALLOCATECHIN GALLATYL GLUCOSIDE",
-        "BALANITES ROXBURGHII SEED OIL",
-        "DICTYOPTERIS POLYPODIOIDES EXTRACT",
-        "BISABOLOL"
+    "texture": {
+      "en": "very light & fluid",
+      "ar": "خفيف جداً وسائل"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "A serum that reduces spots in less than 2 months, whereas they take several years to form!",
+        "It also contains an active ingredient that stimulates the protein responsible for the absence of spots on the palms of the hands. Using what the skin knows how to do by itself to reduce spots, nothing more natural!"
       ],
-      "spotlight": "•     Thanks to polyphenols. These small molecules act in the shadows to limit inflammation and oxidation within your skin\r\n"
+      "ar": [
+        "مصل يقلل البقع في أقل من شهرين، بينما تستغرق سنوات لتتشكل!",
+        "يحتوي أيضاً على مكون نشط يحفز البروتين المسؤول عن غياب البقع على راحة اليدين. استخدام ما تعرفه البشرة بنفسها لتقليل البقع، لا شيء أكثر طبيعية!"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "EPIGALLOCATECHIN GALLATYL GLUCOSIDE",
+          "BALANITES ROXBURGHII SEED OIL",
+          "DICTYOPTERIS POLYPODIOIDES EXTRACT",
+          "BISABOLOL"
+        ],
+        "ar": [
+          "EPIGALLOCATECHIN GALLATYL GLUCOSIDE",
+          "BALANITES ROXBURGHII SEED OIL",
+          "DICTYOPTERIS POLYPODIOIDES EXTRACT",
+          "BISABOLOL"
+        ]
+      },
+      "spotlight": {
+        "en": "•     Thanks to polyphenols. These small molecules act in the shadows to limit inflammation and oxidation within your skin\r\n",
+        "ar": "•     thanks to polyphenols. these small molecules act in the shadows to limit inflammation and oxidation within your skin\r\n"
+      }
     },
     "usage": {
       "en": "•   Apply this serum to the face and neck ALONE or BEFORE your cream.",
@@ -2283,17 +3704,41 @@
       ],
       "ar": "فرشاه خاصه من خلاصة الشاي الأخضر لتصحيح وعلاج ومنع التصبغات والبقع الداكنه "
     },
-    "texture": "Fluid texture",
-    "skinType": "All Skin Types",
-    "benefits": "It corrects stains & reduces pigment",
-    "ingredients": {
-      "main": [
-        "EPIGALLOCATECHIN GALLATYL GLUCOSIDE",
-        "BALANITES ROXBURGHII SEED OIL",
-        "COFFEA ARABICA (COFFEE) SEED EXTRACT",
-        "BISABOLOL"
+    "texture": {
+      "en": "Fluid texture",
+      "ar": "ملمس سائل"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "It corrects stains & reduces pigment"
       ],
-      "spotlight": "•       corrects stains:\r\n\r\n- by eliminating hyperpigmented keratinocytes through stimulation of cell renewal. Keratinocytes filled with melanin give way to new, less pigmented ones.\r\n\r\n- by limiting melanogenesis through a triple action: direct limitation of the creative process, reduction of factors stimulating melanogenesis and reduction of the transfer of melanin to keratinocytes. As a result, the production of brown pigment is reduced by 80% thanks to the selected active ingredients.\r\n"
+      "ar": [
+        "يصحح البقع ويقلل الصبغة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "EPIGALLOCATECHIN GALLATYL GLUCOSIDE",
+          "BALANITES ROXBURGHII SEED OIL",
+          "COFFEA ARABICA (COFFEE) SEED EXTRACT",
+          "BISABOLOL"
+        ],
+        "ar": [
+          "EPIGALLOCATECHIN GALLATYL GLUCOSIDE",
+          "BALANITES ROXBURGHII SEED OIL",
+          "COFFEA ARABICA (COFFEE) SEED EXTRACT",
+          "BISABOLOL"
+        ]
+      },
+      "spotlight": {
+        "en": "•       corrects stains:\r\n\r\n- by eliminating hyperpigmented keratinocytes through stimulation of cell renewal. Keratinocytes filled with melanin give way to new, less pigmented ones.\r\n\r\n- by limiting melanogenesis through a triple action: direct limitation of the creative process, reduction of factors stimulating melanogenesis and reduction of the transfer of melanin to keratinocytes. As a result, the production of brown pigment is reduced by 80% thanks to the selected active ingredients.\r\n",
+        "ar": "•       corrects stains:\r\n\r\n- by eliminating hyperpigmented keratinocytes through stimulation of cell renewal. keratinocytes filled with melanin give way to new, less pigmented ones.\r\n\r\n- by limiting melanogenesis through a triple action: direct limitation of the creative process, reduction of factors stimulating melanogenesis and reduction of the transfer of melanin to keratinocytes. as a result, the production of brown pigment is reduced by 80% thanks to the selected active ingredients.\r\n"
+      }
     },
     "usage": {
       "en": "• Apply to spots 1 to 2 times a day on bare skin. Wait about 10 minutes before applying cream or makeup afterwards.",
@@ -2317,21 +3762,45 @@
       ],
       "ar": "كريم خاص للحصول على بشره براقه و لون برونزي طبيعي ومكياج فاتح اللون لأخفاء عيوب البشره "
     },
-    "texture": "Cream texture.",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "IMMEDIATE “GOOD GLOW” EFFECT",
-      "LASTING TANNED COMPLEXION",
-      "MOISTURIZING  ANTI-AGING EFFEC"
-    ],
-    "ingredients": {
-      "main": [
-        "ANHYDROXYLITOL",
-        "BIOSACCHARIDE GUM-1 & 2",
-        "CAMELLIA SINENSIS LEAF EXTRACT",
-        "COFFEA ARABICA (COFFEE) SEED EXTRACT"
+    "texture": {
+      "en": "Cream texture.",
+      "ar": "Cream texture."
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "IMMEDIATE “GOOD GLOW” EFFECT",
+        "LASTING TANNED COMPLEXION",
+        "MOISTURIZING  ANTI-AGING EFFEC"
       ],
-      "spotlight": "•      At Novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\r\n"
+      "ar": [
+        "IMMEDIATE “GOOD GLOW” EFFECT",
+        "بشرة برونزية دائمة",
+        "تأثير مرطب مضاد للشيخوخة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "ANHYDROXYLITOL",
+          "BIOSACCHARIDE GUM-1 & 2",
+          "CAMELLIA SINENSIS LEAF EXTRACT",
+          "COFFEA ARABICA (COFFEE) SEED EXTRACT"
+        ],
+        "ar": [
+          "ANHYDROXYLITOL",
+          "BIOSACCHARIDE GUM-1 & 2",
+          "CAMELLIA SINENSIS LEAF EXTRACT",
+          "COFFEA ARABICA (COFFEE) SEED EXTRACT"
+        ]
+      },
+      "spotlight": {
+        "en": "•      At Novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\r\n",
+        "ar": "•      at novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\r\n"
+      }
     },
     "usage": {
       "en": "•   Apply in small touches in the morning to the entire face, starting from the midline and moving up towards the temples. Smooth the forehead, from the frown line outwards.",
@@ -2355,21 +3824,45 @@
       ],
       "ar": "كريم خاص للحصول على بشره براقه و لون برونزي طبيعي ومكياج متوسط اللون لأخفاء عيوب البشره "
     },
-    "texture": "Cream texture.",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "IMMEDIATE “GOOD GLOW” EFFECT",
-      "LASTING TANNED COMPLEXION",
-      "MOISTURIZING  ANTI-AGING EFFEC"
-    ],
-    "ingredients": {
-      "main": [
-        "ANHYDROXYLITOL",
-        "BIOSACCHARIDE GUM-1 & 2",
-        "CAMELLIA SINENSIS LEAF EXTRACT",
-        "COFFEA ARABICA (COFFEE) SEED EXTRACT"
+    "texture": {
+      "en": "Cream texture.",
+      "ar": "Cream texture."
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "IMMEDIATE “GOOD GLOW” EFFECT",
+        "LASTING TANNED COMPLEXION",
+        "MOISTURIZING  ANTI-AGING EFFEC"
       ],
-      "spotlight": "•      At Novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\r\n"
+      "ar": [
+        "IMMEDIATE “GOOD GLOW” EFFECT",
+        "بشرة برونزية دائمة",
+        "تأثير مرطب مضاد للشيخوخة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "ANHYDROXYLITOL",
+          "BIOSACCHARIDE GUM-1 & 2",
+          "CAMELLIA SINENSIS LEAF EXTRACT",
+          "COFFEA ARABICA (COFFEE) SEED EXTRACT"
+        ],
+        "ar": [
+          "ANHYDROXYLITOL",
+          "BIOSACCHARIDE GUM-1 & 2",
+          "CAMELLIA SINENSIS LEAF EXTRACT",
+          "COFFEA ARABICA (COFFEE) SEED EXTRACT"
+        ]
+      },
+      "spotlight": {
+        "en": "•      At Novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\r\n",
+        "ar": "•      at novexpert, to benefit from the benefits of melanin, without going overboard, we have developed a hybrid treatment, between makeup and cream in order to enjoy a tanned complexion and a prolonged tan thanks to a 100% natural product. natural origin.\r\n"
+      }
     },
     "usage": {
       "en": "•   Apply in small touches in the morning to the entire face, starting from the midline and moving up towards the temples. Smooth the forehead, from the frown line outwards.",
@@ -2393,22 +3886,47 @@
       ],
       "ar": "سيروم معزز لمكافحة شيخوخة البشره ومضاد لجميع انواع التجاعيد العميقه والسطحيه والتعبيريه حيث انه يقوم على تحفيز جين الشباب( كولاجين 17) ويقوم على تنعيم البشره ويعمل على شد البشره ومنع ترهلها ويضيف الى البشره رونقا ونضاره"
     },
-    "texture": "very light & fluid",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "AT TISSUE LEVEL: Increase in collagens in the first and second layers of the skin to reduce deep wrinkles.",
-      "EPIDERMIS: +130%* collagen 17.",
-      "DERMIS: +45% of total collagens*.",
-      "AT THE CELLULAR LEVEL: Rejuvenated epidermis thanks to the stimulation and organization of cell renewal. Result? Thickened epidermis up to +26%*."
-    ],
-    "ingredients": {
-      "main": [
-        "ALARIA ESCULENTA EXTRACT",
-        "LAMINARIA OCHROLEUCA EXTRACT",
-        "OROBANCHE RAPUM EXTRACT",
-        "Novaxyline"
+    "texture": {
+      "en": "very light & fluid",
+      "ar": "خفيف جداً وسائل"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "AT TISSUE LEVEL: Increase in collagens in the first and second layers of the skin to reduce deep wrinkles.",
+        "EPIDERMIS: +130%* collagen 17.",
+        "DERMIS: +45% of total collagens*.",
+        "AT THE CELLULAR LEVEL: Rejuvenated epidermis thanks to the stimulation and organization of cell renewal. Result? Thickened epidermis up to +26%*."
       ],
-      "spotlight": "•     It is the first cosmetic and dermatological treatment to ensure the protection and neo-synthesis of the main dermal AND epidermal collagens, including the famous collagen 17.\r\n"
+      "ar": [
+        "على مستوى الأنسجة: زيادة الكولاجين في الطبقتين الأولى والثانية من البشرة لتقليل التجاعيد العميقة",
+        "البشرة: زيادة الكولاجين 17 بنسبة 130%*",
+        "الأدمة: زيادة الكولاجين الكلي بنسبة 45%*",
+        "على المستوى الخلوي: بشرة متجددة بفضل تحفيز وتنظيم تجديد الخلايا. النتيجة؟ بشرة أكثر سمكاً بنسبة تصل إلى 26%*"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "ALARIA ESCULENTA EXTRACT",
+          "LAMINARIA OCHROLEUCA EXTRACT",
+          "OROBANCHE RAPUM EXTRACT",
+          "Novaxyline"
+        ],
+        "ar": [
+          "ALARIA ESCULENTA EXTRACT",
+          "LAMINARIA OCHROLEUCA EXTRACT",
+          "OROBANCHE RAPUM EXTRACT",
+          "Novaxyline"
+        ]
+      },
+      "spotlight": {
+        "en": "•     It is the first cosmetic and dermatological treatment to ensure the protection and neo-synthesis of the main dermal AND epidermal collagens, including the famous collagen 17.\r\n",
+        "ar": "•     it is the first cosmetic and dermatological treatment to ensure the protection and neo-synthesis of the main dermal and epidermal collagens, including the famous collagen 17.\r\n"
+      }
     },
     "usage": {
       "en": "•   Take a dab or two then distribute the Pro-Collagen Booster over the entire face and neck. This Booster can be applied alone or before your cream. You can apply makeup directly after applying the Booster.",
@@ -2429,24 +3947,51 @@
       "en": "This micellar water alone combines the effectiveness of a cleanser and a leave-in make-up remover with the performance of a moisturizing and revitalizing treatment full of Hyaluronic Acid. A 4 in 1 treatment",
       "ar": "ماء تنظيف الوجه والعيون من المكياج يحتوي على حامض الهايالورينك لترطيب واعادة الحيويه للبشره"
     },
-    "texture": "Liquid texture",
-    "skinType": "All Skin Types",
-    "benefits": [
-      "Daily care without wasting time:",
-      "- MAKEUP REMOVER &amp; CLEANSER*",
-      "- MOISTURIZING*",
-      "- PLUMPING*",
-      "No chemical ingredientes",
-      "No Preservatives"
-    ],
-    "ingredients": {
-      "main": [
-        "SODIUM HYALURONATE",
-        "LACTOBACILLUS FERMENT",
-        "ALOE BARBADENSIS LEAF JUICE + AQUA",
-        "GLYCERIN"
+    "texture": {
+      "en": "Liquid texture",
+      "ar": "Liquid texture"
+    },
+    "skinType": {
+      "en": "All Skin Types",
+      "ar": "جميع أنواع البشرة"
+    },
+    "benefits": {
+      "en": [
+        "Daily care without wasting time:",
+        "- MAKEUP REMOVER &amp; CLEANSER*",
+        "- MOISTURIZING*",
+        "- PLUMPING*",
+        "No chemical ingredientes",
+        "No Preservatives"
       ],
-      "spotlight": "•      A formula full of hyaluronic acid for immediate hydration and a wrinkle-filling effect. Ultra soft, micellar water is also leave-in, to take care of the most sensitive skin.\r\n"
+      "ar": [
+        "عناية يومية بدون إضاعة الوقت:",
+        "- مزيل مكياج ومنظف*",
+        "- مرطب*",
+        "- ممتلئ*",
+        "بدون مكونات كيميائية",
+        "بدون مواد حافظة"
+      ]
+    },
+    "ingredients": {
+      "main": {
+        "en": [
+          "SODIUM HYALURONATE",
+          "LACTOBACILLUS FERMENT",
+          "ALOE BARBADENSIS LEAF JUICE + AQUA",
+          "GLYCERIN"
+        ],
+        "ar": [
+          "SODIUM HYALURONATE",
+          "LACTOBACILLUS FERMENT",
+          "ALOE BARBADENSIS LEAF JUICE + AQUA",
+          "GLYCERIN"
+        ]
+      },
+      "spotlight": {
+        "en": "•      A formula full of hyaluronic acid for immediate hydration and a wrinkle-filling effect. Ultra soft, micellar water is also leave-in, to take care of the most sensitive skin.\r\n",
+        "ar": "•      a formula full of hyaluronic acid for immediate hydration and a wrinkle-filling effect. ultra soft, micellar water is also leave-in, to take care of the most sensitive skin.\r\n"
+      }
     },
     "usage": {
       "en": "•  Pour a few drops of Micellar Water with Hyaluronic Acid onto a cotton pad. Apply to the face from the inside out to remove makeup and cleanse.",

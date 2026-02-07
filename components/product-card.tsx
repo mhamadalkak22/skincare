@@ -6,7 +6,7 @@ import { Link } from "@/src/i18n/navigation";
 import type { Product } from "@/lib/products-data";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 interface ProductCardProps {
   product: Product;
@@ -15,6 +15,7 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const t = useTranslations("Product");
   const tCommon = useTranslations("Common");
+  const locale = useLocale();
 
   // Get the first variant's price for display
   const price =
@@ -25,10 +26,34 @@ export function ProductCard({ product }: ProductCardProps) {
   // Get first variant size
   const size = product.variants[0]?.size || "";
 
-  // Get description - take first item if array
-  const description = Array.isArray(product.description?.en)
-    ? product.description.en[0]
-    : product.description?.en || "";
+  // Get description - take first item if array, handle locale
+  const description = (() => {
+    const descData = (locale === "ar" && product.description?.ar)
+      ? product.description.ar
+      : product.description?.en;
+    
+    if (Array.isArray(descData)) {
+      return descData[0] || "";
+    }
+    if (typeof descData === "string") {
+      return descData;
+    }
+    return "";
+  })();
+
+  // Get skin type based on locale
+  const skinType = (() => {
+    if (!product.skinType) return "";
+    if (typeof product.skinType === "string") return product.skinType;
+    if (product.skinType && typeof product.skinType === "object") {
+      const value =
+        locale === "ar"
+          ? product.skinType.ar || product.skinType.en
+          : product.skinType.en || product.skinType.ar;
+      return value || "";
+    }
+    return "";
+  })();
 
   return (
     <motion.div
@@ -89,10 +114,10 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           {/* Skin Type */}
-          {product.skinType && (
+          {skinType && (
             <div className="pt-2">
               <p className="text-xs text-muted-foreground uppercase tracking-wide">
-                <span className="font-semibold">For:</span> {product.skinType}
+                <span className="font-semibold">For:</span> {skinType}
               </p>
             </div>
           )}

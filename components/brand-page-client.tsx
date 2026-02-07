@@ -32,6 +32,7 @@ export function BrandPageClient({
   lines,
 }: BrandPageClientProps) {
   const t = useTranslations("Product");
+  const tBrand = useTranslations("BrandPages");
   const tNav = useTranslations("Nav");
   const [selectedLine, setSelectedLine] = useState<string | null>(null);
 
@@ -112,7 +113,9 @@ export function BrandPageClient({
                 }`}
               >
                 <Instagram className="w-5 h-5" />
-                <span className="font-medium">{t("followOnInstagram")}</span>
+                <span className="font-medium">
+                  {tBrand(`${brand}.followButton`)}
+                </span>
               </a>
             </motion.div>
           </div>
