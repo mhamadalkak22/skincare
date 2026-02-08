@@ -95,16 +95,19 @@ export function SiteHeader({
                   <Languages className="h-5 w-5" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
+              <DropdownMenuContent
+                align="end"
+                className="min-w-[140px] bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-700"
+              >
                 <DropdownMenuItem
                   onClick={() => switchLocale("ar")}
-                  className={locale === "ar" ? "bg-accent" : ""}
+                  className={`font-arabic ${locale === "ar" ? "bg-primary text-white focus:bg-primary focus:text-white" : "focus:bg-gray-100 focus:text-gray-900 dark:focus:bg-gray-800 dark:focus:text-gray-100"}`}
                 >
-                  العربية
+                  <span dir="rtl">العربية</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem
                   onClick={() => switchLocale("en")}
-                  className={locale === "en" ? "bg-accent" : ""}
+                  className={locale === "en" ? "bg-primary text-white focus:bg-primary focus:text-white" : "focus:bg-gray-100 focus:text-gray-900 dark:focus:bg-gray-800 dark:focus:text-gray-100"}
                 >
                   English
                 </DropdownMenuItem>

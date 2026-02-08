@@ -10,11 +10,7 @@
       }
     ],
     "description": {
-      "en": [
-        "24h hydration",
-        "Awakens radiance",
-        "High protection SPF50"
-      ],
+      "en": ["24h hydration", "Awakens radiance", "High protection SPF50"],
       "ar": "واقي مع حمايه قصوى ومرطب للوجه في آن واحد لجميع انواع البشره الحساسه ولا يسبب تهيجا للعينين  ولا يترك آثار بيضاء سهل الامتصاص ولا يعمل على تكون البثور.خالي من العطور ويمكن استخدامه كأساس للمكياج."
     },
     "texture": {
@@ -141,10 +137,7 @@
       }
     ],
     "description": {
-      "en": [
-        "Nourishes",
-        "Protects"
-      ],
+      "en": ["Nourishes", "Protects"],
       "ar": "مرطب للشفاه للكبار والاطفال برائحة الفانيلا ويعمل على تغذية وحماية الشفاه ويستخدم للشفاه الحساسه ويعمل على ترميمها وحمايتها من الجفاف"
     },
     "texture": {
@@ -169,18 +162,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Beeswax",
-          "Carnauba wax",
-          "Candellila wax",
-          "Shea Butter"
-        ],
-        "ar": [
-          "Beeswax",
-          "Carnauba wax",
-          "Candellila wax",
-          "Shea Butter"
-        ]
+        "en": ["Beeswax", "Carnauba wax", "Candellila wax", "Shea Butter"],
+        "ar": ["Beeswax", "Carnauba wax", "Candellila wax", "Shea Butter"]
       },
       "spotlight": {
         "en": "intensively repairs lips against dryness( wax mix)",
@@ -231,14 +214,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Soft Micelles",
-          "Betain"
-        ],
-        "ar": [
-          "Soft Micelles",
-          "Betain"
-        ]
+        "en": ["Soft Micelles", "Betain"],
+        "ar": ["Soft Micelles", "Betain"]
       },
       "spotlight": {
         "en": "Removes make-up, cleanses, moisturizes",
@@ -292,14 +269,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Fatty Cleansing Agents",
-          "Beeswax"
-        ],
-        "ar": [
-          "Fatty Cleansing Agents",
-          "Beeswax"
-        ]
+        "en": ["Fatty Cleansing Agents", "Beeswax"],
+        "ar": ["Fatty Cleansing Agents", "Beeswax"]
       },
       "spotlight": {
         "en": "Removes make-up, cleanses, moisturizes",
@@ -533,12 +504,8 @@
       "ar": "all sesitive skin types"
     },
     "benefits": {
-      "en": [
-        "Efficacy even on installed dark spots and melasma"
-      ],
-      "ar": [
-        "فعال حتى على البقع الداكنة الثابتة والكلف"
-      ]
+      "en": ["Efficacy even on installed dark spots and melasma"],
+      "ar": ["فعال حتى على البقع الداكنة الثابتة والكلف"]
     },
     "ingredients": {
       "main": {
@@ -589,12 +556,8 @@
       "ar": "all sesitive skin types"
     },
     "benefits": {
-      "en": [
-        "Efficacy even on installed dark spots and melasma"
-      ],
-      "ar": [
-        "فعال حتى على البقع الداكنة الثابتة والكلف"
-      ]
+      "en": ["Efficacy even on installed dark spots and melasma"],
+      "ar": ["فعال حتى على البقع الداكنة الثابتة والكلف"]
     },
     "ingredients": {
       "main": {
@@ -630,11 +593,7 @@
       }
     ],
     "description": {
-      "en": [
-        "Cleanses",
-        "Exfoliates",
-        "Prevents from dryness"
-      ],
+      "en": ["Cleanses", "Exfoliates", "Prevents from dryness"],
       "ar": "صابونه طبيه ذات خصائص تقشيريه لتفتيح وتوحيد لون البشره والتقليل من التصبغات للوجه والجسم في آن واحد ولا تسبب جفاف للبشره وتتركها رطبه"
     },
     "texture": {
@@ -646,12 +605,8 @@
       "ar": "all sesitive skin types"
     },
     "benefits": {
-      "en": [
-        "Complementary product, perfect to help reducing dark spots"
-      ],
-      "ar": [
-        "منتج تكميلي، مثالي للمساعدة في تقليل البقع الداكنة"
-      ]
+      "en": ["Complementary product, perfect to help reducing dark spots"],
+      "ar": ["منتج تكميلي، مثالي للمساعدة في تقليل البقع الداكنة"]
     },
     "ingredients": {
       "main": {
@@ -776,11 +731,7 @@
         "Teenagers and adults",
         "Reduces shines"
       ],
-      "ar": [
-        "ينظف ويزيل المكياج",
-        "للمراهقين والبالغين",
-        "يقلل اللمعان"
-      ]
+      "ar": ["ينظف ويزيل المكياج", "للمراهقين والبالغين", "يقلل اللمعان"]
     },
     "ingredients": {
       "main": {
@@ -818,10 +769,7 @@
       }
     ],
     "description": {
-      "en": [
-        "Gently cleanses",
-        "Prevents from dryness"
-      ],
+      "en": ["Gently cleanses", "Prevents from dryness"],
       "ar": "جل غسول طبي  ومنظف خالي من الصابون  للبشره الجافه للوجه والجسم والشعر لجميع افراد العائله .لايسبب جفاف البشره ويتركها رطبه. لا يدمع العينين ويمكن استخدامه لازالة المكياج"
     },
     "texture": {
@@ -846,14 +794,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Soft surfactant",
-          "Vegetable Glycerin"
-        ],
-        "ar": [
-          "Soft surfactant",
-          "Vegetable Glycerin"
-        ]
+        "en": ["Soft surfactant", "Vegetable Glycerin"],
+        "ar": ["Soft surfactant", "Vegetable Glycerin"]
       },
       "spotlight": {
         "en": "Gently cleanses, removes makeup, moisturizes",
@@ -876,10 +818,7 @@
       }
     ],
     "description": {
-      "en": [
-        "48h intense hydration",
-        "Soothes"
-      ],
+      "en": ["48h intense hydration", "Soothes"],
       "ar": "مرطب خاص لليدين ترطيبه يدوم ل 48 ساعه يحمي ويغذي بشرة اليد"
     },
     "texture": {
@@ -895,21 +834,12 @@
         "Very dry, damaged hands",
         "Non greasy, non sticky – quickly penetrates"
       ],
-      "ar": [
-        "للأيدي الجافة جداً والمتضررة",
-        "غير دهني، غير لزج - يتغلغل بسرعة"
-      ]
+      "ar": ["للأيدي الجافة جداً والمتضررة", "غير دهني، غير لزج - يتغلغل بسرعة"]
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Urea",
-          "Allantoin"
-        ],
-        "ar": [
-          "Urea",
-          "Allantoin"
-        ]
+        "en": ["Urea", "Allantoin"],
+        "ar": ["Urea", "Allantoin"]
       },
       "spotlight": {
         "en": "Moisturizes, nourishes, protects",
@@ -932,12 +862,7 @@
       }
     ],
     "description": {
-      "en": [
-        "24h hydration",
-        "Smoothes the skin",
-        "Nourishes",
-        "Smoothes"
-      ],
+      "en": ["24h hydration", "Smoothes the skin", "Nourishes", "Smoothes"],
       "ar": "كريم مرطب للقدمين وتشققات الكعبين ترطيبه يدوم ل 24 ساعه يغذي وينعم بشرة القدم"
     },
     "texture": {
@@ -953,25 +878,12 @@
         "Non greasy and light texture",
         "100% nourished feet after 21 days of application"
       ],
-      "ar": [
-        "ملمس خفيف وغير دهني",
-        "أقدام مغذية بنسبة 100% بعد 21 يوم"
-      ]
+      "ar": ["ملمس خفيف وغير دهني", "أقدام مغذية بنسبة 100% بعد 21 يوم"]
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Urea",
-          "Allantoin",
-          "Beeswax",
-          "Vegetable Glycerin"
-        ],
-        "ar": [
-          "Urea",
-          "Allantoin",
-          "Beeswax",
-          "Vegetable Glycerin"
-        ]
+        "en": ["Urea", "Allantoin", "Beeswax", "Vegetable Glycerin"],
+        "ar": ["Urea", "Allantoin", "Beeswax", "Vegetable Glycerin"]
       },
       "spotlight": {
         "en": "Smoothes, nourishes, repairs",
@@ -1025,16 +937,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Urea",
-          "Beeswax",
-          "Vegetable glycerin"
-        ],
-        "ar": [
-          "Urea",
-          "Beeswax",
-          "Vegetable glycerin"
-        ]
+        "en": ["Urea", "Beeswax", "Vegetable glycerin"],
+        "ar": ["Urea", "Beeswax", "Vegetable glycerin"]
       },
       "spotlight": {
         "en": "Moisturizes, nourishes, smoothes",
@@ -1089,18 +993,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Allantoin",
-          "Plum Oil",
-          "Vegetable Glycerin",
-          "Silica (Fluid)"
-        ],
-        "ar": [
-          "Allantoin",
-          "Plum Oil",
-          "Vegetable Glycerin",
-          "Silica (Fluid)"
-        ]
+        "en": ["Allantoin", "Plum Oil", "Vegetable Glycerin", "Silica (Fluid)"],
+        "ar": ["Allantoin", "Plum Oil", "Vegetable Glycerin", "Silica (Fluid)"]
       },
       "spotlight": {
         "en": "Calms, protects, moisturizes",
@@ -1144,24 +1038,12 @@
         "Soothes",
         "Softens"
       ],
-      "ar": [
-        "يقلل تفاعل البشرة ويقوي حاجز البشرة",
-        "يهدئ",
-        "يُنعم"
-      ]
+      "ar": ["يقلل تفاعل البشرة ويقوي حاجز البشرة", "يهدئ", "يُنعم"]
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Allantoin",
-          "Plum Oil",
-          "Vegetable Glycerin"
-        ],
-        "ar": [
-          "Allantoin",
-          "Plum Oil",
-          "Vegetable Glycerin"
-        ]
+        "en": ["Allantoin", "Plum Oil", "Vegetable Glycerin"],
+        "ar": ["Allantoin", "Plum Oil", "Vegetable Glycerin"]
       },
       "spotlight": {
         "en": "Calms, protects, moisturizes",
@@ -1437,12 +1319,7 @@
       }
     ],
     "description": {
-      "en": [
-        "24h hydration",
-        "Awakes radiance",
-        "Anti-pollution shield",
-        ""
-      ],
+      "en": ["24h hydration", "Awakes radiance", "Anti-pollution shield", ""],
       "ar": "مرطب للوجه للبشره العاديه والمختلطه لبشره اكثر اشراقا ومضاد للتلوث. مناسب للبشره الحساسه .ترطيب يدوم ل 24 ساعه"
     },
     "texture": {
@@ -1454,23 +1331,13 @@
       "ar": "normal to combination  sensitive skin"
     },
     "benefits": {
-      "en": [
-        "Triple action: hydration – radiance – anti-pollution"
-      ],
-      "ar": [
-        "فعالية ثلاثية: ترطيب - إشراق - مضاد للتلوث"
-      ]
+      "en": ["Triple action: hydration – radiance – anti-pollution"],
+      "ar": ["فعالية ثلاثية: ترطيب - إشراق - مضاد للتلوث"]
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Polyglucoside Complex",
-          "Polysaccharide Matrix"
-        ],
-        "ar": [
-          "Polyglucoside Complex",
-          "Polysaccharide Matrix"
-        ]
+        "en": ["Polyglucoside Complex", "Polysaccharide Matrix"],
+        "ar": ["Polyglucoside Complex", "Polysaccharide Matrix"]
       },
       "spotlight": {
         "en": "Moisturizes, awakens radiance, anti-pollution",
@@ -1510,12 +1377,8 @@
       "ar": "dry sensitive skin"
     },
     "benefits": {
-      "en": [
-        "Triple action: hydration – radiance – anti-pollution"
-      ],
-      "ar": [
-        "فعالية ثلاثية: ترطيب - إشراق - مضاد للتلوث"
-      ]
+      "en": ["Triple action: hydration – radiance – anti-pollution"],
+      "ar": ["فعالية ثلاثية: ترطيب - إشراق - مضاد للتلوث"]
     },
     "ingredients": {
       "main": {
@@ -1579,16 +1442,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Polyglucoside Complex",
-          "Polysaccharide Matrix",
-          "Silica"
-        ],
-        "ar": [
-          "Polyglucoside Complex",
-          "Polysaccharide Matrix",
-          "Silica"
-        ]
+        "en": ["Polyglucoside Complex", "Polysaccharide Matrix", "Silica"],
+        "ar": ["Polyglucoside Complex", "Polysaccharide Matrix", "Silica"]
       },
       "spotlight": {
         "en": "Moisturizes, awakens radiance, anti-pollution",
@@ -1611,11 +1466,7 @@
       }
     ],
     "description": {
-      "en": [
-        "24h hydration",
-        "Revives radiance",
-        "Antioxidant action"
-      ],
+      "en": ["24h hydration", "Revives radiance", "Antioxidant action"],
       "ar": "سيروم مرطب عميق لبشره اكثر اشراقا ومضاد للتلوث لجميع انواع البشره .ترطيب يدوم ل 24 ساعه"
     },
     "texture": {
@@ -1640,14 +1491,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Polyglucoside Complex",
-          "Sophora Japonica Extract"
-        ],
-        "ar": [
-          "Polyglucoside Complex",
-          "Sophora Japonica Extract"
-        ]
+        "en": ["Polyglucoside Complex", "Sophora Japonica Extract"],
+        "ar": ["Polyglucoside Complex", "Sophora Japonica Extract"]
       },
       "spotlight": {
         "en": "Moisturizes, awakens radiance, anti-pollution",
@@ -1759,18 +1604,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Succinic Acid",
-          "Roucou Extract",
-          "Bisabolol",
-          "Niacinamide"
-        ],
-        "ar": [
-          "Succinic Acid",
-          "Roucou Extract",
-          "Bisabolol",
-          "Niacinamide"
-        ]
+        "en": ["Succinic Acid", "Roucou Extract", "Bisabolol", "Niacinamide"],
+        "ar": ["Succinic Acid", "Roucou Extract", "Bisabolol", "Niacinamide"]
       },
       "spotlight": {
         "en": "Corrects, smoothes, purifies",
@@ -1823,18 +1658,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Hyaluronic acid",
-          "Vitamin C",
-          "Vitamin E",
-          "Dipeptide"
-        ],
-        "ar": [
-          "Hyaluronic acid",
-          "Vitamin C",
-          "Vitamin E",
-          "Dipeptide"
-        ]
+        "en": ["Hyaluronic acid", "Vitamin C", "Vitamin E", "Dipeptide"],
+        "ar": ["Hyaluronic acid", "Vitamin C", "Vitamin E", "Dipeptide"]
       },
       "spotlight": {
         "en": "Concentrate of anti-aging active ingredients on wrinkles, firmness, radiance",
@@ -2126,11 +1951,7 @@
       }
     ],
     "description": {
-      "en": [
-        "24h hydration",
-        "Smoothes the skin",
-        "Nourishes"
-      ],
+      "en": ["24h hydration", "Smoothes the skin", "Nourishes"],
       "ar": "كريم عالي الترطيب لحالات الجفاف الشديده جدا للجسم بما فيها الصدفيه ولحالات الشعر تحت الجلد وجلد الأوزه . ويستخدم لتنعيم بشرة الجسم"
     },
     "texture": {
@@ -2142,23 +1963,13 @@
       "ar": "all skin types"
     },
     "benefits": {
-      "en": [
-        "Smoothes, soothes, nourishes"
-      ],
-      "ar": [
-        "ينعم، يهدئ، يغذي"
-      ]
+      "en": ["Smoothes, soothes, nourishes"],
+      "ar": ["ينعم، يهدئ، يغذي"]
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Urea 10%",
-          "Beeswax"
-        ],
-        "ar": [
-          "Urea 10%",
-          "Beeswax"
-        ]
+        "en": ["Urea 10%", "Beeswax"],
+        "ar": ["Urea 10%", "Beeswax"]
       },
       "spotlight": {
         "en": "Purifies, repairs",
@@ -2270,7 +2081,7 @@
       ],
       "ar": [
         "لجميع أفراد العائلة",
-        "Face, body and babies’ scalp",
+        "للوجه، الجسم وفروة رأس الأطفال",
         "تقليل الشعور بالحكة بنسبة 84%"
       ]
     },
@@ -2403,16 +2214,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Soft surfactant",
-          "Diglycerol",
-          "Vegetable Glycerin"
-        ],
-        "ar": [
-          "Soft surfactant",
-          "Diglycerol",
-          "Vegetable Glycerin"
-        ]
+        "en": ["Soft surfactant", "Diglycerol", "Vegetable Glycerin"],
+        "ar": ["Soft surfactant", "Diglycerol", "Vegetable Glycerin"]
       },
       "spotlight": {
         "en": "Cleans, protects, strengthens",
@@ -2467,16 +2270,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Shea Butter & Amla Extract",
-          "Panthenol",
-          "Vegetable Glycerin"
-        ],
-        "ar": [
-          "Shea Butter & Amla Extract",
-          "Panthenol",
-          "Vegetable Glycerin"
-        ]
+        "en": ["Shea Butter & Amla Extract", "Panthenol", "Vegetable Glycerin"],
+        "ar": ["Shea Butter & Amla Extract", "Panthenol", "Vegetable Glycerin"]
       },
       "spotlight": {
         "en": "Cleans, limits brokenness, soothes",
@@ -2499,10 +2294,7 @@
       }
     ],
     "description": {
-      "en": [
-        "Nourishes and protects",
-        "24h hydration"
-      ],
+      "en": ["Nourishes and protects", "24h hydration"],
       "ar": "كريم خاص لتغذية الشعر المجعد واعادة ترتيبه والحد من تقصفه وحمايته من الرطوبه والتجعد زيترك على الشعر ولا يغسل. للكبار والأطفال فوق 3 سنوات"
     },
     "texture": {
@@ -2529,14 +2321,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Shea Butter & Amla Extract",
-          "Vegetable Glycerin"
-        ],
-        "ar": [
-          "Shea Butter & Amla Extract",
-          "Vegetable Glycerin"
-        ]
+        "en": ["Shea Butter & Amla Extract", "Vegetable Glycerin"],
+        "ar": ["Shea Butter & Amla Extract", "Vegetable Glycerin"]
       },
       "spotlight": {
         "en": "Redefines curls, limits brokenness, protects",
@@ -2559,11 +2345,7 @@
       }
     ],
     "description": {
-      "en": [
-        "Nourishes",
-        "Limits hair breakage",
-        "Defines hair curls"
-      ],
+      "en": ["Nourishes", "Limits hair breakage", "Defines hair curls"],
       "ar": "قناع للشعر المجعد للحصول على شعر سهل التصفيف والتقليل من تقصفه ويعيد ترتيب ضفائر الشعر ويعمل على تغذية الشعر من جذوره لفروة الرأس الحساسه . للكبار والأطفال فوق 3 سنوات"
     },
     "texture": {
@@ -2590,16 +2372,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Shea Butter & Amla Extract",
-          "Panthenol",
-          "Vegetable Glycerin"
-        ],
-        "ar": [
-          "Shea Butter & Amla Extract",
-          "Panthenol",
-          "Vegetable Glycerin"
-        ]
+        "en": ["Shea Butter & Amla Extract", "Panthenol", "Vegetable Glycerin"],
+        "ar": ["Shea Butter & Amla Extract", "Panthenol", "Vegetable Glycerin"]
       },
       "spotlight": {
         "en": "Nourishes, limits breakage, redefines curls",
@@ -2622,10 +2396,7 @@
       }
     ],
     "description": {
-      "en": [
-        "Very High Protection",
-        "Hydrates 24hr"
-      ],
+      "en": ["Very High Protection", "Hydrates 24hr"],
       "ar": "واقي شمس للوجه والجسم بحمايه قصوى ذو ملمس حليبي سريع الامتصاص ولا يترك آثار بيضاء وغير دهني مناسب للكبار والأطفال فوق 3 سنوات ذو رائحه لطيفه وجذابه ويحتوي على مواد مضاده للأكسده لا يسبب تهيج للعينين ولا يسبب حبوب كما أنه مقاوم للماء والتراب"
     },
     "texture": {
@@ -2652,16 +2423,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Echinacea extract",
-          "Organic Sun Filters",
-          "Glycerin"
-        ],
-        "ar": [
-          "Echinacea extract",
-          "Organic Sun Filters",
-          "Glycerin"
-        ]
+        "en": ["Echinacea extract", "Organic Sun Filters", "Glycerin"],
+        "ar": ["Echinacea extract", "Organic Sun Filters", "Glycerin"]
       },
       "spotlight": {
         "en": "very high sun protection , hydrates ,antioxidant",
@@ -2700,27 +2463,13 @@
       "ar": "all sensitive skin types"
     },
     "benefits": {
-      "en": [
-        "Radiant  Complexion",
-        "Anti-Ageing",
-        "A powerful Antioxidant"
-      ],
-      "ar": [
-        "بشرة مشرقة",
-        "مضاد للشيخوخة",
-        "مضاد أكسدة قوي"
-      ]
+      "en": ["Radiant  Complexion", "Anti-Ageing", "A powerful Antioxidant"],
+      "ar": ["بشرة مشرقة", "مضاد للشيخوخة", "مضاد أكسدة قوي"]
     },
     "ingredients": {
       "main": {
-        "en": [
-          "Ascorbyl Methylsilanol Pectinate",
-          "3-O- Ethyl Ascorbic Acid"
-        ],
-        "ar": [
-          "Ascorbyl Methylsilanol Pectinate",
-          "3-O- Ethyl Ascorbic Acid"
-        ]
+        "en": ["Ascorbyl Methylsilanol Pectinate", "3-O- Ethyl Ascorbic Acid"],
+        "ar": ["Ascorbyl Methylsilanol Pectinate", "3-O- Ethyl Ascorbic Acid"]
       },
       "spotlight": {
         "en": "•      ULTRA-HIGH CONCENTRATION: 25% of a stabilised vitamin C complex\r\n•      Certified non-photoallergenic, non-phototoxic and non-photosensitising\r\n•     Can be used for Sensitive Skin",
@@ -2760,16 +2509,8 @@
       "ar": "NORMAL TO OILY SKIN."
     },
     "benefits": {
-      "en": [
-        "Radiant  Complexion",
-        "Anti-Ageing",
-        "smoothed skin relief"
-      ],
-      "ar": [
-        "بشرة مشرقة",
-        "مضاد للشيخوخة",
-        "ملمس بشرة ناعم"
-      ]
+      "en": ["Radiant  Complexion", "Anti-Ageing", "smoothed skin relief"],
+      "ar": ["بشرة مشرقة", "مضاد للشيخوخة", "ملمس بشرة ناعم"]
     },
     "ingredients": {
       "main": {
@@ -2883,7 +2624,7 @@
         "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
       ],
       "ar": [
-        "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
+        "مضاد قوي للشيخوخة بفضل المكون الحاصل على براءة اختراع: نوفاكسيلين الذي يزيد من تعبير السيرتوينات بنسبة 20%*، الملقبة ببروتينات الشباب. تصبح خلايا البشرة أصغر بـ 11 عاماً"
       ]
     },
     "ingredients": {
@@ -2938,7 +2679,7 @@
         "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
       ],
       "ar": [
-        "Powerful ANTI-AGING thanks to a patented active ingredient: Novaxyline which increases by 20%* the expression of sirtuins, nicknamed the “youth proteins”. Skin cells become 11 years younger"
+        "مضاد قوي للشيخوخة بفضل المكون الحاصل على براءة اختراع: نوفاكسيلين الذي يزيد من تعبير السيرتوينات بنسبة 20%*، الملقبة ببروتينات الشباب. تصبح خلايا البشرة أصغر بـ 11 عاماً"
       ]
     },
     "ingredients": {
@@ -3057,16 +2798,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "ALARIA ESCULENTA EXTRACT",
-          "Aloe Vera Gel",
-          "ADENOSINE"
-        ],
-        "ar": [
-          "ALARIA ESCULENTA EXTRACT",
-          "Aloe Vera Gel",
-          "ADENOSINE"
-        ]
+        "en": ["ALARIA ESCULENTA EXTRACT", "Aloe Vera Gel", "ADENOSINE"],
+        "ar": ["ALARIA ESCULENTA EXTRACT", "Aloe Vera Gel", "ADENOSINE"]
       },
       "spotlight": {
         "en": "•       ANTI-AGING active ingredients such as Novaxyline, a patented active ingredient acting on youth proteins, hyaluronic acid or even an anti-aging amino acid. -wrinkles. Alongside them, TENSIFYING active ingredients acting on BLOOD CIRCULATION to limit dark circles and puffiness: algae extracts, coffee extracts, ferments, etc.\r\n\r\n",
@@ -3165,7 +2898,7 @@
         "Clear, smooth skin in 20 seconds flat! And here’s how the Flash Radiance Cleansing Foam works:"
       ],
       "ar": [
-        "Clear, smooth skin in 20 seconds flat! And here’s how the Flash Radiance Cleansing Foam works:"
+        "بشرة صافية وناعمة في 20 ثانية! وهكذا تعمل رغوة التنظيف المشرقة السريعة:"
       ]
     },
     "ingredients": {
@@ -3281,11 +3014,7 @@
         "For Irritated Skin & Genetic Dryness",
         "For Atopic Skin"
       ],
-      "ar": [
-        "تأثير مهدئ",
-        "للبشرة المتهيجة والجفاف الوراثي",
-        "للبشرة الأتوبية"
-      ]
+      "ar": ["تأثير مهدئ", "للبشرة المتهيجة والجفاف الوراثي", "للبشرة الأتوبية"]
     },
     "ingredients": {
       "main": {
@@ -3349,8 +3078,8 @@
         "علاج تجميلي 4 في 1:",
         "- منشط (بعد التنظيف)",
         "- مثبت مكياج",
-        "- Anti pollution*",
-        "- Hydration booster*",
+        "- مضاد للتلوث*",
+        "- معزز للترطيب*",
         "عناية جلدية 4 في 1:",
         "- في حالة الاحمرار",
         "- في حالة عدم الراحة"
@@ -3358,14 +3087,8 @@
     },
     "ingredients": {
       "main": {
-        "en": [
-          "MARIS SAL (SEA SALT)",
-          "ultra-pure water"
-        ],
-        "ar": [
-          "MARIS SAL (SEA SALT)",
-          "ultra-pure water"
-        ]
+        "en": ["MARIS SAL (SEA SALT)", "ultra-pure water"],
+        "ar": ["MARIS SAL (SEA SALT)", "ultra-pure water"]
       },
       "spotlight": {
         "en": "•      The performance of the Magnesium Mist offers hydration increased by 71%*, oxidation reduced by 40%* and inflammation immediately reduced by 27%*. This mist is a real 360° SOS treatment for sensitive skin.\r\n",
@@ -3403,16 +3126,8 @@
       "ar": "البشرة الحساسة"
     },
     "benefits": {
-      "en": [
-        "- NOURISH",
-        "- PROTECT",
-        "- SOOTH"
-      ],
-      "ar": [
-        "- تغذية",
-        "- حماية",
-        "- تهدئة"
-      ]
+      "en": ["- NOURISH", "- PROTECT", "- SOOTH"],
+      "ar": ["- تغذية", "- حماية", "- تهدئة"]
     },
     "ingredients": {
       "main": {
@@ -3465,29 +3180,13 @@
       "ar": "NORMAL TO OILY SKIN"
     },
     "benefits": {
-      "en": [
-        "Anti-imperfection action",
-        "Anti-aging action"
-      ],
-      "ar": [
-        "فعالية مضادة للعيوب",
-        "فعالية مضادة للشيخوخة"
-      ]
+      "en": ["Anti-imperfection action", "Anti-aging action"],
+      "ar": ["فعالية مضادة للعيوب", "فعالية مضادة للشيخوخة"]
     },
     "ingredients": {
       "main": {
-        "en": [
-          "BAKUCHIOL",
-          "ZINC GLUCONATE",
-          "ZINC LACTATE",
-          "ZINC PCA"
-        ],
-        "ar": [
-          "BAKUCHIOL",
-          "ZINC GLUCONATE",
-          "ZINC LACTATE",
-          "ZINC PCA"
-        ]
+        "en": ["BAKUCHIOL", "ZINC GLUCONATE", "ZINC LACTATE", "ZINC PCA"],
+        "ar": ["BAKUCHIOL", "ZINC GLUCONATE", "ZINC LACTATE", "ZINC PCA"]
       },
       "spotlight": {
         "en": "• Thanks to the three forms of Zinc integrated into this treatment, the activity of a pro-acne factor (released in the event of a too sugary diet in particular) is radically reduced, offering you the chance to find clear skin,\r\n•      Three actions to act at the origin of imperfections: reduction of sebum production*, soothing effect* and inhibition of the bacteria responsible for spots*.\r\n",
@@ -3530,11 +3229,7 @@
         "CORRECTION of pimples",
         "Anti  hyperpigmented scars"
       ],
-      "ar": [
-        "الوقاية من الالتهاب",
-        "تصحيح البثور",
-        "مضاد لندبات فرط التصبغ"
-      ]
+      "ar": ["الوقاية من الالتهاب", "تصحيح البثور", "مضاد لندبات فرط التصبغ"]
     },
     "ingredients": {
       "main": {
@@ -3713,12 +3408,8 @@
       "ar": "جميع أنواع البشرة"
     },
     "benefits": {
-      "en": [
-        "It corrects stains & reduces pigment"
-      ],
-      "ar": [
-        "يصحح البقع ويقلل الصبغة"
-      ]
+      "en": ["It corrects stains & reduces pigment"],
+      "ar": ["يصحح البقع ويقلل الصبغة"]
     },
     "ingredients": {
       "main": {
@@ -3777,7 +3468,7 @@
         "MOISTURIZING  ANTI-AGING EFFEC"
       ],
       "ar": [
-        "IMMEDIATE “GOOD GLOW” EFFECT",
+        "تأثير \"توهج جيد\" فوري",
         "بشرة برونزية دائمة",
         "تأثير مرطب مضاد للشيخوخة"
       ]
@@ -3839,7 +3530,7 @@
         "MOISTURIZING  ANTI-AGING EFFEC"
       ],
       "ar": [
-        "IMMEDIATE “GOOD GLOW” EFFECT",
+        "تأثير \"توهج جيد\" فوري",
         "بشرة برونزية دائمة",
         "تأثير مرطب مضاد للشيخوخة"
       ]

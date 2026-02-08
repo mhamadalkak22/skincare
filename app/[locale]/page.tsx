@@ -1,20 +1,25 @@
 "use client";
 
+import { useState } from "react";
 import { Link } from "@/src/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Instagram, Shield, Sparkles, Heart } from "lucide-react";
+import { Instagram, Shield, Sparkles, Heart, X } from "lucide-react";
 import { getProductsByBrand } from "@/lib/products-data";
 
 export default function HomePage() {
   const t = useTranslations("Home");
   const tNav = useTranslations("Nav");
   const tCommon = useTranslations("Common");
+
+  const [bannerVisible, setBannerVisible] = useState(true);
+
+  const closeBanner = () => setBannerVisible(false);
 
   const topicremProducts = getProductsByBrand("topicrem");
   const novexpertProducts = getProductsByBrand("novexpert");
@@ -23,87 +28,124 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
-      {/* Discount Announcement Banner */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-gradient-to-r from-pink-500 via-primary to-pink-600 text-white py-3 px-4 text-center sticky top-0 z-50 shadow-lg"
-      >
-        <div className="container mx-auto">
-          <motion.p
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.3, delay: 0.2 }}
-            className="text-sm md:text-base font-semibold"
+      {/* Discount Announcement Banner - closeable, stacked on mobile */}
+      <AnimatePresence>
+        {bannerVisible && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="bg-gradient-to-r from-pink-500 via-primary to-pink-600 text-white py-4 px-4 sm:py-3 text-center sticky top-0 z-50 shadow-lg overflow-hidden"
           >
-            🎉 <span className="font-bold">{t("specialOffer")}</span>{" "}
-            {t("discount")}{" "}
-            <span className="bg-white text-primary px-3 py-1 rounded-md font-bold mx-2">
-              SKIN20
-            </span>{" "}
-            {t("atCheckout")} 🎉
-          </motion.p>
-        </div>
-      </motion.div>
+            <div className="container mx-auto relative pe-8 sm:pe-10">
+              <button
+                type="button"
+                onClick={closeBanner}
+                aria-label="Close banner"
+                className="absolute top-1/2 -translate-y-1/2 end-0 sm:end-2 w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <motion.div
+                initial={{ scale: 0.9 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+                className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2 sm:gap-1 text-sm md:text-base font-semibold"
+              >
+                <span className="order-1">
+                  🎉 <span className="font-bold">{t("specialOffer")}</span>{" "}
+                  {t("discount")}
+                </span>
+                <span className="order-2 sm:order-2 bg-white text-primary px-3 py-1.5 sm:py-1 rounded-md font-bold shrink-0">
+                  SKIN20
+                </span>
+                <span className="order-3">
+                  {t("atCheckout")} 🎉
+                </span>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-      {/* Hero Section */}
+      {/* Hero Section - split layout: text + product image */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
         {/* Decorative Elements - Behind content */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
-          <div className="text-center max-w-5xl mx-auto space-y-8">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-              className="mb-6"
-            >
-              <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-balance mb-4">
-                {t("hero.title")}
-                <span className="block text-primary mt-2">
-                  {t("hero.brands")}
-                </span>
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mt-4">
-                {t("hero.subtitle")}
-              </p>
-            </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Column 1: Headline, subtitle, description, CTAs - same context as before */}
+            <div className="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left space-y-8 max-w-xl mx-auto md:mx-0">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                className="mb-6"
+              >
+                <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-balance mb-4">
+                  {t("hero.title")}
+                  <span className="block text-primary mt-2">
+                    {t("hero.brands")}
+                  </span>
+                </h1>
+                <p className="text-lg md:text-xl text-muted-foreground mt-4">
+                  {t("hero.subtitle")}
+                </p>
+              </motion.div>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto md:mx-0 text-pretty leading-relaxed"
+              >
+                {t("hero.description")}
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="flex gap-4 justify-center md:justify-start flex-wrap pt-4 relative z-20"
+              >
+                <Button
+                  size="lg"
+                  className="text-lg px-8 pointer-events-auto"
+                  asChild
+                >
+                  <Link href="/brand/topicrem">{t("hero.exploreTopicrem")}</Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-lg px-8 pointer-events-auto"
+                  asChild
+                >
+                  <Link href="/brand/novexpert">
+                    {t("hero.exploreNovexpert")}
+                  </Link>
+                </Button>
+              </motion.div>
+            </div>
+
+            {/* Column 2: Hero product image - responsive, above the fold */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed"
+              className="order-1 md:order-2 relative aspect-[4/3] w-full min-h-[280px] md:min-h-[320px]"
             >
-              {t("hero.description")}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex gap-4 justify-center flex-wrap pt-4 relative z-20"
-            >
-              <Button
-                size="lg"
-                className="text-lg px-8 pointer-events-auto"
-                asChild
-              >
-                <Link href="/brand/topicrem">{t("hero.exploreTopicrem")}</Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 pointer-events-auto"
-                asChild
-              >
-                <Link href="/brand/novexpert">
-                  {t("hero.exploreNovexpert")}
-                </Link>
-              </Button>
+              <Image
+                src="/web.jpg.webp"
+                alt="Topicrem and Novexpert skincare products"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-contain"
+                priority
+              />
             </motion.div>
           </div>
         </div>

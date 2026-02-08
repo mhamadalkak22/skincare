@@ -66,11 +66,11 @@ export default async function LocaleLayout({ children, params }: Props) {
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
 
-  // Use Cairo font for Arabic, Playfair/Inter for English
+  // Use Cairo for Arabic; Playfair/Inter for English. Always load Cairo so language switcher shows "العربية" correctly.
   const fontClass =
     locale === "ar"
       ? `${cairo.variable} font-arabic`
-      : `${playfair.variable} ${inter.variable} font-sans`;
+      : `${playfair.variable} ${inter.variable} ${cairo.variable} font-sans`;
 
   // Set direction based on locale: RTL for Arabic, LTR for English
   const direction = locale === "ar" ? "rtl" : "ltr";
