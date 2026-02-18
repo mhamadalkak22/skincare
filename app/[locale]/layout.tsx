@@ -1,6 +1,6 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, Cairo } from "next/font/google";
+import { Playfair_Display, Inter, Cairo, Montserrat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -17,6 +17,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
   variable: "--font-arabic",
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-gotham-fallback",
 });
 
 export const metadata: Metadata = {
@@ -70,7 +74,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const fontClass =
     locale === "ar"
       ? `${cairo.variable} font-arabic`
-      : `${playfair.variable} ${inter.variable} ${cairo.variable} font-sans`;
+      : `${playfair.variable} ${inter.variable} ${cairo.variable} ${montserrat.variable} font-sans`;
 
   // Set direction based on locale: RTL for Arabic, LTR for English
   const direction = locale === "ar" ? "rtl" : "ltr";

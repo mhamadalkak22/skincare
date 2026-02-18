@@ -6,6 +6,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/src/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { CartButton } from "@/components/cart-button";
+import Image from "next/image";
 import { ChevronLeft, Menu, Languages } from "lucide-react";
 import { motion } from "framer-motion";
 import {
@@ -68,9 +69,27 @@ export function SiteHeader({
             )}
             <Link
               href="/"
-              className="text-xl md:text-2xl font-bold tracking-tight text-foreground"
+              className="flex items-center gap-4 sm:gap-8"
+              aria-label="Topicrem & Novexpert Home"
             >
-              {"Topicrem & Novexpert"}
+              <span className="relative h-12 w-32 sm:h-14 sm:w-40 md:h-16 md:w-48">
+                <Image
+                  src="/topicremlogo.png"
+                  alt="Topicrem"
+                  fill
+                  className="object-contain object-left"
+                  sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+                />
+              </span>
+              <span className="relative h-12 w-32 sm:h-14 sm:w-40 md:h-16 md:w-48">
+                <Image
+                  src="/novaexpert.png"
+                  alt="Novexpert"
+                  fill
+                  className="object-contain object-left"
+                  sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+                />
+              </span>
             </Link>
           </div>
 

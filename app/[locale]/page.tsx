@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "@/src/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -9,8 +9,27 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Instagram, Shield, Sparkles, Heart, X } from "lucide-react";
-import { getProductsByBrand } from "@/lib/products-data";
+import { Instagram, Shield, Sparkles, Heart, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { getProductsByBrand, allProducts } from "@/lib/products-data";
+import { ProductCard } from "@/components/product-card";
+
+const HERO_SLIDES = [
+  {
+    src: "/web.jpg.webp",
+    alt: "Topicrem and Novexpert skincare products",
+    brand: "both" as const,
+  },
+  {
+    src: "/topicremimage/HYDRA_PROTECTIVE_DAY_CREAM__40ML.webp",
+    alt: "Topicrem hydrating skincare",
+    brand: "topicrem" as const,
+  },
+  {
+    src: "/novaexpertimage/BOOSTER WITH VITAMIN C_2000x2000px.webp",
+    alt: "Novexpert booster skincare",
+    brand: "novexpert" as const,
+  },
+];
 
 export default function HomePage() {
   const t = useTranslations("Home");
@@ -18,14 +37,32 @@ export default function HomePage() {
   const tCommon = useTranslations("Common");
 
   const [bannerVisible, setBannerVisible] = useState(true);
+  const [heroIndex, setHeroIndex] = useState(0);
+  const bestsellersScrollRef = useRef<HTMLDivElement>(null);
 
   const closeBanner = () => setBannerVisible(false);
+
+  const scrollBestsellers = (direction: "left" | "right") => {
+    const el = bestsellersScrollRef.current;
+    if (!el) return;
+    const step = 296; // ~one card (280px) + gap (16px)
+    el.scrollBy({ left: direction === "left" ? -step : step, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setHeroIndex((i) => (i + 1) % HERO_SLIDES.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
 
   const topicremProducts = getProductsByBrand("topicrem");
   const novexpertProducts = getProductsByBrand("novexpert");
 
+  const currentSlide = HERO_SLIDES[heroIndex];
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background font-gotham">
       <SiteHeader />
 
       {/* Discount Announcement Banner - closeable, stacked on mobile */}
@@ -69,86 +106,214 @@ export default function HomePage() {
         )}
       </AnimatePresence>
 
-      {/* Hero Section - split layout: text + product image */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
-        {/* Decorative Elements - Behind content */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none -z-10" />
+      {/* Hero Section - full-bleed like reference: text left, product carousel right, DISCOVER + dots, brand strip */}
+      <section className="relative min-h-[85vh] md:min-h-[90vh] overflow-hidden bg-gradient-to-r from-primary/10 via-background to-background">
+        {/* Left side: darker overlay for text readability */}
+        <div className="absolute inset-0 md:w-[48%] bg-gradient-to-r from-primary/5 to-transparent pointer-events-none z-0" />
 
-        <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Column 1: Headline, subtitle, description, CTAs - same context as before */}
-            <div className="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left space-y-8 max-w-xl mx-auto md:mx-0">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                className="mb-6"
-              >
-                <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-balance mb-4">
-                  {t("hero.title")}
-                  <span className="block text-primary mt-2">
-                    {t("hero.brands")}
-                  </span>
-                </h1>
-                <p className="text-lg md:text-xl text-muted-foreground mt-4">
-                  {t("hero.subtitle")}
-                </p>
-              </motion.div>
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto md:mx-0 text-pretty leading-relaxed"
-              >
-                {t("hero.description")}
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="flex gap-4 justify-center md:justify-start flex-wrap pt-4 relative z-20"
-              >
-                <Button
-                  size="lg"
-                  className="text-lg px-8 pointer-events-auto"
-                  asChild
+        <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center min-h-[70vh] md:min-h-[75vh]">
+            {/* Left: words move with the picture – one slide index drives both */}
+            <div className="order-2 md:order-1 flex flex-col justify-center max-w-xl mx-auto md:mx-0 text-center md:text-left">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={heroIndex}
+                  initial={{ opacity: 0, x: 24 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -24 }}
+                  transition={{ duration: 0.4 }}
+                  className="space-y-4"
                 >
-                  <Link href="/brand/topicrem">{t("hero.exploreTopicrem")}</Link>
-                </Button>
+                  {currentSlide.brand === "both" && (
+                    <>
+                      <p className="text-base md:text-lg text-muted-foreground">
+                        {t("hero.subtitle")}
+                      </p>
+                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
+                        {t("hero.title")}
+                      </h1>
+                      <p className="text-xl md:text-2xl text-primary font-semibold">
+                        {t("hero.brands")}
+                      </p>
+                      <p className="text-muted-foreground text-pretty">
+                        {t("hero.description")}
+                      </p>
+                    </>
+                  )}
+                  {currentSlide.brand === "topicrem" && (
+                    <>
+                      <p className="text-base md:text-lg text-muted-foreground">
+                        {t("hero.slideTopicremSubtitle")}
+                      </p>
+                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary">
+                        {t("hero.slideTopicremTitle")}
+                      </h1>
+                      <p className="text-muted-foreground">
+                        {t("hero.slideTopicremDesc")}
+                      </p>
+                    </>
+                  )}
+                  {currentSlide.brand === "novexpert" && (
+                    <>
+                      <p className="text-base md:text-lg text-muted-foreground">
+                        {t("hero.slideNovexpertSubtitle")}
+                      </p>
+                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary">
+                        {t("hero.slideNovexpertTitle")}
+                      </h1>
+                      <p className="text-muted-foreground">
+                        {t("hero.slideNovexpertDesc")}
+                      </p>
+                    </>
+                  )}
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Single DISCOVER button + dots below (like reference) */}
+              <div className="mt-8 flex flex-col items-center md:items-start gap-4">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg px-8 pointer-events-auto"
+                  className="text-base px-8 border-2 rounded-md font-medium"
                   asChild
                 >
-                  <Link href="/brand/novexpert">
-                    {t("hero.exploreNovexpert")}
+                  <Link
+                    href={
+                      currentSlide.brand === "both"
+                        ? "/#our-brands"
+                        : currentSlide.brand === "topicrem"
+                          ? "/brand/topicrem"
+                          : "/brand/novexpert"
+                    }
+                  >
+                    {t("hero.discover")}
                   </Link>
                 </Button>
-              </motion.div>
+                <div className="flex gap-2">
+                  {HERO_SLIDES.map((_, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => setHeroIndex(i)}
+                      aria-label={`Slide ${i + 1}`}
+                      className={`h-2.5 w-2.5 rounded-full transition-all ${
+                        i === heroIndex
+                          ? "bg-primary scale-110"
+                          : "bg-gray-300 dark:bg-gray-600 border border-gray-300 dark:border-gray-600"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
 
-            {/* Column 2: Hero product image - responsive, above the fold */}
+            {/* Right: Topicrem + Novexpert product carousel – LTR so images show in Arabic (RTL) */}
             <motion.div
+              dir="ltr"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="order-1 md:order-2 relative aspect-[4/3] w-full min-h-[280px] md:min-h-[320px]"
+              className="order-1 md:order-2 relative w-full min-w-0 md:-mr-8 lg:-mr-12 md:self-stretch flex items-center justify-center md:justify-end"
             >
-              <Image
-                src="/web.jpg.webp"
-                alt="Topicrem and Novexpert skincare products"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain"
-                priority
-              />
+              <div className="relative w-full h-[280px] sm:h-[320px] md:h-[420px] md:min-h-[380px] overflow-hidden rounded-lg md:transform md:-rotate-1">
+                <div
+                  className="flex h-full transition-transform duration-500 ease-out"
+                  style={{
+                    width: `${HERO_SLIDES.length * 100}%`,
+                    transform: `translateX(-${heroIndex * (100 / HERO_SLIDES.length)}%)`,
+                  }}
+                >
+                  {HERO_SLIDES.map((slide, i) => (
+                    <div
+                      key={slide.src}
+                      className="relative shrink-0 h-full"
+                      style={{ width: `${100 / HERO_SLIDES.length}%` }}
+                    >
+                      <Image
+                        src={slide.src}
+                        alt={slide.alt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 55vw"
+                        className="object-contain"
+                        priority
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
+
+        {/* Bottom brand strip – gentle marquee (inline animation so it always runs) */}
+        <div className="absolute bottom-0 left-0 right-0 border-t border-border/50 bg-background/80 backdrop-blur-sm py-2 overflow-hidden">
+          <div
+            className="flex items-center gap-8 md:gap-12 text-xs text-muted-foreground whitespace-nowrap"
+            style={{
+              width: "max-content",
+              animation: "brand-strip-marquee 28s linear infinite",
+              willChange: "transform",
+            }}
+          >
+            {[1, 2].map((copy) => (
+              <div key={copy} className="flex items-center gap-8 md:gap-12 shrink-0">
+                <span>{t("hero.brandStrip.laboratory")}</span>
+                <span>{t("hero.brandStrip.since")}</span>
+                <span className="text-primary font-medium">{t("hero.brandStrip.forSkin")}</span>
+                <span>{t("hero.brandStrip.madeIn")}</span>
+                <span>{t("hero.brandStrip.paris")}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bestsellers - horizontal carousel with left/right arrows beside title */}
+      <section className="container mx-auto px-4 py-12 md:py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <div className="flex items-center justify-between gap-4 mb-6 md:mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold shrink-0">
+              {t("bestsellers")}
+            </h2>
+            <div className="flex items-center gap-1 shrink-0">
+              <button
+                type="button"
+                onClick={() => scrollBestsellers("left")}
+                aria-label="Scroll bestsellers left"
+                className="p-2 rounded-full border border-border bg-card hover:bg-muted transition-colors touch-manipulation"
+              >
+                <ChevronLeft className="h-6 w-6 text-foreground" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollBestsellers("right")}
+                aria-label="Scroll bestsellers right"
+                className="p-2 rounded-full border border-border bg-card hover:bg-muted transition-colors touch-manipulation"
+              >
+                <ChevronRight className="h-6 w-6 text-foreground" />
+              </button>
+            </div>
+          </div>
+          <div
+            ref={bestsellersScrollRef}
+            className="flex gap-4 overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 scroll-smooth snap-x snap-mandatory scrollbar-none"
+          >
+            {allProducts.slice(0, 8).map((product) => (
+              <div
+                key={product.id}
+                className="relative shrink-0 w-[260px] sm:w-[280px] snap-start"
+              >
+                <span className="absolute top-2 left-2 z-10 rounded-full bg-white/95 px-2 py-0.5 text-xs font-medium text-gray-700 shadow-sm">
+                  BESTSELLER
+                </span>
+                <ProductCard product={product} />
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </section>
 
       {/* Why Choose Us Section */}
@@ -282,7 +447,7 @@ export default function HomePage() {
       </section>
 
       {/* Brand Sections */}
-      <section className="container mx-auto px-4 py-20">
+      <section id="our-brands" className="container mx-auto px-4 py-20">
         <div className="max-w-7xl mx-auto space-y-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             {t("ourBrands")}

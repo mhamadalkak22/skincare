@@ -11,13 +11,28 @@
     "specialOffer": "SPECIAL OFFER!",
     "discount": "Get 20% OFF on all products! Use code:",
     "atCheckout": "at checkout",
+    "bestsellers": "Bestsellers",
     "hero": {
       "title": "Premium Skincare",
       "brands": "Topicrem & Novexpert",
       "subtitle": "French Dermatological Excellence",
       "description": "Two leading French skincare brands trusted by dermatologists worldwide. Discover the perfect blend of dermatological expertise and natural innovation.",
+      "slideTopicremTitle": "Ultra-Moisturizing",
+      "slideTopicremSubtitle": "Our dermatological icons",
+      "slideTopicremDesc": "Expert care for sensitive skin.",
+      "slideNovexpertTitle": "Natural Innovation",
+      "slideNovexpertSubtitle": "Science meets nature",
+      "slideNovexpertDesc": "Powerful anti-aging with proven results.",
+      "discover": "Discover",
       "exploreTopicrem": "Explore Topicrem",
-      "exploreNovexpert": "Explore Novexpert"
+      "exploreNovexpert": "Explore Novexpert",
+      "brandStrip": {
+        "laboratory": "Laboratory",
+        "since": "Since 1993",
+        "forSkin": "For all sensitive skin",
+        "madeIn": "Made in France",
+        "paris": "Paris Dermatological"
+      }
     },
     "whyChoose": {
       "title": "Why Choose Our Brands",

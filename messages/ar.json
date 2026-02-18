@@ -11,13 +11,28 @@
     "specialOffer": "عرض خاص!",
     "discount": "احصل على خصم 20% على جميع المنتجات! استخدم الكود:",
     "atCheckout": "عند الدفع",
+    "bestsellers": "الأكثر مبيعاً",
     "hero": {
       "title": "العناية الفاخرة بالبشرة",
       "brands": "توبيكريم ونوفإكسبرت",
       "subtitle": "التميز الفرنسي في طب الجلد",
       "description": "علامتان تجاريتان فرنسيتان رائدتان في العناية بالبشرة يثق بهما أطباء الجلد حول العالم. اكتشف المزيج المثالي بين الخبرة الطبية والابتكار الطبيعي.",
+      "slideTopicremTitle": "ترطيب مكثف",
+      "slideTopicremSubtitle": "أيقونات العناية الجلدية",
+      "slideTopicremDesc": "عناية خبراء للبشرة الحساسة.",
+      "slideNovexpertTitle": "ابتكار طبيعي",
+      "slideNovexpertSubtitle": "العلم يلتقي الطبيعة",
+      "slideNovexpertDesc": "مضاد للشيخوخة بفعالية مثبتة.",
+      "discover": "اكتشف",
       "exploreTopicrem": "استكشف توبيكريم",
-      "exploreNovexpert": "استكشف نوفإكسبرت"
+      "exploreNovexpert": "استكشف نوفإكسبرت",
+      "brandStrip": {
+        "laboratory": "مختبر",
+        "since": "منذ 1993",
+        "forSkin": "لجميع البشرة الحساسة",
+        "madeIn": "صنع في فرنسا",
+        "paris": "باريس الجلدية"
+      }
     },
     "whyChoose": {
       "title": "لماذا تختار علاماتنا التجارية",
