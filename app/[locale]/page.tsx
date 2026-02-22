@@ -20,12 +20,12 @@ const HERO_SLIDES = [
     brand: "both" as const,
   },
   {
-    src: "/topicremimage/HYDRA_PROTECTIVE_DAY_CREAM__40ML.webp",
+    src: "/top1.jpeg",
     alt: "Topicrem hydrating skincare",
     brand: "topicrem" as const,
   },
   {
-    src: "/novaexpertimage/BOOSTER WITH VITAMIN C_2000x2000px.webp",
+    src: "/nove1.jpeg",
     alt: "Novexpert booster skincare",
     brand: "novexpert" as const,
   },
@@ -467,7 +467,7 @@ export default function HomePage() {
                   className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/20 dark:to-pink-900/20 relative overflow-hidden group"
                 >
                   <Image
-                    src="/topicremimage/HYDRA_PROTECTIVE_DAY_CREAM__40ML.webp"
+                    src="/tpoi1.jpeg"
                     alt="Topicrem Collection"
                     fill
                     className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
@@ -539,7 +539,7 @@ export default function HomePage() {
                   className="aspect-[4/3] md:aspect-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950/20 dark:to-slate-900/20 relative overflow-hidden md:order-2 group"
                 >
                   <Image
-                    src="/novaexpertimage/BOOSTER WITH VITAMIN C_2000x2000px.webp"
+                    src="/nova1.jpeg"
                     alt="Novexpert Collection"
                     fill
                     className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"

@@ -69,25 +69,27 @@ export function SiteHeader({
             )}
             <Link
               href="/"
-              className="flex items-center gap-4 sm:gap-8"
+              className="flex items-center gap-4 sm:gap-6 md:gap-8"
               aria-label="Topicrem & Novexpert Home"
             >
-              <span className="relative h-12 w-32 sm:h-14 sm:w-40 md:h-16 md:w-48">
+              <span className="relative h-18 w-44 min-[480px]:h-20 min-[480px]:w-52 sm:h-20 sm:w-52 md:h-22 md:w-60 lg:h-24 lg:w-72">
                 <Image
                   src="/topicremlogo.png"
                   alt="Topicrem"
                   fill
                   className="object-contain object-left"
-                  sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+                  sizes="(max-width: 480px) 176px, (max-width: 640px) 208px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+                  priority
                 />
               </span>
-              <span className="relative h-12 w-32 sm:h-14 sm:w-40 md:h-16 md:w-48">
+              <span className="relative h-18 w-44 min-[480px]:h-20 min-[480px]:w-52 sm:h-20 sm:w-52 md:h-22 md:w-60 lg:h-24 lg:w-72">
                 <Image
                   src="/novaexpert.png"
                   alt="Novexpert"
                   fill
                   className="object-contain object-left"
-                  sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+                  sizes="(max-width: 640px) 144px, (max-width: 768px) 176px, (max-width: 1024px) 224px, 256px"
+                  priority
                 />
               </span>
             </Link>
