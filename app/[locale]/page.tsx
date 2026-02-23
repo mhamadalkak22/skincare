@@ -15,11 +15,6 @@ import { ProductCard } from "@/components/product-card";
 
 const HERO_SLIDES = [
   {
-    src: "/web.jpg.webp",
-    alt: "Topicrem and Novexpert skincare products",
-    brand: "both" as const,
-  },
-  {
     src: "/top1.jpeg",
     alt: "Topicrem hydrating skincare",
     brand: "topicrem" as const,
@@ -124,22 +119,6 @@ export default function HomePage() {
                   transition={{ duration: 0.4 }}
                   className="space-y-4"
                 >
-                  {currentSlide.brand === "both" && (
-                    <>
-                      <p className="text-base md:text-lg text-muted-foreground">
-                        {t("hero.subtitle")}
-                      </p>
-                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
-                        {t("hero.title")}
-                      </h1>
-                      <p className="text-xl md:text-2xl text-primary font-semibold">
-                        {t("hero.brands")}
-                      </p>
-                      <p className="text-muted-foreground text-pretty">
-                        {t("hero.description")}
-                      </p>
-                    </>
-                  )}
                   {currentSlide.brand === "topicrem" && (
                     <>
                       <p className="text-base md:text-lg text-muted-foreground">
@@ -179,11 +158,9 @@ export default function HomePage() {
                 >
                   <Link
                     href={
-                      currentSlide.brand === "both"
-                        ? "/#our-brands"
-                        : currentSlide.brand === "topicrem"
-                          ? "/brand/topicrem"
-                          : "/brand/novexpert"
+                      currentSlide.brand === "topicrem"
+                        ? "/brand/topicrem"
+                        : "/brand/novexpert"
                     }
                   >
                     {t("hero.discover")}
