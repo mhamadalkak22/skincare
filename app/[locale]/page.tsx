@@ -58,9 +58,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background font-gotham">
-      <SiteHeader />
-
-      {/* Discount Announcement Banner - closeable, stacked on mobile */}
+      {/* Discount Announcement Banner - very top above header */}
       <AnimatePresence>
         {bannerVisible && (
           <motion.div
@@ -68,7 +66,7 @@ export default function HomePage() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-gradient-to-r from-pink-500 via-primary to-pink-600 text-white py-4 px-4 sm:py-3 text-center sticky top-0 z-50 shadow-lg overflow-hidden"
+            className="bg-gradient-to-r from-pink-500 via-primary to-pink-600 text-white py-4 px-4 sm:py-3 text-center z-50 shadow-lg overflow-hidden"
           >
             <div className="container mx-auto relative pe-8 sm:pe-10">
               <button
@@ -100,6 +98,8 @@ export default function HomePage() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <SiteHeader />
 
       {/* Hero Section - full-bleed like reference: text left, product carousel right, DISCOVER + dots, brand strip */}
       <section className="relative min-h-[85vh] md:min-h-[90vh] overflow-hidden bg-gradient-to-r from-primary/10 via-background to-background">

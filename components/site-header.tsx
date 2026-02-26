@@ -52,14 +52,14 @@ export function SiteHeader({
 
   return (
     <motion.header
-      initial={{ y: -20, opacity: 0 }}
+      initial={{ y: -16, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.3 }}
-      className="border-b border-border bg-card sticky top-0 z-50"
+      transition={{ duration: 0.25 }}
+      className="border-b border-border bg-white sticky top-0 z-50"
     >
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 overflow-x-auto md:overflow-visible">
+          <div className="flex items-center gap-2 flex-1 justify-center md:flex-none md:justify-start">
             {showBackButton && (
               <Link href={backHref}>
                 <Button variant="ghost" size="icon">
@@ -69,46 +69,46 @@ export function SiteHeader({
             )}
             <Link
               href="/"
-              className="flex items-center gap-4 sm:gap-6 md:gap-8"
+              className="group flex items-center gap-4 sm:gap-6 md:gap-10"
               aria-label="Topicrem & Novexpert Home"
             >
-              <span className="relative h-18 w-44 min-[480px]:h-20 min-[480px]:w-52 sm:h-20 sm:w-52 md:h-22 md:w-60 lg:h-24 lg:w-72">
+              <span className="overflow-hidden">
                 <Image
                   src="/topicremlogo.png"
                   alt="Topicrem"
-                  fill
-                  className="object-contain object-left"
-                  sizes="(max-width: 480px) 176px, (max-width: 640px) 208px, (max-width: 768px) 208px, (max-width: 1024px) 240px, 288px"
+                  width={2000}
+                  height={240}
                   priority
+                  className="h-40 w-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </span>
-              <span className="relative h-18 w-44 min-[480px]:h-20 min-[480px]:w-52 sm:h-20 sm:w-52 md:h-22 md:w-60 lg:h-24 lg:w-72">
+              <span className="overflow-hidden">
                 <Image
                   src="/novaexpert.png"
                   alt="Novexpert"
-                  fill
-                  className="object-contain object-left"
-                  sizes="(max-width: 640px) 144px, (max-width: 768px) 176px, (max-width: 1024px) 224px, 256px"
+                  width={2000}
+                  height={240}
                   priority
+                  className="h-40 w-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8 text-[11px] tracking-[0.18em] uppercase">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 md:gap-3 border-s border-border ps-3">
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

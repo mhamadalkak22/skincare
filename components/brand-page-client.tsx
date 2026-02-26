@@ -48,7 +48,16 @@ export function BrandPageClient({
   }, {} as Record<string, Product[]>);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div
+      className="min-h-screen bg-white"
+      style={{
+        backgroundImage: `
+          linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px)
+        `,
+        backgroundSize: "24px 24px",
+      }}
+    >
       <SiteHeader />
 
       <section className="border-b border-border bg-gradient-to-b from-muted/30 to-background">
