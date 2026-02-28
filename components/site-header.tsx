@@ -57,10 +57,11 @@ export function SiteHeader({
       transition={{ duration: 0.25 }}
       className="border-b border-border bg-white sticky top-0 z-50"
     >
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center gap-2 sm:gap-4 min-w-0">
-          {/* Logo area: can shrink on mobile so buttons don't overlap */}
-          <div className="flex items-center gap-2 flex-1 min-w-0 justify-center md:flex-none md:justify-start">
+      <div className="container mx-auto px-4 py-3 md:py-4">
+        {/* Mobile: two rows so both logos + all actions are clear. Desktop: single row */}
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4 md:min-w-0">
+          {/* Row 1 on mobile: both logos fully visible (no shrink/cut-off) */}
+          <div className="flex items-center gap-2 flex-1 min-w-0 justify-center md:justify-start order-1">
             {showBackButton && (
               <Link href={backHref}>
                 <Button variant="ghost" size="icon" className="shrink-0">
@@ -70,34 +71,34 @@ export function SiteHeader({
             )}
             <Link
               href="/"
-              className="group flex items-center gap-2 sm:gap-4 md:gap-10 min-w-0 shrink"
+              className="group flex items-center justify-center gap-3 sm:gap-4 md:gap-10 md:flex-1 md:min-w-0 md:justify-start"
               aria-label="Topicrem & Novexpert Home"
             >
-              <span className="flex items-center overflow-hidden h-10 sm:h-14 shrink-0">
+              <span className="flex items-center h-9 sm:h-10 md:h-14 shrink-0">
                 <Image
                   src="/logo1.jpeg"
                   alt="Topicrem"
                   width={400}
                   height={120}
                   priority
-                  className="h-10 w-auto max-h-10 sm:h-14 sm:max-h-14 object-contain object-center transition-transform duration-500 ease-out group-hover:scale-110"
+                  className="h-9 w-auto max-h-9 sm:h-10 sm:max-h-10 md:h-14 md:max-h-14 object-contain object-center transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </span>
-              <span className="flex items-center overflow-hidden h-10 sm:h-14 shrink-0">
+              <span className="flex items-center h-9 sm:h-10 md:h-14 shrink-0">
                 <Image
                   src="/logo2.jpeg"
                   alt="Novexpert"
                   width={400}
                   height={120}
                   priority
-                  className="h-10 w-auto max-h-10 sm:h-14 sm:max-h-14 object-contain object-center transition-transform duration-500 ease-out group-hover:scale-110"
+                  className="h-9 w-auto max-h-9 sm:h-10 sm:max-h-10 md:h-14 md:max-h-14 object-contain object-center transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 text-[11px] tracking-[0.18em] uppercase shrink-0">
+          <nav className="hidden md:flex items-center gap-8 text-[11px] tracking-[0.18em] uppercase shrink-0 order-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -109,8 +110,8 @@ export function SiteHeader({
             ))}
           </nav>
 
-          {/* Translate, menu, cart: always visible and never overlap logos */}
-          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 border-s border-border ps-2 sm:ps-3 shrink-0 bg-white">
+          {/* Row 2 on mobile: translate, menu, cart. Always visible. */}
+          <div className="flex items-center justify-end gap-1.5 sm:gap-2 md:gap-3 md:border-s md:border-border md:ps-3 shrink-0 bg-white order-2 md:order-3">
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
