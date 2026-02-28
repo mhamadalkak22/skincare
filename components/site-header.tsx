@@ -58,45 +58,46 @@ export function SiteHeader({
       className="border-b border-border bg-white sticky top-0 z-50"
     >
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center gap-4 overflow-x-auto md:overflow-visible">
-          <div className="flex items-center gap-2 flex-1 justify-center md:flex-none md:justify-start">
+        <div className="flex items-center gap-2 sm:gap-4 min-w-0">
+          {/* Logo area: can shrink on mobile so buttons don't overlap */}
+          <div className="flex items-center gap-2 flex-1 min-w-0 justify-center md:flex-none md:justify-start">
             {showBackButton && (
               <Link href={backHref}>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="shrink-0">
                   <ChevronLeft className="h-5 w-5" />
                 </Button>
               </Link>
             )}
             <Link
               href="/"
-              className="group flex items-center gap-4 sm:gap-6 md:gap-10"
+              className="group flex items-center gap-2 sm:gap-4 md:gap-10 min-w-0 shrink"
               aria-label="Topicrem & Novexpert Home"
             >
-              <span className="overflow-hidden">
+              <span className="flex items-center overflow-hidden h-10 sm:h-14 shrink-0">
                 <Image
-                  src="/topicremlogo.png"
+                  src="/logo1.jpeg"
                   alt="Topicrem"
-                  width={2000}
-                  height={240}
+                  width={400}
+                  height={120}
                   priority
-                  className="h-40 w-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110"
+                  className="h-10 w-auto max-h-10 sm:h-14 sm:max-h-14 object-contain object-center transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </span>
-              <span className="overflow-hidden">
+              <span className="flex items-center overflow-hidden h-10 sm:h-14 shrink-0">
                 <Image
-                  src="/novaexpert.png"
+                  src="/logo2.jpeg"
                   alt="Novexpert"
-                  width={2000}
-                  height={240}
+                  width={400}
+                  height={120}
                   priority
-                  className="h-40 w-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110"
+                  className="h-10 w-auto max-h-10 sm:h-14 sm:max-h-14 object-contain object-center transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 text-[11px] tracking-[0.18em] uppercase">
+          <nav className="hidden md:flex items-center gap-8 text-[11px] tracking-[0.18em] uppercase shrink-0">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -108,11 +109,12 @@ export function SiteHeader({
             ))}
           </nav>
 
-          <div className="flex items-center gap-2 md:gap-3 border-s border-border ps-3">
+          {/* Translate, menu, cart: always visible and never overlap logos */}
+          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 border-s border-border ps-2 sm:ps-3 shrink-0 bg-white">
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="shrink-0 size-10 touch-manipulation">
                   <Languages className="h-5 w-5" />
                 </Button>
               </DropdownMenuTrigger>
@@ -138,7 +140,7 @@ export function SiteHeader({
             {/* Mobile Menu Button */}
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
+                <Button variant="ghost" size="icon" className="md:hidden shrink-0 size-10 touch-manipulation">
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
@@ -166,7 +168,9 @@ export function SiteHeader({
               </SheetContent>
             </Sheet>
 
-            <CartButton />
+            <span className="shrink-0 inline-flex">
+              <CartButton />
+            </span>
           </div>
         </div>
       </div>
