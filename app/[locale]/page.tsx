@@ -58,7 +58,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background font-gotham">
-      {/* Discount Announcement Banner - very top above header */}
+      {/* Discount Announcement Banner - one row, scrolling on mobile */}
       <AnimatePresence>
         {bannerVisible && (
           <motion.div
@@ -66,34 +66,46 @@ export default function HomePage() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-gradient-to-r from-pink-500 via-primary to-pink-600 text-white py-4 px-4 sm:py-3 text-center z-50 shadow-lg overflow-hidden"
+            className="bg-gradient-to-r from-pink-500 via-primary to-pink-600 text-white py-2.5 px-4 sm:py-3 text-center z-50 shadow-lg overflow-hidden"
           >
-            <div className="container mx-auto relative pe-8 sm:pe-10">
+            <div className="container mx-auto relative flex items-center min-h-[2.5rem] sm:min-h-0">
+              {/* Close button - right side, above marquee on mobile */}
               <button
                 type="button"
                 onClick={closeBanner}
                 aria-label="Close banner"
-                className="absolute top-1/2 -translate-y-1/2 end-0 sm:end-2 w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                className="absolute top-1/2 -translate-y-1/2 end-0 sm:end-2 w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50 z-10 shrink-0"
               >
                 <X className="w-5 h-5" />
               </button>
-              <motion.div
-                initial={{ scale: 0.9 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.3, delay: 0.1 }}
-                className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2 sm:gap-1 text-sm md:text-base font-semibold"
-              >
-                <span className="order-1">
-                  🎉 <span className="font-bold">{t("specialOffer")}</span>{" "}
-                  {t("discount")}
-                </span>
-                <span className="order-2 sm:order-2 bg-white text-primary px-3 py-1.5 sm:py-1 rounded-md font-bold shrink-0">
-                  SKIN20
-                </span>
-                <span className="order-3">
-                  {t("atCheckout")} 🎉
-                </span>
-              </motion.div>
+              {/* Mobile: single row with scrolling marquee */}
+              <div className="flex-1 min-w-0 pe-10 sm:pe-10 overflow-hidden">
+                <div className="md:hidden overflow-hidden">
+                  <div className="flex animate-marquee w-max">
+                    <div className="flex items-center gap-2 shrink-0 text-sm font-semibold whitespace-nowrap pl-4">
+                      <span>🎉 <span className="font-bold">{t("specialOffer")}</span> {t("discount")}</span>
+                      <span className="bg-white text-primary px-2 py-0.5 rounded font-bold">SKIN20</span>
+                      <span>{t("atCheckout")} 🎉</span>
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0 text-sm font-semibold whitespace-nowrap pl-8">
+                      <span>🎉 <span className="font-bold">{t("specialOffer")}</span> {t("discount")}</span>
+                      <span className="bg-white text-primary px-2 py-0.5 rounded font-bold">SKIN20</span>
+                      <span>{t("atCheckout")} 🎉</span>
+                    </div>
+                  </div>
+                </div>
+                {/* Desktop: static one row, no scroll */}
+                <motion.div
+                  initial={{ scale: 0.9 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.3, delay: 0.1 }}
+                  className="hidden md:flex flex-row flex-nowrap items-center justify-center gap-2 text-base font-semibold"
+                >
+                  <span>🎉 <span className="font-bold">{t("specialOffer")}</span> {t("discount")}</span>
+                  <span className="bg-white text-primary px-3 py-1 rounded-md font-bold shrink-0">SKIN20</span>
+                  <span>{t("atCheckout")} 🎉</span>
+                </motion.div>
+              </div>
             </div>
           </motion.div>
         )}

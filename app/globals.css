@@ -143,3 +143,16 @@
     transform: translateX(-50%);
   }
 }
+
+/* Promo banner marquee - single row scrolling on mobile */
+@keyframes promo-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: promo-marquee 20s linear infinite;
+}
